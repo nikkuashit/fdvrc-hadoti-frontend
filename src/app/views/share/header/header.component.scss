@@ -1,4 +1,4 @@
-h1 {
+.header h1 {
 	margin-left: 55px;
 	font-size: 27px;
 	font-weight: 600;
@@ -84,7 +84,7 @@ ul {
 	.navbar-brand .b_logo1 {
 		height: 60px;
 		width: 120px;
-		margin-top: -20px;
+		margin-top: -40px;
 	}
 	.b_logo2 {
 		display: none;
@@ -92,12 +92,14 @@ ul {
 	.navbar-expand-lg .navbar-nav .nav-link {
 		margin-top: -25px;
 	}
+	.navbar-nav {
+		margin-left: -100px;
+	}
 }
 
 @media (max-width: 992px) {
 	.navbar-expand-lg .navbar-nav .nav-link {
-		margin-top: 30px;
-		padding: 1rem 0rem;
+		padding: 2rem 0rem;
 		width: 100px;
 		text-align: center;
 		margin-left: 300px;
@@ -109,7 +111,7 @@ ul {
 		display: none;
 	}
 	.navbar-brand .b_logo1 {
-		margin-top: 20px;
+		margin-top: -10px;
 	}
 }
 

@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="new ">
+            <h3>Latest news</h3>
+        </div>
+
+
+
+    </div>
+
+    <div class="row ">
+        <div *ngFor="let data of gData" class="col-lg-4 col-md-4 col-sm-4 ">
+            <div class="col">
+                <div class="card">
+                    <img [src]="data.image" alt="...">
+                    <div class="card-body">
+                        <a href="#">
+                            <h6>{{data.title}}</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
