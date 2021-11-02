@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,10 @@ import { OurProductComponent } from './views/share/our-product/our-product.compo
 import { KnownAbtUsComponent } from './views/share/known-abt-us/known-abt-us.component';
 import { INewsComponent } from './views/share/i-news/i-news.component';
 import { TestimonialComponent } from './views/share/testimonial/testimonial.component';
+import { AboutComponent } from './views/share/about/about.component';
+import { MediaComponent } from './views/share/media/media.component';
+import { ProjectUpdateComponent } from './views/share/project-update/project-update.component';
+import { EngageWithUsComponent } from './views/share/engage-with-us/engage-with-us.component';
 
 @NgModule({
 	declarations: [
@@ -24,9 +29,13 @@ import { TestimonialComponent } from './views/share/testimonial/testimonial.comp
 		OurProductComponent,
 		KnownAbtUsComponent,
 		INewsComponent,
-		TestimonialComponent
+		TestimonialComponent,
+		AboutComponent,
+		MediaComponent,
+		ProjectUpdateComponent,
+		EngageWithUsComponent
 	],
-	imports: [ BrowserModule, AppRoutingModule ],
+	imports: [ BrowserModule, AppRoutingModule, YouTubePlayerModule ],
 	providers: [],
 	bootstrap: [ AppComponent ]
 })

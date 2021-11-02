@@ -1,0 +1,196 @@
+<!-- Article -->
+<div class="container mb-3 article ">
+    <h3>Articles</h3>
+    <div class="card-group">
+        <div class="card  m-3 mt-0">
+            <img src="/assets/media/ali-shah-lakhani-dwbzzB03gUE-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <button class="btn-sm btn-danger ">Read More</button>
+            </div>
+        </div>
+        <div class="card   m-3 mt-0">
+            <img src="/assets/media/ashni-Wh9ZC4727e4-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <button class="btn-sm btn-danger">Read More</button>
+            </div>
+        </div>
+        <div class="card  m-3 mt-0">
+            <img src="/assets/media/markus-winkler-cxoR55-bels-unsplash.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <button class="btn-sm btn-danger">Read More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Annoncement Archieve -->
+<div class="annoncement-a mb-3  mt-3 ">
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <h3> Annoucement Archive</h3>
+
+                <ul>
+                    <li><a href=""> 1.Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href=""> 2.Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href=""> 3.Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href=""> 4.Lorem ipsum dolor sit amet.</a></li>
+
+                </ul>
+            </div>
+            <div class="col-3">
+                <h3> Annoucement Archive</h3>
+
+                <ul>
+                    <li><a href=""> 5.Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href=""> 6.Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href=""> 7.Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href=""> 8.Lorem ipsum dolor sit amet.</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-6">
+                <div class="date-picker">
+                    <input type="date"><span><i class="fas fa-calendar-alt calender"></i></span>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- video section -->
+<div class="conatiner m-3 bg-light video-block">
+
+
+    <div class="row p-3">
+
+        <h3>Things To know</h3>
+        <div class="col-lg-6 col-md-9 col-sm-9">
+            <youtube-player videoId="KhoV-vBAyFI" suggestedQuality="highres" [height]="250" [width]="450"
+                [startSeconds]="4" [endSeconds]="8">
+            </youtube-player>
+            <h4> <a href=""> Title</a></h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam distinctio vel eum! Vitae, nostrum?
+                Consequatur ipsa dignissimos, odio veritatis esse voluptate cumque, atque quasi alias, laudantium
+                possimus illum adipisci? Voluptatem?</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 video-block-1">
+
+            <youtube-player class="video" videoId="Fw1SQSek5rk" suggestedQuality="highres" [height]="120" [width]="200"
+                [startSeconds]="4" [endSeconds]="8">
+            </youtube-player>
+            <h4> <a href=""> Title-1</a></h4>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 video-block-1 ">
+
+                <youtube-player videoId="i8Pcbot9EDE" suggestedQuality="highres" [height]="120" [width]="200"
+                    [startSeconds]="4" [endSeconds]="8">
+                </youtube-player>
+                <h4> <a href=""> Title-2</a></h4>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6 video-block-2">
+
+            <youtube-player videoId="KEvWER2Zcsw" suggestedQuality="highres" [height]="120" [width]="200"
+                [startSeconds]="4" [endSeconds]="8">
+            </youtube-player>
+            <h4> <a href=""> Title-3</a></h4>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 video-block-2">
+
+                <youtube-player videoId="8fWSfEBGobI" suggestedQuality="highres" [height]="120" [width]="200"
+                    [startSeconds]="4" [endSeconds]="8">
+                </youtube-player>
+                <h4> <a href=""> Title-4</a></h4>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<!-- Gallery -->
+<div class="gallery mt-3">
+    <div class="container">
+
+        <h3>Gallery</h3>
+        <div class="underline_2 mb-3 "></div>
+        <div class="col-12  pb-3 ">
+            <div class="row ">
+
+
+                <div *ngFor="let data of memberData_1" class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="col">
+                        <div class="card">
+                            <a href="">
+                                <p>{{data.gal_title}}</p>
+                            </a>
+                            <img [src]="data.image" alt="...">
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-1 mb-1 pt-3 pb-3 ">
+            <div class="row ">
+                <div *ngFor="let data of memberData_2" class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="col">
+                        <div class="card">
+                            <a href="">
+                                <p>{{data.gal_title}}</p>
+                            </a>
+                            <img [src]="data.image" alt="...">
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Newspaper Article -->
+<div class="new-article mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+
+                <p>1.Lorem ipsum dolor sit amet.<a href=""><span>Link</span></a></p>
+                <p>2.Lorem ipsum dolor sit amet.<a href=""><span>Link</span></a></p>
+                <p>3.Lorem ipsum dolor sit amet.<a href=""><span>Link</span></a></p>
+                <p>4.Lorem ipsum dolor sit amet.<a href=""><span>Link</span></a></p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <p>5.Lorem ipsum dolor sit amet.<a href=""><span>Link</span></a> </p>
+                <p>6.Lorem ipsum dolor sit amet.<a href=""><span>Link</span></a> </p>
+                <p>7.Lorem ipsum dolor sit amet.<a href=""><span>Link</span></a> </p>
+                <p>8.Lorem ipsum dolor sit amet.<a href=""><span>Link</span></a> </p>
+            </div>
+
+        </div>
+    </div>
+
+</div>

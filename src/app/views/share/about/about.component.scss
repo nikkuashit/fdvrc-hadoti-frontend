@@ -1,0 +1,143 @@
+.mission {
+	background-color: #ffe6e9;
+}
+.about h3 {
+	color: red;
+	text-decoration: underline;
+	text-transform: capitalize;
+	margin-top: 10px;
+	font-size: 21px;
+}
+.about p {
+	font-size: 10px;
+	color: rgb(82, 82, 82);
+}
+.about button {
+	border: none;
+	font-size: 12px;
+}
+
+/* board-sec */
+
+.board-img {
+	height: 150px;
+	margin: auto;
+}
+.carousel-item img {
+	margin-left: 100px;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000'  viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+	margin-left: -80px;
+	height: 15px;
+	margin-top: -40px;
+}
+.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+	margin-right: -80px;
+	height: 15px;
+	margin-top: -30px;
+}
+
+.board-dir h3 {
+	color: red;
+	font-size: 27px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.box p {
+	margin-left: 135px;
+	line-height: 0px;
+	font-size: 10px;
+}
+
+/* Team Member-sec */
+.team-member {
+	background-color: #ffe6e9;
+}
+.card {
+	background-color: transparent;
+	border: none;
+}
+.card img {
+	height: 100px;
+	width: 100px;
+	border: 2px solid red;
+	border-radius: 50%;
+	margin: auto;
+}
+.team-member h3 {
+	color: red;
+	font-size: 27px;
+	font-weight: 500;
+	text-transform: capitalize;
+	padding-top: 30px;
+}
+.underline_1 {
+	height: 3px;
+	width: 195px;
+	background-color: red;
+	border-radius: 20px;
+	margin-top: -14px;
+}
+.card p {
+	font-size: 10px;
+	text-align: center;
+}
+.card .deg {
+	margin-top: -15px;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+	.carousel-control-prev-icon {
+		display: none;
+	}
+	.carousel-control-next-icon {
+		display: none;
+	}
+	.about h3 {
+		margin-top: 0px;
+	}
+}
+
+@media (max-width: 992px) {
+	.box img {
+		margin-left: 40px;
+	}
+	.box p {
+		margin-left: 75px;
+	}
+	.carousel-control-prev-icon {
+		display: none;
+	}
+	.carousel-control-next-icon {
+		display: none;
+	}
+	.about h3 {
+		margin-top: 0px;
+	}
+}
+@media (max-width: 768px) {
+	.box img {
+		margin-left: 10px;
+	}
+	.box p {
+		margin-left: 50px;
+	}
+	.team-member {
+		margin-left: 20px;
+	}
+	.carousel-control-prev-icon {
+		display: none;
+	}
+	.carousel-control-next-icon {
+		display: none;
+	}
+	.about h3 {
+		margin-top: 0px;
+	}
+}

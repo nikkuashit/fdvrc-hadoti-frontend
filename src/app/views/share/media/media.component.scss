@@ -1,0 +1,163 @@
+/* Article */
+.card {
+	height: 450px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	text-align: center;
+}
+
+.card img {
+	height: 300px;
+	max-width: 500px;
+}
+.article h3 {
+	color: red;
+	font-size: 27px;
+}
+
+.card h5 {
+	color: red;
+}
+.card p,
+button {
+	font-size: 10px;
+}
+
+/* Annoncement Archieve */
+.annoncement-a {
+	background-color: #ffe6e9;
+}
+.annoncement-a h3 {
+	color: red;
+	margin-top: 10px;
+	font-size: 21px;
+}
+
+.annoncement-a ul li {
+	list-style: none;
+	margin-top: 10px;
+}
+
+.annoncement-a ul a {
+	color: rgb(70, 70, 70);
+	padding-top: 10px;
+}
+.annoncement-a ul a:hover {
+	color: red;
+}
+
+.date-picker input {
+	padding: 10px;
+	color: red;
+	text-transform: uppercase;
+	border-radius: 4px;
+	border: 2px solid red;
+	margin-top: 60px;
+}
+.calender {
+	color: red;
+	padding-left: 20px;
+	font-size: 40px;
+}
+
+/* gallery */
+.gallery .card {
+	height: 190px;
+	transition: all 1s;
+	margin: 5px;
+}
+.gallery .card:hover {
+	transform: scale(1.02);
+}
+.gallery .card img {
+	height: 150px;
+	width: 295px;
+}
+.card a {
+	font-weight: 500;
+	color: red;
+}
+
+.gallery h3 {
+	color: red;
+	font-size: 27px;
+}
+
+/* news-article */
+.new-article {
+	background-color: #ffe6e9;
+	padding: 40px;
+}
+.new-article span {
+	padding: 50px;
+}
+.new-article a {
+	color: red;
+}
+
+/* video */
+.video-block {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.video-block h3 {
+	font-size: 27px;
+	color: red;
+}
+
+.video-block p {
+	font-size: 12px;
+	margin-top: -10px;
+}
+.video-block h4 a {
+	font-size: 18px;
+	color: red;
+	text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 1400px) {
+	.gallery .card img {
+		width: 249px;
+	}
+}
+@media (max-width: 1200px) {
+	.gallery .card img {
+		width: 204px;
+	}
+}
+
+@media (max-width: 992px) {
+	.gallery .card img {
+		width: 324px;
+	}
+}
+
+@media (max-width: 768px) {
+	.gallery .card img {
+		width: 504px;
+	}
+	.new-article span {
+		padding: 150px;
+	}
+	.calender {
+		color: red;
+
+		font-size: 30px;
+	}
+	.date-picker input {
+		padding: 6px;
+		font-size: 12px;
+	}
+	.annoncement-a h3 {
+		font-size: 18px;
+		margin-left: -15px;
+	}
+	.annoncement-a ul {
+		margin-left: -10px;
+	}
+	.new-article a {
+		font-size: 14px;
+	}
+	.new-article p {
+		font-size: 14px;
+	}
+}

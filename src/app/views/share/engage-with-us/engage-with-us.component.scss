@@ -1,0 +1,382 @@
+/* Engage with us */
+.engage-with-us {
+	margin-bottom: 90px;
+}
+
+.background-img {
+	background-image: url(/assets/engage-wth-us/green-chameleon-s9CC2SKySJM-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px;
+	max-height: 500px;
+}
+.engage-with-us img {
+	height: 400px;
+	width: 400px;
+	margin-top: -20px;
+}
+
+.engage-with-us h6 {
+	color: #fd515c;
+	font-size: 18px;
+	margin-top: 40px;
+	letter-spacing: 5px;
+}
+.engage-with-us h4 {
+	color: #ef4e58;
+	font-size: 27px;
+	letter-spacing: 5px;
+	word-spacing: 5px;
+	line-height: 35px;
+	font-weight: 500;
+}
+.engage-with-us p {
+	color: #ef4e58;
+	font-size: 12px;
+}
+
+.engage-with-us button {
+	font-size: 12px;
+	border: none;
+}
+.engage-with-us .info {
+	width: 100%;
+	background-color: #ffe6e9;
+	border: 1px solid rgb(214, 214, 214);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+.engage-with-us input {
+	padding: 10px;
+	border: .5px solid red;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#category {
+	padding: 10px;
+	border: .5px solid red;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#location {
+	padding: 10px;
+	border: .5px solid red;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#btn-1 {
+	padding: 8px;
+	font-size: 12px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	border: .5px solid #fff;
+}
+
+/* Internship */
+
+.internship {
+	background-image: url(/assets/engage-wth-us/Student-Internship.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 450px;
+}
+.box {
+	background-color: #ffe6e9;
+
+	height: 450px;
+	opacity: 0.9;
+	clip-path: polygon(100% 0, 60% 0%, 100% 100%, 0 100%, 0 0);
+}
+
+.box h4 {
+	margin-top: 80px;
+	font-size: 27px;
+	color: red;
+	font-weight: 500;
+	letter-spacing: 5px;
+	line-height: 5px;
+}
+.box h5 {
+	font-size: 18px;
+	color: red;
+	font-weight: 400;
+	word-spacing: 8px;
+	line-height: 25px;
+	text-transform: capitalize;
+}
+.box p {
+	font-size: 12px;
+	line-height: 20px;
+	word-spacing: 2px;
+}
+.box-left {
+	margin-left: 100px;
+}
+.box button {
+	font-size: 12px;
+	border: none;
+}
+.why-prg {
+	background-color: #ec98a1;
+	height: 100px;
+	opacity: 0.8;
+	margin-top: -100px;
+}
+
+.why-prg h4 {
+	font-size: 21px;
+	font-weight: 500;
+	color: red;
+}
+.why-prg p {
+	font-size: 12px;
+	margin-top: -10px;
+}
+
+/* form */
+.form {
+	background-color: #ffe6e9;
+	margin-top: 0px;
+}
+.form input {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin-left: 2px;
+	font-size: 12px;
+}
+.form h4 {
+	color: #ef4e58;
+	font-size: 21px;
+}
+.form button {
+	font-size: 12px;
+	border: none;
+}
+#education {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	font-size: 12px;
+}
+#city {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	font-size: 12px;
+}
+#mobile {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin-left: -2px;
+	font-size: 12px;
+}
+#apply {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	font-size: 12px;
+}
+
+/* Tender search  */
+.tender-search h3 {
+	font-size: 27px;
+	color: #ef4e58;
+}
+
+#tender-type {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin-left: -2px;
+	font-size: 12px;
+	background-color: #ffe6e9;
+}
+#field {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin-left: -2px;
+	font-size: 12px;
+	background-color: #ffe6e9;
+}
+#region {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin-left: -2px;
+	font-size: 12px;
+	background-color: #ffe6e9;
+}
+#keyward {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin-left: -2px;
+	font-size: 12px;
+	background-color: #ffe6e9;
+}
+#to {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin-left: -2px;
+	font-size: 12px;
+	background-color: #ffe6e9;
+}
+#from {
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	margin-left: -2px;
+	font-size: 12px;
+	background-color: #ffe6e9;
+}
+.tender-search h5 {
+	font-size: 16px;
+	color: #ef4e58;
+}
+.tender-search button {
+	font-size: 12px;
+	border: none;
+}
+.tender-rt .t_bg {
+	background-image: url(/assets/engage-wth-us/tender.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px;
+	height: 430px;
+	margin-top: -50px;
+	margin-bottom: 30px;
+}
+
+.tender-rt h1 {
+	margin-top: -10px;
+	letter-spacing: 5px;
+	color: #ef4e58;
+	font-size: 33px;
+}
+.tender-rt p {
+	color: #fff;
+	font-size: 12px;
+}
+.tender-rt h4 {
+	color: #ef4e58;
+	text-decoration: underline;
+	font-size: 18px;
+}
+.tender-rt h6 {
+	color: black;
+	text-decoration: underline;
+	margin-left: 1px;
+	font-size: 14px;
+}
+
+/* partnership */
+.card {
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card img {
+	height: 200px;
+	width: 150px;
+}
+.partnership {
+	background-color: #ffe6e9;
+	padding: 20px;
+}
+.partnership h3 {
+	color: #ef4e58;
+	font-size: 21px;
+	text-transform: uppercase;
+}
+.partnership p {
+	font-size: 12px;
+	text-align: center;
+	padding: 10px;
+}
+
+.partnership button {
+	font-size: 10px;
+	border: none;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	margin-left: 140px;
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+	.partnership button {
+		margin-left: 100px;
+	}
+}
+@media (max-width: 992px) {
+	.partnership button {
+		margin-left: 60px;
+	}
+	.engage-with-us .info {
+		margin-top: 0px;
+	}
+	.engage-with-us img {
+		height: 300px;
+		width: 300px;
+		margin-top: 60px;
+	}
+}
+@media (max-width: 768px) {
+	.card {
+		width: 120px;
+		height: 200px;
+		margin-left: 40px;
+	}
+
+	.partnership button {
+		margin-left: 60px;
+		font-size: 14px;
+	}
+	.partnership h3 {
+		font-size: 16px;
+	}
+	.partnership p {
+		display: none;
+	}
+	.card img {
+		height: 100px;
+		width: 150px;
+	}
+	.tender-search h3 {
+		font-size: 18px;
+	}
+	.tender-rt h1 {
+		font-size: 21px;
+		letter-spacing: .5px;
+		margin-top: -70px;
+	}
+	.engage-with-us input {
+		font-size: 8px;
+		padding: 2px;
+	}
+	#category {
+		font-size: 8px;
+		padding: 6px;
+	}
+	#location {
+		font-size: 8px;
+		padding: 6px;
+	}
+	#btn-1 {
+		font-size: 10px;
+		padding: 2px;
+	}
+}
