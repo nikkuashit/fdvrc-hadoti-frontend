@@ -9,27 +9,10 @@
 	height: 300px;
 	max-width: 500px;
 }
-.article h3 {
-	color: red;
-	font-size: 27px;
-}
-
-.card h5 {
-	color: red;
-}
-.card p,
-button {
-	font-size: 10px;
-}
 
 /* Annoncement Archieve */
 .annoncement-a {
 	background-color: #ffe6e9;
-}
-.annoncement-a h3 {
-	color: red;
-	margin-top: 10px;
-	font-size: 21px;
 }
 
 .annoncement-a ul li {
@@ -42,19 +25,19 @@ button {
 	padding-top: 10px;
 }
 .annoncement-a ul a:hover {
-	color: red;
+	color: #ff2666;
 }
 
 .date-picker input {
 	padding: 10px;
-	color: red;
+	color: #ff2666;
 	text-transform: uppercase;
 	border-radius: 4px;
-	border: 2px solid red;
+	border: 2px solid #ff2666;
 	margin-top: 60px;
 }
 .calender {
-	color: red;
+	color: #ff2666;
 	padding-left: 20px;
 	font-size: 40px;
 }
@@ -74,12 +57,7 @@ button {
 }
 .card a {
 	font-weight: 500;
-	color: red;
-}
-
-.gallery h3 {
-	color: red;
-	font-size: 27px;
+	color: #ff2666;
 }
 
 /* news-article */
@@ -91,16 +69,12 @@ button {
 	padding: 50px;
 }
 .new-article a {
-	color: red;
+	color: #ff2666;
 }
 
 /* video */
 .video-block {
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-.video-block h3 {
-	font-size: 27px;
-	color: red;
 }
 
 .video-block p {
@@ -109,7 +83,7 @@ button {
 }
 .video-block h4 a {
 	font-size: 18px;
-	color: red;
+	color: #ff2666;
 	text-decoration: underline;
 }
 
@@ -139,7 +113,7 @@ button {
 		padding: 150px;
 	}
 	.calender {
-		color: red;
+		color: #ff2666;
 
 		font-size: 30px;
 	}

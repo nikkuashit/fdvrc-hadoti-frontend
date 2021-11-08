@@ -1,0 +1,159 @@
+<!-- Product -->
+<div class="container mb-3">
+    <h1 class="text-center header-text"> Product</h1>
+    <div class="row text-center">
+        <div class="col-12">
+            <h3><a class="bulk" href=""> Bulk Unit</a> <a href=""><span class="m-3 consumer">
+                        Consumer Pack
+                    </span></a></h3>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div *ngFor="let data of productItem" class="col-lg-3 col-md-6 col-sm-6 mx-auto">
+            <div class="card c-size " style="width: 15rem;">
+                <img class="card-img-top  prod-img mx-auto" [src]="data.img" alt="...">
+                <div class="card-body bg-light">
+                    <a href="">
+                        <h3 class="card-title">{{ data.title1}}</h3>
+                    </a>
+                    <p class="card-text">{{data.title2}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div *ngFor="let data of productItem1" class="col-lg-3 col-md-6 col-sm-6 mx-auto">
+            <div class="card c-size " style="width: 15rem;">
+                <img class="card-img-top  prod-img mx-auto" [src]="data.img" alt="...">
+                <div class="card-body bg-light">
+                    <a href="">
+                        <h3 class="card-title">{{ data.title1}}</h3>
+                    </a>
+                    <p class="card-text">{{data.title2}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- product enquire -->
+
+<div class="container mb-3">
+    <div class="row mt-2">
+        <h1 class="text-center header-text"> Product Enquire</h1>
+    </div>
+</div>
+<div class="product">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-lg-6 col-sm-12">
+                <div class="mb-1">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enquire Here.."
+                        rows="8"></textarea>
+                </div>
+                <div class="mb-1">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" rows="2">
+                </div>
+                <div class="mb-1">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Mobile Number"
+                        rows="2">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address"
+                        rows="2">
+                </div>
+            </div>
+            <div class="col-6 mt-3">
+                <div class="mb-3">
+                    <ul class="list-group">
+
+                        <h3 class="subtitle-text">Let's work together</h3>
+                        <li class="list-group-item mb-3">
+                            <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nisl tellus
+                                scelerisque
+                                mattis
+                                erat dolor cursus venenatis tincidunt. Mattis in amet id risus enim leo nunc in non.
+                                Commodo
+                                commodo id libero ut ullamcorper. Ut urna est augue cras purus bibendum viverra
+                                suspendisse.
+                            </p>
+                        </li>
+                        <li class="list-group-item mb-3">
+                            <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nisl tellus
+                                scelerisque
+                                mattis
+                                erat dolor cursus venenatis tincidunt. Mattis in amet id risus enim leo nunc in non.
+                                Commodo
+                                commodo id libero ut ullamcorper. Ut urna est augue cras purus bibendum viverra
+                                suspendisse.
+                            </p>
+                        </li>
+                        <li class="list-group-item mb-3">
+                            <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nisl tellus
+                                scelerisque
+                                mattis
+                                erat dolor cursus venenatis tincidunt. Mattis in amet id risus enim leo nunc in non.
+                                Commodo
+                                commodo id libero ut ullamcorper. Ut urna est augue cras purus bibendum viverra
+                                suspendisse.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- market linkage -->
+<div class="container mb-3">
+    <div class="row text-center">
+        <h1 class="txt-color header-text">Market Linkage</h1>
+        <a href="">
+            <h3 class="txt-dec">Lorem ipsum dolor sit amet </h3>
+        </a>
+        <a href="">
+            <p class="txt-dec">Lorem ipsum </p>
+        </a>
+        <a href="">
+            <p class="txt-dec">Lorem ipsum </p>
+        </a>
+    </div>
+    <div class="row  text-center">
+        <div class="card mx-auto text-white">
+            <img src="/assets/product/Rectangle 32.png" class="card-img p-1" alt="...">
+            <div class="card-img-overlay col-md-12  ">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text mx-auto">Last updated 3 mins ago</p>
+            </div>
+        </div>
+        <div class="card  mx-auto text-white">
+            <img src="/assets/product/Rectangle 33.png" class="card-img p-1" alt="...">
+            <div class="card-img-overlay col-md-12">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+        </div>
+        <div class="card  mx-auto text-white">
+            <img src="/assets/product/Rectangle 34.png" class="card-img p-1" alt="...">
+            <div class="card-img-overlay col-md-12">
+                <h3 class="card-title">Card title</h3>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>

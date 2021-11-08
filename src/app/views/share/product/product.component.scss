@@ -1,0 +1,59 @@
+/* product */
+.c-size {
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transition: all 1s;
+	background-color: #fce3e4;
+}
+.c-size:hover {
+	transform: scale(1.05);
+}
+.prod-img {
+	height: 100px;
+	width: 80px;
+}
+.bulk {
+	color: rgb(51, 51, 51);
+	font-size: 21px;
+}
+.bulk:hover {
+	color: #ff2666;
+	text-decoration: underline;
+}
+.consumer {
+	color: rgb(51, 51, 51);
+	font-size: 21px;
+}
+.consumer:hover {
+	color: #ff2666;
+	text-decoration: underline;
+}
+
+/* product inquire */
+.product {
+	background-color: #fce3e4;
+}
+
+/* market linkage  */
+.txt-color {
+	color: #ff2666;
+}
+.txt-dec {
+	color: grey;
+	font-size: 21px;
+	text-decoration: underline;
+}
+.card {
+	border-radius: 0px;
+	border: 1px solid #ff2666;
+	width: 330px;
+	margin: 20px;
+}
+.card h3 {
+	font-size: 18px;
+	color: #ff2666;
+	text-decoration: underline;
+}
+.card p {
+	font-size: 12px;
+}

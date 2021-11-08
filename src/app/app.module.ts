@@ -9,15 +9,13 @@ import { CoreModule } from './views/core/core.module';
 // import { HeaderComponent } from './views/share/header/header.component';
 import { ShareModule } from './views/share/share.module';
 
-
 @NgModule({
 	declarations: [
-		AppComponent,
-    // HeaderComponent,
-    // FooterComponent,
+		AppComponent
+		// HeaderComponent,
+		// FooterComponent,
 	],
-	imports: [ BrowserModule, CommonModule, AppRoutingModule, ShareModule,
-    CoreModule ],
+	imports: [ BrowserModule, CommonModule, AppRoutingModule, ShareModule, CoreModule ],
 	providers: [],
 	bootstrap: [ AppComponent ]
 })

@@ -4,14 +4,20 @@ import { EngageWithUsComponent } from './views/share/engage-with-us/engage-with-
 import { AboutComponent } from './views/share/about/about.component';
 import { ProjectUpdateComponent } from './views/share/project-update/project-update.component';
 import { MediaComponent } from './views/share/media/media.component';
+import { ProductComponent } from './views/share/product/product.component';
+import { MemberComponent } from './views/share/member/member.component';
+import { ContactUsComponent } from './views/share/contact-us/contact-us.component';
 import { LandingPageComponent } from '../app/views/core/landing-page/landing-page.component';
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent },
+	{ path: '', component: LandingPageComponent },
 	{ path: 'engage-with-us', component: EngageWithUsComponent },
 	{ path: 'about', component: AboutComponent },
 	{ path: 'product-update', component: ProjectUpdateComponent },
-	{ path: 'media', component: MediaComponent }
+	{ path: 'media', component: MediaComponent },
+	{ path: 'product', component: ProductComponent },
+	{ path: 'member', component: MemberComponent },
+	{ path: 'contact-us', component: ContactUsComponent }
 ];
 
 @NgModule({

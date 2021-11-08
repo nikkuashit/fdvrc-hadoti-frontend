@@ -12,23 +12,41 @@ import { INewsComponent } from './i-news/i-news.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MediaComponent } from './media/media.component';
+import { ProductComponent } from './product/product.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { MemberComponent } from './member/member.component';
 
 @NgModule({
-	declarations: [ HeaderComponent, FooterComponent,     HeroImgComponent,
-    WhatWeDoComponent,
-    ProjectGlanceComponent,
-    OurProductComponent,
-    KnownAbtUsComponent,
-    INewsComponent,
-    TestimonialComponent, MediaComponent, ],
-	imports: [ BrowserModule, CommonModule,RouterModule ],
-  exports: [  HeaderComponent, FooterComponent, HeroImgComponent,
-    WhatWeDoComponent,
-    ProjectGlanceComponent,
-    OurProductComponent,
-    KnownAbtUsComponent,
-    INewsComponent,
-    TestimonialComponent, MediaComponent,]
-
+	declarations: [
+		HeaderComponent,
+		FooterComponent,
+		HeroImgComponent,
+		WhatWeDoComponent,
+		ProjectGlanceComponent,
+		OurProductComponent,
+		KnownAbtUsComponent,
+		INewsComponent,
+		TestimonialComponent,
+		MediaComponent,
+		ProductComponent,
+		ContactUsComponent,
+		MemberComponent
+	],
+	imports: [ BrowserModule, CommonModule, RouterModule ],
+	exports: [
+		HeaderComponent,
+		FooterComponent,
+		HeroImgComponent,
+		WhatWeDoComponent,
+		ProjectGlanceComponent,
+		OurProductComponent,
+		KnownAbtUsComponent,
+		INewsComponent,
+		TestimonialComponent,
+		MediaComponent,
+		ProductComponent,
+		ContactUsComponent,
+		MemberComponent
+	]
 })
 export class ShareModule {}
