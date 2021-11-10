@@ -15,6 +15,8 @@ import { MediaComponent } from './media/media.component';
 import { ProductComponent } from './product/product.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MemberComponent } from './member/member.component';
+import { AboutComponent } from './about/about.component';
+import { EngageWithUsComponent } from './engage-with-us/engage-with-us.component';
 
 @NgModule({
 	declarations: [
@@ -30,7 +32,9 @@ import { MemberComponent } from './member/member.component';
 		MediaComponent,
 		ProductComponent,
 		ContactUsComponent,
-		MemberComponent
+		MemberComponent,
+    AboutComponent,
+    EngageWithUsComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule ],
 	exports: [
@@ -46,7 +50,9 @@ import { MemberComponent } from './member/member.component';
 		MediaComponent,
 		ProductComponent,
 		ContactUsComponent,
-		MemberComponent
+		MemberComponent,
+    AboutComponent,
+    EngageWithUsComponent
 	]
 })
 export class ShareModule {}

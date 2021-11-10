@@ -131,3 +131,9 @@ ul {
 		margin-left: 20px;
 	}
 }
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff2666;
+}
