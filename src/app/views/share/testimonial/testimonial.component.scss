@@ -1,24 +1,12 @@
-.testimonial h3 {
-	text-align: center;
-	font-weight: 500;
-	font-size: 33px;
-	color: #ef4e58;
-
-	margin-bottom: 30px;
-	text-transform: capitalize;
-}
-
 .carousel-item .box {
 	width: 400px;
-	height: 450px;
+	height: 400px;
 	left: 107px;
 	top: 296px;
-
 	background-color: #fff;
 	padding: 20px;
 	margin: auto;
 	margin-bottom: 30px;
-
 	box-shadow: 5px 10px 18px #bbbbbb;
 }
 
@@ -56,7 +44,7 @@
 }
 
 .carousel-item .box h2 {
-	color: red;
+	color: #ff2666;
 }
 .carousel-item .box p {
 	text-align: center;
@@ -84,7 +72,7 @@
 	}
 	.carousel-item .box {
 		width: 280px;
-		height: 350px;
+		height: 340px;
 	}
 	.carousel-item .box .sm-box {
 		width: 280px;
@@ -100,9 +88,7 @@
 		margin-left: 95px;
 		margin-top: 10px;
 	}
-	.testimonial h3 {
-		font-size: 37px;
-	}
+
 	.box .sm-box h6 {
 		padding-top: 65px;
 
@@ -121,7 +107,7 @@
 	}
 	.carousel-item .box {
 		width: 200px;
-		height: 250px;
+		height: 300px;
 	}
 	.carousel-item .box .sm-box {
 		width: 200px;
@@ -149,7 +135,7 @@
 		font-size: 11px;
 	}
 	.social-links {
-		margin-top: -15px;
+		margin-top: -10px;
 		font-size: 10px;
 	}
 	.carousel-control-prev-icon {

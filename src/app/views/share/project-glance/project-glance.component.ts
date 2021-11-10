@@ -32,7 +32,7 @@ export class ProjectGlanceComponent implements OnInit {
 			id: 1,
 			title: 'Tender Details',
 			discription:
-				'This is a longer card with supporting text below as a natural lead-into additionalcontent. This content is a little bit longer.',
+				'This is a longer card with supporting text below as a natural lead-into additionalcontent.This content is a little bit longer.',
 			image: '/assets/glance/tender.png'
 		}
 	];
