@@ -23,7 +23,7 @@ a {
 	transition: all 0.5s;
 }
 a:hover {
-	color: #ff2666;
+	// color: #ff2666;
 }
 ul {
 	list-style-type: none;
@@ -41,8 +41,8 @@ ul {
 }
 
 .dropdown:hover > .dropdown-menu {
-	display: block;
-	transition: 0.8s ease-in-out;
+	// display: block;
+	// transition: 0.8s ease-in-out;
 }
 .navbar-toggler {
 	background: #ff2666;
