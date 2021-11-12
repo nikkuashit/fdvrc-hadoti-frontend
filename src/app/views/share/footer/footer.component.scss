@@ -1,7 +1,9 @@
-.fluid-container {
-	background-image: url();
+.back-img {
+	background-image: url("/assets/brand_logo/FDRVC_India_grey-1\ 1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
-
 footer {
 	background: rgb(247, 112, 153);
 	background: linear-gradient(184deg, rgba(247, 112, 153, 1) 15%, rgba(255, 38, 102, 1) 52%);
@@ -25,15 +27,12 @@ p {
 }
 .logo h3 {
 	font-size: 21px;
-	font-weight: 600;
-	margin-top: 10px;
+	font-weight: 500;
 	max-width: 600px;
-	padding: 0px;
 }
 .logo p {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 400;
-	margin-top: -5px;
 }
 
 .logo .logo_2 {
@@ -43,16 +42,13 @@ p {
 	margin-right: 40px;
 }
 .footer-copyright-text {
-	height: 60px;
 	background-color: black;
-	margin-top: 40px;
-	padding: 0px;
 }
 
 .footer-copyright-text > p {
 	padding-top: 17px;
-	opacity: 90%;
-	font-weight: 300;
+	opacity: 70%;
+	font-size: 14px;
 }
 
 .footer-widget {
