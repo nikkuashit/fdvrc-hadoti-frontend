@@ -17,6 +17,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MemberComponent } from './member/member.component';
 import { AboutComponent } from './about/about.component';
 import { EngageWithUsComponent } from './engage-with-us/engage-with-us.component';
+import { ProjectUpdateComponent } from 'src/app/project-update/project-update.component';
 
 @NgModule({
 	declarations: [
@@ -33,8 +34,9 @@ import { EngageWithUsComponent } from './engage-with-us/engage-with-us.component
 		ProductComponent,
 		ContactUsComponent,
 		MemberComponent,
-    AboutComponent,
-    EngageWithUsComponent
+		AboutComponent,
+		ProjectUpdateComponent,
+		EngageWithUsComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule ],
 	exports: [
@@ -51,8 +53,9 @@ import { EngageWithUsComponent } from './engage-with-us/engage-with-us.component
 		ProductComponent,
 		ContactUsComponent,
 		MemberComponent,
-    AboutComponent,
-    EngageWithUsComponent
+		AboutComponent,
+		EngageWithUsComponent,
+		ProjectUpdateComponent
 	]
 })
 export class ShareModule {}

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EngageWithUsComponent } from './views/share/engage-with-us/engage-with-us.component';
 import { AboutComponent } from './views/share/about/about.component';
-import { ProjectUpdateComponent } from './views/share/project-update/project-update.component';
+import { ProjectUpdateComponent } from './project-update/project-update.component';
 import { MediaComponent } from './views/share/media/media.component';
 import { ProductComponent } from './views/share/product/product.component';
 import { MemberComponent } from './views/share/member/member.component';

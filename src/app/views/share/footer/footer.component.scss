@@ -1,12 +1,18 @@
+// .back-img {
+// 	background-image: url("/assets/brand_logo/India_Top\ 1.png");
+// 	background-repeat: no-repeat;
+// 	background-position: left;
+// }
 .back-img {
-	background-image: url("/assets/brand_logo/FDRVC_India_grey-1\ 1.png");
+	background-image: url("/assets/brand_logo/India_Top 1.png");
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	background-size: contain;
+	background-position: left;
 }
 footer {
-	background: rgb(247, 112, 153);
-	background: linear-gradient(184deg, rgba(247, 112, 153, 1) 15%, rgba(255, 38, 102, 1) 52%);
+	// background: rgb(239, 78, 88);
+	// background: linear-gradient(180deg, rgba(239, 78, 88, 1) 0%, rgb(99, 29, 33) 54%, rgb(0, 0, 0) 100%);
+	background: linear-gradient(181.58deg, #ff535e 2.37%, #88131b 38.16%, #000000 83.04%);
 	overflow-x: hidden;
 }
 .logo {
@@ -42,7 +48,7 @@ p {
 	margin-right: 40px;
 }
 .footer-copyright-text {
-	background-color: black;
+	background: transparent;
 }
 
 .footer-copyright-text > p {
