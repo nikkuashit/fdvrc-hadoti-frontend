@@ -1,0 +1,140 @@
+h1 {
+	font-size: 33px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	word-spacing: 4px;
+	color: #ef4e58;
+}
+
+.navbar-brand .b_logo1 {
+	height: 65px;
+	width: 170px;
+	margin-top: -50px;
+}
+.b_logo2 {
+	height: 65px;
+	width: 60px;
+	margin-top: -90px;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+	transition: all 0.5s;
+}
+a:hover {
+	color: #ef4e58;
+}
+ul {
+	list-style-type: none;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0rem 1.6rem;
+	font-size: 16px;
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: -40px;
+}
+.navbar-nav {
+	margin-left: -155px;
+}
+
+// .dropdown:hover > .dropdown-menu {
+// 	// display: block;
+// 	// transition: 0.8s ease-in-out;
+// }
+.navbar-toggler {
+	background: #ef4e58;
+	border: none;
+	padding: 10px 6px;
+	outline: none;
+	width: 60px;
+	margin-left: 600px;
+	margin-top: -40px;
+}
+.navbar-toggler span {
+	display: block;
+	width: 22px;
+	height: 3px;
+	border: 4px;
+	border-radius: 10%;
+	background: #fff;
+	margin-left: 14px;
+}
+.navbar-toggler span + span {
+	margin-top: 4px;
+	width: 18px;
+	height: 2.5px;
+	margin-left: 14px;
+}
+.navbar-toggler span + span + span {
+	width: 10px;
+	height: 2.5px;
+	margin-left: 14px;
+}
+
+.dropdown-divider {
+	color: #ff2666;
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+	.navbar-brand .b_logo1 {
+		height: 60px;
+		width: 120px;
+		margin-top: -40px;
+	}
+	.b_logo2 {
+		display: none;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+		margin-top: -25px;
+	}
+	.navbar-nav {
+		margin-left: -100px;
+	}
+}
+
+@media (max-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding: 2rem 0rem;
+		width: 100px;
+		text-align: center;
+		margin-left: 300px;
+	}
+	.b_logo2 {
+		display: none;
+	}
+	h1 {
+		display: none;
+	}
+	.navbar-brand .b_logo1 {
+		margin-top: -10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar-toggler {
+		margin-left: 450px;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+		margin-left: 200px;
+	}
+}
+
+@media (max-width: 576px) {
+	.navbar-toggler {
+		margin-left: 400px;
+	}
+	.navbar-brand .b_logo1 {
+		margin-left: 20px;
+	}
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+	color: #fff;
+	text-decoration: none;
+	background-color: #ef4e58;
+}

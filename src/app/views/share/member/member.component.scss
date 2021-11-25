@@ -1,0 +1,36 @@
+.top-sec {
+	background-color: #fffaec;
+}
+.top-sec ul li {
+	transition: all 1s;
+}
+.top-sec ul li:hover {
+	color: #ef4e58;
+	transform: scale(1.02);
+}
+.accordion-item h2 button {
+	color: #ef4e58;
+}
+.midle {
+	background-color: #fffaec;
+}
+.download {
+	color: #ef4e58;
+	font-size: 33px;
+}
+
+/* bottom */
+
+.box h3 {
+	background-color: #ef4e58;
+	color: #fff;
+	width: 200px;
+}
+.sm-box {
+	background-color: #ef4e58;
+	color: #fff;
+	width: 200px;
+}
+.sm-box:hover {
+	transform: scale(1.1);
+}
