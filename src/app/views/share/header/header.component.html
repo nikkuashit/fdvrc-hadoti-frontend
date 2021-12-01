@@ -2,9 +2,10 @@
     <div class="container mt-1 theme-color-header-text mb-3">
 
         <div class="row">
-            <h1 class="nav justify-content-center header"> Hadoti Mahila Kisan Producer Company Ltd.
+            <h1 class="nav justify-content-center header-text"> Hadoti Mahila Kisan Producer Company Ltd.
             </h1>
-            <a class="navbar-brand"><img class="b_logo1" src="/assets/brand_logo/HADOTI LOGO.png" alt=""></a>
+            <a class="navbar-brand" [routerLink]="['/']"><img class="b_logo1" src="/assets/brand_logo/HADOTI LOGO.png"
+                    alt=""></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -23,12 +24,19 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="['/about']"
-                            routerLinkActive="active">
-                            About Us
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" [routerLink]="['/member']" routerLinkActive="active">Member</a>
+                            <li><a class="dropdown-item text-center" [routerLink]="['/about']"
+                                    routerLinkActive="active">About
+                                    Us</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-center" [routerLink]="['/member']"
+                                    routerLinkActive="active">Member</a>
                             </li>
 
                         </ul>
@@ -38,12 +46,17 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="['/product-update']"
-                            routerLinkActive="active">
-                            Product Update
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Project
                         </a>
+
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" [routerLink]="['/product']"
+                            <li><a class="dropdown-item text-center" [routerLink]="['/project-update']"
+                                    routerLinkActive="active">Project Update</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-center" [routerLink]="['/product']"
                                     routerLinkActive="active">Product</a></li>
                         </ul>
                     </li>
@@ -53,14 +66,19 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="['/contact-us']"
-                            routerLinkActive="active">
-                            Contact us
+                            data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="active">
+                            Contact
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" [routerLink]="['/engage-with-us']"
+                            <li><a class="dropdown-item text-center" [routerLink]="['/contact-us']"
+                                    routerLinkActive="active">Contact
+                                    With Us</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-center" [routerLink]="['/engage-with-us']"
                                     routerLinkActive="active">Engage
-                                    With</a></li>
+                                    With Us</a></li>
 
 
                         </ul>

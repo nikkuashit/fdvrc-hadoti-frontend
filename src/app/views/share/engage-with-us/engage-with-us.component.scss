@@ -30,7 +30,7 @@
 
 .engage-with-us .info {
 	width: 100%;
-	background-color: #fffaec;
+	background-color: #ffe7f0;
 	border: 1px solid rgb(214, 214, 214);
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	margin-bottom: 20px;
@@ -58,7 +58,7 @@
 	height: 450px;
 }
 .box {
-	background-color: #fffaec;
+	background-color: #ffe7f0;
 	height: 450px;
 	opacity: 0.9;
 	clip-path: polygon(100% 0, 60% 0%, 100% 100%, 0 100%, 0 0);
@@ -82,11 +82,11 @@
 	background-color: #ffadb5;
 	width: 100%;
 	opacity: .8;
-	margin-top: -100px;
+	margin-top: -150px;
 }
 /* form */
 .form {
-	background-color: #fffaec;
+	background-color: #ffe7f0;
 }
 .form input {
 	padding: 10px;
@@ -114,7 +114,7 @@
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	margin-left: -2px;
 	font-size: 12px;
-	background-color: #fffaec;
+	background-color: #ffe7f0;
 }
 
 .tender-search h5 {
@@ -122,7 +122,7 @@
 	color: #ef4e58;
 }
 .tender-rt .t_bg {
-	background-image: url(/assets/engage-wth-us/tender.png);
+	background-image: url(/assets/engage-wth-us/tender.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 100px;
@@ -153,7 +153,7 @@
 	width: 150px;
 }
 .partnership {
-	background-color: #fffaec;
+	background-color: #ffe7f0;
 	padding: 20px;
 }
 
@@ -166,41 +166,24 @@
 	}
 }
 @media (max-width: 768px) {
-	.card {
-		width: 120px;
-		height: 200px;
-	}
-	.partnership h3 {
-		font-size: 16px;
-	}
-	.partnership p {
-		display: none;
-	}
-	.card img {
-		height: 100px;
-		width: 150px;
-	}
-	.tender-search h3 {
-		font-size: 18px;
-	}
 	.tender-rt h1 {
-		font-size: 21px;
-		letter-spacing: .5px;
-		margin-top: -70px;
+		margin-top: -80px;
+		max-width: 500px;
+	}
+	.t_bg p {
+		width: 400px;
+		margin-left: -70px;
 	}
 	.engage-with-us input {
-		font-size: 10px;
+		font-size: 12px;
 		padding: 4px;
 	}
 	.engage {
-		font-size: 8px;
+		font-size: 12px;
 		padding: 6px;
 	}
 	#btn-1 {
 		font-size: 12px;
 		padding: 3px;
-	}
-	.partnership button {
-		font-size: 10px;
 	}
 }
