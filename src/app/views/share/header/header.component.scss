@@ -1,10 +1,6 @@
-h1 {
-	margin-left: 30px;
-}
-
 .navbar-brand .b_logo1 {
-	height: 65px;
-	width: 170px;
+	height: 65px !important;
+	width: 170px !important;
 	margin-top: -50px;
 }
 .b_logo2 {
@@ -14,7 +10,6 @@ h1 {
 }
 a {
 	text-decoration: none;
-	color: black;
 	font-weight: 500;
 	transition: all 0.5s;
 	text-decoration: none;
@@ -27,14 +22,18 @@ ul {
 }
 .navbar-expand-lg .navbar-nav .nav-link {
 	padding: 0rem 1.6rem;
-	font-size: 16px;
+	font-size: 1.025rem !important;
 	position: relative;
 	text-transform: uppercase;
 	text-align: center;
 	margin-top: -40px;
+	color: black;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+	color: #ef4e58;
 }
 .navbar-nav {
-	margin-left: -155px;
+	margin-left: -115px;
 }
 
 .navbar-toggler {
@@ -109,19 +108,19 @@ ul {
 
 @media (max-width: 768px) {
 	.navbar-toggler {
-		margin-left: 450px;
+		margin-left: 650px;
 	}
 	.navbar-expand-lg .navbar-nav .nav-link {
-		margin-left: 200px;
+		margin-left: 300px;
 	}
 }
 
 @media (max-width: 576px) {
 	.navbar-toggler {
-		margin-left: 400px;
+		margin-left: 300px;
 	}
-	.navbar-brand .b_logo1 {
-		margin-left: 20px;
+	.navbar-expand-lg .navbar-nav .nav-link {
+		margin-left: 140px;
 	}
 }
 
