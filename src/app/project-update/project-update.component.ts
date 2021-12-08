@@ -23,6 +23,22 @@ export class ProjectUpdateComponent implements OnInit {
 		}
 	}, 100);
 	chart: any;
+
+	// buttom
+	isProcurement = true;
+	showText() {
+		this.isProcurement = !this.isProcurement;
+	}
+
+	isMember = true;
+	showText1() {
+		this.isMember = !this.isMember;
+	}
+
+	isProcess = true;
+	showText2() {
+		this.isProcess = !this.isProcess;
+	}
 	constructor() {}
 
 	ngOnInit(): void {

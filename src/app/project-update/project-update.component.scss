@@ -47,6 +47,10 @@
 /* crop production end*/
 
 /* bottom-sec */
+.limitTextHeight {
+	height: 100px;
+	overflow: hidden;
+}
 .bottom-sec {
 	background-color: #ffe7f0;
 }

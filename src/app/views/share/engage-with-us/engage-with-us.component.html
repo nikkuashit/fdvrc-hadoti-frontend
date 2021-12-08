@@ -4,40 +4,54 @@
     <div class="container-fluid">
         <div class="background-img">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 ">
                     <h6>Think outside the box</h6>
                     <h4>Evolve Your Career</h4>
-                    <p class="paragraph-text" style="color: #ef4e58;">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit.<br> Eget vitae
-                        egestas sed posuere
-                        lorem.
-                    </p>
-                    <button class="btn-sm bt">Leran More</button>
+                    <div [ngClass]="{'limitTextHeight': isBox}">
+                        <p class="paragraph-text" style="color: #ef4e58;">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit.Eget vitae
+                            egestas sed posuere
+                            lorem.Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit.Eget vitae
+                            egestas sed posuere
+                            lorem.lorem.Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit.Eget vitae
+                            egestas sed posuere
+                            lorem.
+                        </p>
+                    </div>
+                    <button class="btn-sm bt mb-2 mt-3 " type="button" (click)="showText1()">
+                        {{ isBox ? 'Read More': 'Read Less' }}
+                    </button>
+
                 </div>
                 <div class="col-6 ">
-                    <img src="/assets/engage-wth-us/1327679_Wallpaper2 1.png" alt="">
+                    <img class="responsive" src="/assets/engage-wth-us/1327679_Wallpaper2 1.png" alt="">
                 </div>
 
             </div>
-            <div class="container info ">
-                <div class="row mx-auto ">
+            <div class="container info mx-auto p-2 shadow">
+                <div class="row">
 
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 ">
+                    <div class="col-lg-3 col-md-12 col-sm-12 ms-4 mt-2 ">
 
-                        <input type="text" placeholder="search">
+                        <input type="text" placeholder="search" class="p-2 shadow">
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
-                        <select name="All Ctegories" class="engage" id="category" form="categoryform">
+                    <div class="col-lg-3 col-md-6 col-sm-6 ms-4  mt-2">
+                        <select name="All Ctegories" class="engage p-2 shadow" id="category" form="categoryform">
                             <option value="all-categories ">Select all categories</option>
                             <option value="all-categories"></option>
                             <option value="all-categories"></option>
                             <option value="all-categories"></option>
                         </select>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
-                        <select name="location" class="engage" id="location" form="locationform">
+                    <div class="col-lg-3 col-md-6 col-sm-6 ms-4  mt-2 ">
+                        <select name="location" class="engage p-2 shadow" id="location" form="locationform">
                             <option value="all-location">Select location</option>
                             <option value="all-location"></option>
                             <option value="all-location"></option>
@@ -46,8 +60,8 @@
 
                         </select>
                     </div>
-                    <div class="col-3 mt-2">
-                        <button class="btn-sm bt" id="btn-1">Find Job</button>
+                    <div class="col-sm-12 ms-4 mt-2 ">
+                        <button class="btn-sm bt p-1" id="btn-1">Find Job</button>
                     </div>
                 </div>
 
@@ -63,15 +77,28 @@
             <div class="col-12">
 
                 <div class="box">
-                    <div class="col-lg-4 col-md-6 col-sm-6 pt-3 offset-2">
-                        <h4 class="mt-5 mb-3">Learn</h4>
-                        <h5>How to apply for internhip for program</h5>
-                        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue mollis
-                            convallis ipsu risus
-                            etiam sit ac. Consectetur<br> laoreet mauris condimentum lorem enim arcu scelerisque quis
-                            nulla.
-                        </p>
-                        <button class="btn-sm bt">Learn More</button>
+                    <div class="col-6 pt-3 ">
+                        <h4 class="mt-5 mb-3 ms-5">Learn</h4>
+                        <h5 class=" ms-5">How to apply for internhip for program</h5>
+                        <div [ngClass]="{'limitTextHeight': isCarrer}">
+                            <p class="paragraph-text  ms-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.Eget vitae
+                                egestas sed posuere
+                                lorem.Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.Eget vitae
+                                egestas sed posuere
+                                lorem.lorem.Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit.Eget vitae
+                                egestas sed posuere
+                                lorem.
+                            </p>
+                        </div>
+                        <button class="btn-sm bt  ms-5 mt-2" type="button" (click)="showText()">
+                            {{ isCarrer ? 'Read More': 'Read Less' }}
+                        </button>
                     </div>
                 </div>
             </div>
@@ -162,14 +189,14 @@
 <!-- Tender search -->
 <div class="tender-search">
     <div class="container-fluid">
-        <div class="row m-3 ">
+        <div class="row ms-5">
             <h3 class="subtitle-text">Tender Search</h3>
             <div class="col-3">
                 <select name="apply" class="tender" id="tender-type" form="tenderform">
-                    <option value="tender-type ">Tender Type</option>
+                    <option value="tender-type">Tender Type</option>
                     <option value="tender"></option>
                 </select>
-                <div class="col-3 mt-3 mb-2">
+                <div class="col-12 mt-3 mb-2">
                     <select name="apply" class="tender" id="field" form="tenderform">
                         <option value="field of experties">Field of experties</option>
                         <option value="tender"></option>
@@ -197,7 +224,7 @@
                 <div class="row mb-3">
                     <h5 class="mt-2">Capture Date</h5>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="col-lg-3 col-md-6 col-sm-6 mb-3 ">
                         <select name="apply" class="tender" id="to" form="applyform">
                             <option value="to">To</option>
                         </select>
@@ -211,22 +238,22 @@
 
                 </div>
 
-                <div class="col-lg-6 col-md-9 col-sm-9 mb-3">
-                    <button class="btn-sm bt">Search Now</button>
+                <div class="col-sm-12 mb-3">
+                    <button class="btn-sm bt">Search</button>
                 </div>
 
             </div>
 
-            <div class="col-9 tender-rt mt-3">
-                <div class="t_bg">
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="header-text">List, Search and With Tenders</h1>
-                        <p class="paragraph-text" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur
+            <div class="col-9 tender-rt">
+                <div class="t_bg ms-5">
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        <h1 class="header-text ms-5 pt-5">List, Search and With Tenders</h1>
+                        <p class="paragraph-text ms-5 me-5" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Massa egestas
                             laoreet massa
                             duis
                             aliquam.</p>
-                        <p class="paragraph-text" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur
+                        <p class="paragraph-text ms-5 me-5" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Massa egestas
                             laoreet massa duis
                             aliquam.</p>
@@ -235,26 +262,26 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-3 ">
                             <a href="">
-                                <h4>Lorem Ipsum</h4>
+                                <h4 class="ms-5 ">Lorem Ipsum</h4>
                             </a>
                             <a href="">
-                                <h6>Lorem Ipsum</h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 ">
-                            <a href="">
-                                <h4>Lorem Ipsum</h4>
-                            </a>
-                            <a href="">
-                                <h6>Lorem Ipsum</h6>
+                                <h6 class="ms-5 ">Lorem Ipsum</h6>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 ">
                             <a href="">
-                                <h4>Lorem Ipsum</h4>
+                                <h4 class="ms-5 "> Lorem Ipsum</h4>
                             </a>
                             <a href="">
-                                <h6>Lorem Ipsum</h6>
+                                <h6 class="ms-5 ">Lorem Ipsum</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                            <a href="">
+                                <h4 class="ms-5 ">Lorem Ipsum</h4>
+                            </a>
+                            <a href="">
+                                <h6 class="ms-5  mb-5">Lorem Ipsum</h6>
                             </a>
                         </div>
 
@@ -277,14 +304,14 @@
     <div class="container-fluid">
         <div class="row">
 
-            <div *ngFor="let data of partnershipData" class="col-lg-4 col-md-4 col-sm-3 mx-auto">
+            <div *ngFor="let data of partnershipData" class="col-lg-4 col-md-6 col-sm-12 mx-auto">
                 <div class="col">
-                    <div class="card">
+                    <div class="card mx-auto">
                         <h3 class="mx-auto mt-3 subtitle-text">{{data.card_title}}</h3>
                         <img class="mx-auto" [src]="data.image" alt="...">
                         <p class="paragraph-text p-2 text-center">{{data.card_para}}</p>
                     </div>
-                    <button class="btn-sm bt mt-1 mb-2 mx-auto">Explore Now</button>
+                    <button class="btn-sm bt mt-2 mb-2">Explore Now</button>
                 </div>
             </div>
         </div>

@@ -1,6 +1,10 @@
 .mission {
 	background-color: #ffe7f0;
 }
+.limitTextHeight {
+	height: 100px;
+	overflow: hidden;
+}
 .about h3 {
 	color: #ef4e58;
 	text-decoration: underline;

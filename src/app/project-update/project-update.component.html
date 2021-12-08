@@ -62,16 +62,35 @@
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 mt-2">
                 <h3 class="subtitle-text">Procurement</h3>
+                <div [ngClass]="{'limitTextHeight': isProcurement}">
 
-                <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam,
-                    interdum ultrices sit.
-                    Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis sit
-                    egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
-                    convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi
-                    nulla. Nunc diam consectetur amet ut dapibus.Tellus tortor sed turpis
-                    convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi
-                    nulla. Nunc diam consectetur amet ut dapibus</p>
-                <button class="btn-sm bt">Read More</button>
+                    <p class="paragraph-text mt-2 ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam,
+                        interdum
+                        ultrices sit.
+                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes,
+                        sagittis
+                        sit
+                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
+                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi
+                        nam
+                        mi
+                        nulla. Nunc diam consectetur amet ut dapibus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices
+                        sit.
+                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes,
+                        sagittis
+                        sit
+                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
+                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi
+                        nam
+                        mi
+                        nulla. Nunc diam consectetur amet ut dapibus.
+                </div>
+                <button class="btn-sm bt mt-1" type="button" (click)="showText()">
+                    {{ isProcurement ? 'Read More': 'Read Less' }}
+                </button>
+
             </div>
 
         </div>
@@ -80,15 +99,35 @@
             <div class="col-lg-9 col-md-9 col-sm-9 mt-2">
                 <h3 class="subtitle-text">Member Enrollment</h3>
 
-                <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam,
-                    interdum ultrices sit.
-                    Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis sit
-                    egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
-                    convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi
-                    nulla. Nunc diam consectetur amet ut dapibus.Tellus tortor sed turpis
-                    convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi
-                    nulla. Nunc diam consectetur amet ut dapibus</p>
-                <button class="btn-sm bt">Read More</button>
+                <div [ngClass]="{'limitTextHeight': isMember}">
+
+                    <p class="paragraph-text mt-2 ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam,
+                        interdum
+                        ultrices sit.
+                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes,
+                        sagittis
+                        sit
+                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
+                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi
+                        nam
+                        mi
+                        nulla. Nunc diam consectetur amet ut dapibus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices
+                        sit.
+                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes,
+                        sagittis
+                        sit
+                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
+                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi
+                        nam
+                        mi
+                        nulla. Nunc diam consectetur amet ut dapibus.
+                </div>
+                <button class="btn-sm bt mt-1" type="button" (click)="showText1()">
+                    {{ isMember ? 'Read More': 'Read Less' }}
+                </button>
+
             </div>
             <div class="col-lg-3  col-md-3 col-sm-3">
                 <img src="/assets/project update/member-enrollment.png" alt="member-enrollment">
@@ -103,16 +142,35 @@
             <div class="col-lg-9 col-md-9 col-sm-9 mb-3">
                 <h3 class="subtitle-text">Process and Services </h3>
 
-                <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam,
-                    interdum ultrices
-                    sit.
-                    Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis sit
-                    egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
-                    convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi
-                    nulla. Nunc diam consectetur amet ut dapibus.Tellus tortor sed turpis
-                    convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi
-                    nulla. Nunc diam consectetur amet ut dapibus</p>
-                <button class="btn-sm bt">Read More</button>
+                <div [ngClass]="{'limitTextHeight': isProcess}">
+
+                    <p class="paragraph-text mt-2 ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam,
+                        interdum
+                        ultrices sit.
+                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes,
+                        sagittis
+                        sit
+                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
+                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi
+                        nam
+                        mi
+                        nulla. Nunc diam consectetur amet ut dapibus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices
+                        sit.
+                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes,
+                        sagittis
+                        sit
+                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
+                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi
+                        nam
+                        mi
+                        nulla. Nunc diam consectetur amet ut dapibus.
+                </div>
+                <button class="btn-sm bt mt-1" type="button" (click)="showText2()">
+                    {{ isProcess ? 'Read More': 'Read Less' }}
+                </button>
+
             </div>
         </div>
     </div>

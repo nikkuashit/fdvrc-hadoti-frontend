@@ -6,6 +6,21 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './about.component.scss' ]
 })
 export class AboutComponent implements OnInit {
+	isMission = true;
+
+	showText() {
+		this.isMission = !this.isMission;
+	}
+	isProduct = true;
+
+	showText1() {
+		this.isProduct = !this.isProduct;
+	}
+	isWho = true;
+
+	showText2() {
+		this.isWho = !this.isWho;
+	}
 	memberData_1 = [
 		{ mem_title: 'Mr. Murati', deg_title: 'Seniour Manger', image: '/assets/about_us/memb_1.png' },
 		{ mem_title: 'mr. Sakshena', deg_title: 'Socila Worker', image: '/assets/about_us/memb_2.png' },

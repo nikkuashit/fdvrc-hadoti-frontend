@@ -26,6 +26,14 @@ export class EngageWithUsComponent implements OnInit {
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pretium in sit arcu magna nascetur et vel.'
 		}
 	];
+	isCarrer = true;
+	showText() {
+		this.isCarrer = !this.isCarrer;
+	}
+	isBox = true;
+	showText1() {
+		this.isBox = !this.isBox;
+	}
 
 	constructor() {}
 

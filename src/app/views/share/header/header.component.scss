@@ -83,17 +83,13 @@ ul {
 	.navbar-expand-lg .navbar-nav .nav-link {
 		margin-top: -25px;
 	}
-	.navbar-nav {
-		margin-left: -100px;
-	}
 }
 
 @media (max-width: 992px) {
 	.navbar-expand-lg .navbar-nav .nav-link {
 		padding: 2rem 0rem;
-		width: 100px;
 		text-align: center;
-		margin-left: 300px;
+		margin-left: 20px;
 	}
 	.b_logo2 {
 		display: none;
@@ -108,19 +104,23 @@ ul {
 
 @media (max-width: 768px) {
 	.navbar-toggler {
-		margin-left: 650px;
-	}
-	.navbar-expand-lg .navbar-nav .nav-link {
-		margin-left: 300px;
+		margin-left: 500px;
 	}
 }
 
 @media (max-width: 576px) {
 	.navbar-toggler {
-		margin-left: 300px;
+		margin-left: 400px;
 	}
-	.navbar-expand-lg .navbar-nav .nav-link {
-		margin-left: 140px;
+}
+@media (max-width: 460px) {
+	.navbar-toggler {
+		margin-left: 350px;
+	}
+}
+@media (max-width: 400px) {
+	.navbar-toggler {
+		margin-left: 290px;
 	}
 }
 

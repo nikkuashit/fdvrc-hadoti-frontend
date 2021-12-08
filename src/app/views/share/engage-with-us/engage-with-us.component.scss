@@ -2,7 +2,10 @@
 .engage-with-us {
 	margin-bottom: 90px;
 }
-
+.limitTextHeight {
+	height: 40px;
+	overflow: hidden;
+}
 .background-img {
 	background-image: url(/assets/engage-wth-us/green-chameleon-s9CC2SKySJM-unsplash.jpg);
 	background-repeat: no-repeat;
@@ -13,13 +16,12 @@
 .engage-with-us img {
 	height: 400px;
 	width: 400px;
-	margin-top: -20px;
+	margin-top: -80px;
 }
 
 .engage-with-us h6 {
 	color: #ef4e58;
 	font-size: 18px;
-	margin-top: 40px;
 }
 .engage-with-us h4 {
 	color: #ef4e58;
@@ -29,24 +31,16 @@
 }
 
 .engage-with-us .info {
-	width: 100%;
 	background-color: #ffe7f0;
 	border: 1px solid rgb(214, 214, 214);
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	margin-bottom: 20px;
-	padding: 10px;
 }
 .engage-with-us input {
-	padding: 10px;
 	border: .5px solid #ef4e58;
 	border-radius: 4px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .engage {
-	padding: 10px;
 	border: .5px solid #ef4e58;
 	border-radius: 4px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 /* Internship */
@@ -82,7 +76,7 @@
 	background-color: #ffadb5;
 	width: 100%;
 	opacity: .8;
-	margin-top: -150px;
+	margin-top: -170px;
 }
 /* form */
 .form {
@@ -94,7 +88,7 @@
 	border-radius: 4px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	margin-left: 2px;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .apply-form {
@@ -102,7 +96,7 @@
 	border: none;
 	border-radius: 4px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 /* Tender search  */
@@ -113,7 +107,7 @@
 	border-radius: 4px;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	margin-left: -2px;
-	font-size: 12px;
+	font-size: 14px;
 	background-color: #ffe7f0;
 }
 
@@ -125,9 +119,7 @@
 	background-image: url(/assets/engage-wth-us/tender.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 100px;
-	height: 430px;
-	margin-top: -50px;
+	min-height: 400px;
 	margin-bottom: 30px;
 }
 
@@ -162,28 +154,16 @@
 	.engage-with-us img {
 		height: 300px;
 		width: 300px;
-		margin-top: 60px;
+		margin-top: -40px;
 	}
 }
-@media (max-width: 768px) {
-	.tender-rt h1 {
+@media (max-width: 530px) {
+	.engage-with-us img {
+		min-height: 350px;
+		min-width: 200px;
 		margin-top: -80px;
-		max-width: 500px;
 	}
-	.t_bg p {
-		width: 400px;
-		margin-left: -70px;
-	}
-	.engage-with-us input {
-		font-size: 12px;
-		padding: 4px;
-	}
-	.engage {
-		font-size: 12px;
-		padding: 6px;
-	}
-	#btn-1 {
-		font-size: 12px;
-		padding: 3px;
+	.engage-with-us .info {
+		min-width: 250px;
 	}
 }
