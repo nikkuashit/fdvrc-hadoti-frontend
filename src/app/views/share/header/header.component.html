@@ -1,94 +1,84 @@
-<nav class="navbar navbar-expand-lg">
-    <div class="container mt-1 theme-color-header-text mb-3">
+<h1 class="text-center Hadoti-title  mt-3">Hadoti Mahila Kisan Producer Company Ltd.</h1>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand-1 b_logo1 ms-5" [routerLink]="['/']"><img src="/assets/brand_logo/hadoti_logo.png"
+                alt=""></a>
+        <button class="navbar-toggler me-5 mt-4 mb-1" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 mt-5">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" [routerLink]="['/']" routerLinkActive="active">Home</a>
+                </li>
 
-        <div class="row">
-            <h1 class="nav justify-content-center header-text ms-4"> Hadoti Mahila Kisan Producer Company Ltd.
-            </h1>
-            <a class="navbar-brand" [routerLink]="['/']"><img class="b_logo1" src="/assets/brand_logo/HADOTI LOGO.png"
-                    alt=""></a>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu mx-5 shadow" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" [routerLink]="['/about']" routerLinkActive="active">About
+                                Us</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" [routerLink]="['/member']" routerLinkActive="active">Member
+                                Corner</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
 
-            <button class="navbar-toggler pr-3" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Project
+                    </a>
+                    <ul class="dropdown-menu mx-5 shadow" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" [routerLink]="['/project-update']"
+                                routerLinkActive="active">Project Update</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" [routerLink]="['/product']" routerLinkActive="active">Product</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
 
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" aria-current="page" [routerLink]="['/media']"
+                        routerLinkActive="active">Media</a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Contact
+                    </a>
+                    <ul class="dropdown-menu mx-5 shadow" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" [routerLink]="['/contact-us']" routerLinkActive="active">
+                                Contact Us</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" [routerLink]="['/engage-with-us']" routerLinkActive="active">Engage
+                                With Us</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mt-1">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" [routerLink]="['/']" routerLinkActive="active">Home</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            About
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-center" [routerLink]="['/about']"
-                                    routerLinkActive="active">About
-                                    Us</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-center" [routerLink]="['/member']"
-                                    routerLinkActive="active">Member</a>
-                            </li>
-
-                        </ul>
-                    </li>
-
-
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Project
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-center" [routerLink]="['/project-update']"
-                                    routerLinkActive="active">Project Update</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-center" [routerLink]="['/product']"
-                                    routerLinkActive="active">Product</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" tabindex="-1" [routerLink]="['/media']" routerLinkActive="active">Media</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="active">
-                            Contact
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-center" [routerLink]="['/contact-us']"
-                                    routerLinkActive="active">Contact
-                                    With Us</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-center" [routerLink]="['/engage-with-us']"
-                                    routerLinkActive="active">Engage
-                                    With Us</a></li>
-
-
-                        </ul>
-                    </li>
-
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <a><img class="b_logo2" src="/assets/brand_logo/logo_2.png" alt=""></a>
-                </ul>
-            </div>
+                    </ul>
+                </li>
+            </ul>
         </div>
+        <a class="navbar-brand b_logo2 me-5" href="#"><img src="/assets/brand_logo/logo_2.png" alt=""></a>
     </div>
+
 </nav>

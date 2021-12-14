@@ -50,9 +50,10 @@ body {
 	line-height: 1.375rem;
 }
 .bt {
-	font-size: 0.9rem;
-	background-color: #ef4e58;
+	font-size: 1rem;
 	color: #fff;
 	border: none;
+	border-radius: 0px !important;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background-color: #ef4e58;
 }

@@ -13,16 +13,22 @@ export class ProjectUpdateComponent implements OnInit {
 		if (this.farmerMemberCount == 1000) {
 			clearInterval(this.farmerMemberCountstop);
 		}
-	}, 50);
+	}, 30);
 
+	dc3Count: number = 0;
+	dc3Countstop: any = setInterval(() => {
+		this.dc3Count++;
+		if (this.dc3Count == 10) {
+			clearInterval(this.dc3Countstop);
+		}
+	}, 150);
 	productCount: number = 0;
 	productCountstop: any = setInterval(() => {
 		this.productCount++;
 		if (this.productCount == 30) {
 			clearInterval(this.productCountstop);
 		}
-	}, 100);
-	chart: any;
+	}, 150);
 
 	// buttom
 	isProcurement = true;
@@ -39,6 +45,7 @@ export class ProjectUpdateComponent implements OnInit {
 	showText2() {
 		this.isProcess = !this.isProcess;
 	}
+	chart: any;
 	constructor() {}
 
 	ngOnInit(): void {
