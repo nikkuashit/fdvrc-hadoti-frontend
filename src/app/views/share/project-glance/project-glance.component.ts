@@ -8,34 +8,37 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectGlanceComponent implements OnInit {
 	glanceData = [
 		{
-			id: 1,
-			title: 'Member',
-			discription:
-				'This is a longer card with supporting text below as a natural lead-into additionalcontent. This content is a little bit longer.',
-			image: '/assets/glance/member.png'
+			glaimg: '/assets/glance/member.png',
+			glatiltle: 'MEMBERS',
+			glapara:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.',
+			glanread: 'Read More'
 		},
 		{
-			id: 1,
-			title: 'Produce',
-			discription:
-				'This is a longer card with supporting text below as a natural lead-into additionalcontent. This content is a little bit longer.',
-			image: '/assets/glance/produce.png'
+			glaimg: '/assets/glance/produce.png',
+			glatiltle: 'PRODUCE',
+			glapara:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.'
 		},
 		{
-			id: 1,
-			title: 'Innovation',
-			discription:
-				'This is a longer card with supporting text below as a natural lead-into additionalcontent. This content is a little bit longer.',
-			image: '/assets/glance/innovation.png'
+			glaimg: '/assets/glance/innovation.png',
+			glatiltle: 'INNOVATION',
+			glapara:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.'
 		},
 		{
-			id: 1,
-			title: 'Tender Details',
-			discription:
-				'This is a longer card with supporting text below as a natural lead-into additionalcontent.This content is a little bit longer.',
-			image: '/assets/glance/tender.png'
+			glaimg: '/assets/glance/tender.png',
+			glatiltle: 'TENDER DETAILS',
+			glapara:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.Fringilla nullam vel proin laoreet sem. Ornare commodo nisl arcu et nulla.Fringilla nullam vel proin laoreet sem. Ornare commodo nisl.',
+			glaread: ''
 		}
 	];
+	isReadMore = true;
+
+	showText() {
+		this.isReadMore = !this.isReadMore;
+	}
 
 	constructor() {}
 

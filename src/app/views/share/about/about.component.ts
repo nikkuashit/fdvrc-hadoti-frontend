@@ -33,6 +33,33 @@ export class AboutComponent implements OnInit {
 		{ mem_title: 'Sidhyu  Singh', deg_title: '  News Channel', image: '/assets/about_us/memb_7.png' },
 		{ mem_title: 'Kapli', deg_title: 'Socila Worker', image: '/assets/about_us/memb_8.png' }
 	];
+	// value and objective
+	valueData: any = [
+		{
+			val_imag: '/assets/about_us/global_solid.png',
+			val_subtitle: 'STRATEGIC PLAN',
+			val_para:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames sit dictum a aliquet diam. Sit maecenas pellentesque nec vulputate semper consectetur nibh metus, egestas.'
+		},
+		{
+			val_imag: '/assets/about_us/simple-line-icons_notebook.png',
+			val_subtitle: 'Initiative',
+			val_para:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames sit dictum a aliquet diam. Sit maecenas pellentesque nec vulputate semper consectetur nibh metus, egestas.'
+		},
+		{
+			val_imag: '/assets/about_us/codicon_graph.png',
+			val_subtitle: 'ACCOUNTABILITY',
+			val_para:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames sit dictum a aliquet diam. Sit maecenas pellentesque nec vulputate semper consectetur nibh metus, egestas.'
+		},
+		{
+			val_imag: '/assets/about_us/cil_graph.png',
+			val_subtitle: 'Evaluate & Iterate',
+			val_para:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames sit dictum a aliquet diam. Sit maecenas pellentesque nec vulputate semper consectetur nibh metus, egestas.'
+		}
+	];
 	constructor() {}
 
 	ngOnInit(): void {}

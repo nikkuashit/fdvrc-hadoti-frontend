@@ -19,9 +19,9 @@ a:focus {
 	text-decoration: none;
 	outline: none;
 }
-/* ::-webkit-scrollbar {
-	display: none;
-} */
+.KrutiDev_hindi_text {
+	font-family: Kruti Dev !important;
+}
 
 html,
 body {
@@ -34,13 +34,13 @@ body {
 
 .header-text {
 	color: #ef4e58;
-	font-size: 2rem !important;
+	font-size: 2.5rem !important;
 	word-spacing: 2px;
 	text-transform: capitalize;
 }
 .subtitle-text {
 	color: #ef4e58;
-	font-size: 1.7rem !important;
+	font-size: 2rem !important;
 	text-transform: capitalize;
 }
 
@@ -50,10 +50,16 @@ body {
 	line-height: 1.375rem;
 }
 .bt {
-	font-size: 1rem;
+	font-size: 1.2rem;
+	background-color: #ef4e58;
 	color: #fff;
 	border: none;
 	border-radius: 0px !important;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	background-color: #ef4e58;
+}
+.theme-color {
+	color: #ef4e58;
+}
+.background {
+	background-color: #ffe7f0;
 }

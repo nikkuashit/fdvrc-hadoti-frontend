@@ -1,20 +1,13 @@
-<div class="container mb-3">
-    <div class="row ">
-        <div *ngFor="let data of glanceData" class="col-lg-3 col-md-3 col-sm-6">
-
-            <div class="col">
-                <div class="card mt-3 mb-5">
-
-                    <img [src]="data.image" class="card-img-top" />
-
-                    <div class="card-body">
-                        <h3 class="card-title text-center subtitle-text">{{data.title}}</h3>
-                        <p class="card-text text-center paragraph-text">{{data.discription}}</p>
-                        <a href="#">
-                            <h6>Read More...</h6>
-                        </a>
-                    </div>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let data of glanceData" class="card text-center mx-auto  shadow" style="width: 18rem;">
+            <img [src]="data.glaimg" class="card-img-top mx-auto" />
+            <div class="card-body">
+                <div [ngClass]="{'limitTextHeight': isReadMore}">
+                    <h5 class="card-title subtitle-text">{{data.glatiltle}}</h5>
+                    <p class="card-text paragraph-text mt-3">{{data.glapara}}</p>
                 </div>
+                <span (click)="showText()">{{data.glaread}} {{ isReadMore ? 'Read More': 'Read Less' }}</span>
             </div>
         </div>
     </div>
