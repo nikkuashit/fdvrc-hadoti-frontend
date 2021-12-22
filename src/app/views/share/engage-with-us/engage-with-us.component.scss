@@ -1,7 +1,3 @@
-.limitTextHeight {
-	height: 85px;
-	overflow: hidden;
-}
 .engage-with-us {
 	background: url(/assets/engage-wth-us/green-chameleon-s9CC2SKySJM-unsplash.jpg);
 	background-repeat: no-repeat;
@@ -11,10 +7,16 @@
 select {
 	border: none;
 }
+
+@media (max-width: 992px) {
+	.images {
+		margin-top: 10px;
+	}
+}
 @media (max-width: 768px) {
 	.images {
-		height: 300px;
-		margin-top: 90px;
+		height: 450px;
+		margin-top: 80px;
 	}
 }
 // internship
@@ -26,7 +28,7 @@ select {
 
 // partnership
 .partnership img {
-	max-height: 300px;
+	height: 300px;
 }
 .partnership .card {
 	border: none;

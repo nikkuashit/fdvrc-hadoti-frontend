@@ -18,6 +18,9 @@ import { MemberComponent } from './member/member.component';
 import { AboutComponent } from './about/about.component';
 import { EngageWithUsComponent } from './engage-with-us/engage-with-us.component';
 import { ProjectUpdateComponent } from 'src/app/project-update/project-update.component';
+import { AccordionModule } from 'primeng/accordion';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
 	declarations: [
@@ -38,7 +41,7 @@ import { ProjectUpdateComponent } from 'src/app/project-update/project-update.co
 		ProjectUpdateComponent,
 		EngageWithUsComponent
 	],
-	imports: [ BrowserModule, CommonModule, RouterModule ],
+	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
 		HeaderComponent,
 		FooterComponent,

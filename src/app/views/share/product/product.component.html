@@ -3,33 +3,33 @@
     <h1 class="text-center header-text"> Product</h1>
     <div class="row text-center">
         <div class="col-12">
-            <h3><a class="bulk" href=""> Bulk Unit</a> <a href=""><span class="m-3 consumer">
+            <h3 class="subtitle-text"><a class="bulk" href=""> Bulk Unit</a> <a href=""><span class="m-3 consumer">
                         Consumer Pack
                     </span></a></h3>
         </div>
     </div>
     <div class="row text-center">
         <div *ngFor="let data of productItem" class="col-lg-3 col-md-6 col-sm-6">
-            <div class="card c-size mx-auto" style="width: 15rem;">
-                <img class="card-img-top  prod-img mx-auto" [src]="data.img" alt="...">
-                <div class="card-body bg-light">
+            <div class="card c-size mx-auto border border-danger background p-3 m-2 shadow ">
+                <img class="card-img-top prod-img mx-auto" [src]="data.img" alt="...">
+                <div class="card-body bg-white">
                     <a href="">
-                        <h3 class="card-title">{{ data.title1}}</h3>
+                        <h3 class="card-title subtitle-text ">{{ data.title1}}</h3>
                     </a>
-                    <p class="card-text">{{data.title2}}</p>
+                    <p class="card-text paragraph-text ">{{data.title2}}</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row text-center">
         <div *ngFor="let data of productItem1" class="col-lg-3 col-md-6 col-sm-6 ">
-            <div class="card c-size mx-auto" style="width: 15rem;">
+            <div class="card c-size mx-auto border border-danger background p-3 m-2 shadow">
                 <img class="card-img-top  prod-img mx-auto" [src]="data.img" alt="...">
-                <div class="card-body bg-light">
+                <div class="card-body bg-white">
                     <a href="">
-                        <h3 class="card-title">{{ data.title1}}</h3>
+                        <h3 class="card-title subtitle-text ">{{ data.title1}}</h3>
                     </a>
-                    <p class="card-text">{{data.title2}}</p>
+                    <p class="card-text paragraph-text">{{data.title2}}</p>
                 </div>
             </div>
         </div>
@@ -38,12 +38,12 @@
 
 <!-- product enquire -->
 
-<div class="container mb-3">
-    <div class="row mt-2">
+<div class="container mt-5">
+    <div class="row">
         <h1 class="text-center header-text"> Product Enquire</h1>
     </div>
 </div>
-<div class="product">
+<div class="product background mb-5">
     <div class="container">
         <div class="row mb-3">
             <div class="col-lg-6 col-sm-12">
@@ -67,7 +67,7 @@
                         rows="2">
                 </div>
             </div>
-            <div class="col-6 mt-3 mx-auto">
+            <div class="col-lg-6 col-md-12 col-sm-12 mt-3 mx-auto">
                 <div class="mb-3">
                     <ul class="list-group ">
 
@@ -110,49 +110,58 @@
         </div>
     </div>
 </div>
-
 <!-- market linkage -->
-<div class="container mb-3">
+<div class="container my-5">
     <div class="row text-center">
-        <h1 class="txt-color header-text">Market Linkage</h1>
+        <h1 class="header-text">Market Linkage</h1>
         <a href="">
-            <h5 style="color:#ef4e58;text-decoration:underline;opacity:.9;">Lorem ipsum dolor sit amet </h5>
+            <h5 class="theme-color underline">Lorem ipsum dolor sit amet </h5>
         </a>
         <a href="">
-            <p class="txt-dec">Lorem ipsum </p>
+            <p class="paragraph-text">Lorem ipsum </p>
         </a>
         <a href="">
-            <p class="txt-dec">Lorem ipsum </p>
+            <p class="paragraph-text">Lorem ipsum </p>
         </a>
     </div>
-    <div class="row  text-center">
-        <div class="card mx-auto text-white">
-            <img src="/assets/product/Rectangle 32.png" class="card-img p-1" alt="...">
-            <div class="card-img-overlay col-md-12  ">
-                <h3 class="card-title">Card title</h3>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text mx-auto">Last updated 3 mins ago</p>
+    <div class="row text-center">
+        <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+            <div class="card  text-white border-danger mb-3 shadow">
+                <img src="/assets/product/Rectangle 32.png" class=" p-2" alt="...">
+                <div class="card-img-overlay">
+                    <h3 class="card-title subtitle-text mt-3">Card title</h3>
+                    <p class="card-text mt-3">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text my-4">Last updated 3 mins ago</p>
+                </div>
             </div>
         </div>
-        <div class="card  mx-auto text-white">
-            <img src="/assets/product/Rectangle 33.png" class="card-img p-1" alt="...">
-            <div class="card-img-overlay col-md-12">
-                <h3 class="card-title">Card title</h3>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text">Last updated 3 mins ago</p>
+        <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+            <div class="card  text-white border-danger mb-3 shadow">
+                <img src="/assets/product/Rectangle 33.png" class=" p-2" alt="...">
+                <div class="card-img-overlay">
+                    <h3 class="card-title subtitle-text mt-3">Card title</h3>
+                    <p class="card-text mt-3">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text my-4">Last updated 3 mins ago</p>
+                </div>
             </div>
         </div>
-        <div class="card  mx-auto text-white">
-            <img src="/assets/product/Rectangle 34.png" class="card-img p-1" alt="...">
-            <div class="card-img-overlay col-md-12">
-                <h3 class="card-title">Card title</h3>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text">Last updated 3 mins ago</p>
+        <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+            <div class="card  text-white border-danger mb-3 shadow">
+                <img src="/assets/product/Rectangle 34.png" class=" p-2" alt="...">
+                <div class="card-img-overlay">
+                    <h3 class="card-title subtitle-text mt-3">Card title</h3>
+                    <p class="card-text mt-3">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+                    <p class="card-text my-4">Last updated 3 mins ago</p>
+                </div>
             </div>
         </div>
+
 
     </div>
 

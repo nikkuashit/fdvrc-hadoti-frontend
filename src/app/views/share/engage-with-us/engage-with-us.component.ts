@@ -6,14 +6,22 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './engage-with-us.component.scss' ]
 })
 export class EngageWithUsComponent implements OnInit {
-	isCarrer = true;
-	showText() {
-		this.isCarrer = !this.isCarrer;
-	}
+	internhip_para: string = 'Lorem ipsum dolor sitamet, consectetur adipiscing elit.Eget vitaee gestas sed posuerelorem.Lorem ipsum dolor sit amet, consec teturadi piscingelit.Eget vitaeegestas sed posuere lorem.lorem.Lorem ipsum dolor sit amet, consecte turadipis cingelit.Eget vitaeegestas sed posuere lorem.';
+	showLess = true;
 	isBox = true;
-	showText1() {
+	showText() {
+		this.showLess = !this.showLess;
 		this.isBox = !this.isBox;
 	}
+
+	engage_para: string = 'Lorem ipsum dolor sitamet, consectetur adipiscing elit.Eget vitaee gestas sed posuerelorem.Lorem ipsum dolor sit amet, consec teturadi piscingelit.Eget vitaeegestas sed posuere lorem.lorem.Lorem ipsum dolor sit amet, consecte turadipis cingelit.Eget vitaeegestas sed posuere lorem.';
+	showLess1 = true;
+	isCarrer = true;
+	showText1() {
+		this.showLess1 = !this.showLess1;
+		this.isCarrer = !this.isCarrer;
+	}
+
 	// partnership
 	partnershipData = [
 		{
@@ -42,7 +50,6 @@ export class EngageWithUsComponent implements OnInit {
 				'Lorem ipsum dolor sit amet, consectetura dipiscing elit. Massa egestaslaoreet massa duisaliquam.'
 		}
 	];
-
 	constructor() {}
 
 	ngOnInit(): void {}

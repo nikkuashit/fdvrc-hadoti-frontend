@@ -1,35 +1,26 @@
 <!-- Engage with us -->
-<div class="engage-with-us mt-2 ">
+<div class="engage-with-us">
     <div class="container">
         <div class="row">
-            <div class="col-6 pt-5">
+            <div class="col-6 mt-5">
                 <h6 class="fs-3 text-white">Think outside the box</h6>
                 <h4 class="fs-1 text-white">Evolve Your Career</h4>
                 <div [ngClass]="{'limitTextHeight': isBox}">
-                    <p class="paragraph-text text-white w-75">Lorem ipsum dolor sit
-                        amet, consectetur
-                        adipiscing
-                        elit.Eget vitae
-                        egestas sed posuere
-                        lorem.Lorem ipsum dolor sit amet, consectetur
-                        adipiscing
-                        elit.Eget vitae
-                        egestas sed posuere
-                        lorem.lorem.Lorem ipsum dolor sit amet, consectetur
-                        adipiscing
-                        elit.Eget vitae
-                        egestas sed posuere
-                        lorem.
-
+                    <p *ngIf="showLess" class="paragraph-text text-white">
+                        {{engage_para| slice:0:200 }}
+                        <span *ngIf="engage_para.length>100">...</span>
+                    </p>
+                    <p *ngIf="!showLess" class="paragraph-text text-white">
+                        {{engage_para}}
                     </p>
                 </div>
-                <button class="btn-sm bt mb-2 mt-3" type="button" (click)="showText1()">
+                <button class="btn-sm bt mb-3" type="button" (click)="showText()">
                     {{ isBox ? 'Read More': 'Read Less' }}
                 </button>
 
             </div>
-            <div class="col-6">
-                <img class="d-block w-100 images" src="/assets/engage-wth-us/1327679_Wallpaper2 1.png" alt="">
+            <div class="col-6 p-0 ">
+                <img class="d-block w-100  images" src="/assets/engage-wth-us/1327679_Wallpaper2 1.png" alt="">
             </div>
 
         </div>
@@ -74,26 +65,20 @@
         <div class="row">
             <div class="col-12">
                 <div class="box">
-                    <div class="col-6 pt-3 ">
+                    <div class="col-lg-6 col-md-9 col-sm-12 pt-3 ">
                         <h4 class="mt-5 mb-3 ms-5 fs-1 theme-color">Learn</h4>
                         <h5 class=" ms-5 subtitle-text">How to apply for internhip for program</h5>
                         <div [ngClass]="{'limitTextHeight': isCarrer}">
-                            <p class="paragraph-text  ms-5 theme-color">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit.Eget vitae
-                                egestas sed posuere
-                                lorem.Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit.Eget vitae
-                                egestas sed posuere
-                                lorem.lorem.Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit.Eget vitae
-                                egestas sed posuere
-                                lorem.
+                            <p *ngIf="showLess1" class="paragraph-text  ms-5 theme-color">
+                                {{internhip_para | slice:0:250}}
+                                <span *ngIf="internhip_para.length>250">...</span>
+                            </p>
+                            <p *ngIf="!showLess1" class="paragraph-text  ms-5 theme-color">
+                                {{internhip_para}}
+
                             </p>
                         </div>
-                        <button class="btn-sm bt  ms-5 mb-5" type="button" (click)="showText()">
+                        <button class="btn-sm bt  ms-5 mb-5" type="button" (click)="showText1()">
                             {{ isCarrer ? 'Read More': 'Read Less' }}
                         </button>
                     </div>
@@ -261,15 +246,15 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3  bg-white text-center p-2 shadow m-4 rounded">
+                        <div class="col-lg-3 col-md-3 col-sm-3  bg-white text-center p-2 shadow mx-2 mb-2  rounded">
                             <a href="">
-                                <h4 class="theme-color">Lorem Ipsum</h4>
+                                <h4 class="theme-color ">Lorem Ipsum</h4>
                             </a>
                             <a href="">
                                 <h6 class="paragraph-text">Lorem Ipsum</h6>
                             </a>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 bg-white text-center p-2 shadow m-4 rounded ">
+                        <div class="col-lg-3 col-md-3 col-sm-3 bg-white text-center p-2 shadow mx-2 mb-2  rounded ">
                             <a href="">
                                 <h4 class="theme-color"> Lorem Ipsum</h4>
                             </a>
@@ -277,7 +262,7 @@
                                 <h6 class="paragraph-text">Lorem Ipsum</h6>
                             </a>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3  bg-white text-center p-2 shadow m-4 rounded ">
+                        <div class="col-lg-3 col-md-3 col-sm-3  bg-white text-center p-2 shadow mx-2 mb-2  rounded ">
                             <a href="">
                                 <h4 class="theme-color">Lorem Ipsum</h4>
                             </a>
@@ -297,10 +282,9 @@
 <div class="partnership background">
     <div class="container-fluid p-5">
         <div class="row">
-
-            <div *ngFor="let data of partnershipData" class="col-lg-4 col-md-6 col-sm-12 mx-auto">
+            <div *ngFor="let data of partnershipData" class="col-lg-4 col-md-12 col-sm-12 mx-auto">
                 <div class="text-center">
-                    <div class="card mx-auto d-block w-100 shadow p-2">
+                    <div class="card mx-auto shadow p-2">
                         <h3 class="header-text">{{data.card_title}}</h3>
                         <img [src]="data.image" class="" alt="...">
                         <p class="paragraph-text p-2">{{data.card_para}}</p>

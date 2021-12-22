@@ -35,11 +35,12 @@ export class ProjectGlanceComponent implements OnInit {
 		}
 	];
 	isReadMore = true;
+	showLess = true;
 
 	showText() {
+		this.showLess = !this.showLess;
 		this.isReadMore = !this.isReadMore;
 	}
-
 	constructor() {}
 
 	ngOnInit(): void {}
