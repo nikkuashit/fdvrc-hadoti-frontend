@@ -17,7 +17,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MemberComponent } from './member/member.component';
 import { AboutComponent } from './about/about.component';
 import { EngageWithUsComponent } from './engage-with-us/engage-with-us.component';
-import { ProjectUpdateComponent } from 'src/app/project-update/project-update.component';
+import { ProjectUpdateComponent } from './project-update/project-update.component';
 import { AccordionModule } from 'primeng/accordion';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
