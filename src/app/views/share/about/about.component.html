@@ -7,7 +7,7 @@
                 <img class="d-block w-100 " [src]="data.abt_image">
             </div>
             <div class="col-lg-9 col-md-6 col-sm-12">
-                <h1 class="subtitle-text  head" style="text-decoration: underline;">{{data.abt_title}}</h1>
+                <h2 class="subtitle-text text-decoration-underline">{{data.abt_title}}</h2>
                 <div [ngClass]="{'textHeight':isReadMore}">
                     <p *ngIf="showLess" class="paragraph-text">{{data.abt_paragraph | slice:0:550}}
                         <span *ngIf="data.abt_paragraph.length>500">
@@ -18,7 +18,7 @@
 
                     </p>
                 </div>
-                <button class="btn-sm bt mt-1 mb-3" type="button" (click)="showText()">
+                <button class="btn-sm  bt mt-1 mb-3" type="button" (click)="showText()">
                     {{ isReadMore ? 'Read More': 'Read Less' }}
                 </button>
             </div>
@@ -27,7 +27,7 @@
     <div *ngFor='let data of aboutProduct'>
         <div class="row mx-auto mb-5">
             <div class="col-lg-9 col-md-6 col-sm-12 ">
-                <h1 class="subtitle-text head" style="text-decoration: underline;">{{data.abt_title}}</h1>
+                <h2 class="subtitle-text head text-decoration-underline">{{data.abt_title}}</h2>
                 <div [ngClass]="{'textHeight':isReadMore_1}">
                     <p *ngIf="showLess1" class="paragraph-text">{{data.abt_paragraph | slice:0:550}}
                         <span *ngIf="data.abt_paragraph.length>550">
@@ -39,7 +39,7 @@
                     </p>
 
                 </div>
-                <button class="btn-sm bt mt-1 mb-3" (click)="showText_1()">{{isReadMore_1? 'Read More':'Read
+                <button class="btn-sm  bt mt-1 mb-3" (click)="showText_1()">{{isReadMore_1? 'Read More':'Read
                     Less'}}</button>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -53,7 +53,7 @@
                 <img class="d-block w-100" [src]="data.abt_image">
             </div>
             <div class="col-lg-9 col-md-6 col-sm-12 ">
-                <h1 class="subtitle-text  head" style="text-decoration: underline;">{{data.abt_title}}</h1>
+                <h2 class="subtitle-text  text-decoration-underline">{{data.abt_title}}</h2>
                 <div [ngClass]="{'textHeight':isReadMore_2}">
                     <p *ngIf="showLess2" class="paragraph-text ">{{data.abt_paragraph |slice:0:550}}
                         <span *ngIf="data.abt_paragraph.length>550">...</span>
@@ -62,7 +62,7 @@
 
                     </p>
                 </div>
-                <button class="btn-sm bt mt-1 mb-3" (click)="showText_2()">{{isReadMore_2? 'Read
+                <button class="btn-sm  bt mt-1 mb-3" (click)="showText_2()">{{isReadMore_2? 'Read
                     More':'Read
                     Less'}}</button>
             </div>
@@ -72,7 +72,7 @@
 
 <!-- Board of Director -->
 <div class="container-fluid my-5">
-    <h1 class="header-text text-center pb-3">Company Board of Directors Members</h1>
+    <h1 class="header-text text-center pb-3"> Board of Directors </h1>
     <p-carousel [value]="product" [numVisible]="3" [numScroll]="3" [circular]="false"
         [responsiveOptions]="responsiveOptions">
         <ng-template let-product pTemplate="item">
@@ -81,8 +81,8 @@
                     <img [src]="product.image" alt="" class="d-block ms-2 w-75">
                 </div>
                 <div>
-                    <h5 class="text-center me-5 fs-4 text-uppercase theme-color mt-3">{{product.title}}</h5>
-                    <h6 class="text-center me-5 fs-6 text-uppercase">{{product.position}}</h6>
+                    <h4 class="text-center me-5  text-uppercase theme-color mt-3">{{product.title}}</h4>
+                    <h6 class="text-center me-5  text-uppercase">{{product.position}}</h6>
                 </div>
             </div>
         </ng-template>
@@ -92,12 +92,12 @@
 <!-- Value & Object -->
 <div class="container-fluid my-5 bg-light p-3 value">
     <div class="row ">
-        <h1 class="header-text text-center mb-3">Value & Objective</h1>
+        <h1 class=" header-text text-center mb-3">Value & Objective</h1>
         <div *ngFor="let data of valueData" class="col-lg-3 col-md-6 col-sm-12">
             <div class="card text-center p-4 mb-5 shadow">
                 <img [src]="data.val_imag" height="40px" class="mx-auto mt-4 color-white" />
                 <div class="card-body">
-                    <h5 class="fs-5 theme-color text-uppercase">{{data.val_subtitle}}</h5>
+                    <h5 class="theme-color text-uppercase">{{data.val_subtitle}}</h5>
                     <p class=" paragraph-text mt-3">{{data.val_para}}</p>
                 </div>
             </div>

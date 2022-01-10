@@ -3,8 +3,8 @@
     <div class="container">
         <div class="row">
             <div class="col-6 mt-5">
-                <h6 class="fs-3 text-white">Think outside the box</h6>
-                <h4 class="fs-1 text-white">Evolve Your Career</h4>
+                <h3 class=" text-white">Think outside the box</h3>
+                <h1 class=" text-white">Evolve Your Career</h1>
                 <div [ngClass]="{'limitTextHeight': isBox}">
                     <p *ngIf="showLess" class="paragraph-text text-white">
                         {{engage_para| slice:0:200 }}
@@ -50,7 +50,7 @@
                     </select>
                 </div>
                 <div class="col-lg-3 col-sm-9 my-1">
-                    <button class="btn-sm bt fs-5  ms-auto" id="btn-1">Find Job</button>
+                    <button class="btn-sm bt mx-auto" id="btn-1">Find Job</button>
                 </div>
             </div>
 
@@ -66,8 +66,8 @@
             <div class="col-12">
                 <div class="box">
                     <div class="col-lg-6 col-md-9 col-sm-12 pt-3 ">
-                        <h4 class="mt-5 mb-3 ms-5 fs-1 theme-color">Learn</h4>
-                        <h5 class=" ms-5 subtitle-text">How to apply for internhip for program</h5>
+                        <h1 class="mt-5 mb-1 ms-5  theme-color">Learn</h1>
+                        <h4 class=" ms-5 subtitle-text">How to apply for internhip for program</h4>
                         <div [ngClass]="{'limitTextHeight': isCarrer}">
                             <p *ngIf="showLess1" class="paragraph-text  ms-5 theme-color">
                                 {{internhip_para | slice:0:250}}
@@ -87,7 +87,7 @@
         </div>
         <div class="row mx-auto mb-3 p-3 background ">
             <div class="col-lg-6 col-md-9 col-sm-12 mx-auto mt-3">
-                <h3 class="subtitle-text">Why internship program?</h3>
+                <h2 class="theme-color">Why internship program?</h2>
                 <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit
                     adipiscing luctus est, proin
                     pellentesque facilisi ullamcorper. Vestibulum lorem amet et, quam pharetra cursus.</p>
@@ -102,7 +102,7 @@
 
         <div class="row mx-auto">
             <div class="col-12 mt-3">
-                <h3 class="header-text mx-auto">Enter Your Name here</h3>
+                <h2 class="theme-color mx-auto">Enter Your Name here</h2>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-9 mt-2">
@@ -159,7 +159,7 @@
 
         <div class="row mx-auto">
             <div class="col-lg-3 col-md-3 col-sm-3">
-                <button class="btn-sm bt my-2 ">Apply Now</button>
+                <button class="btn-sm  bt my-2 ">Apply Now</button>
             </div>
         </div>
 
@@ -172,7 +172,7 @@
         <div class="row">
 
             <div class="col-lg-3 col-md-6 col-sm-12 ">
-                <h3 class="header-text">Tender Search</h3>
+                <h2 class="theme-color">Tender Search</h2>
                 <select name="apply" class="p-3 d-block w-100  shadow  rounded background" id="tender-type"
                     form="tenderform">
                     <option value="tender-type">Tender Type</option>
@@ -235,7 +235,7 @@
             <div class="col-lg-9 col-md-12 my-5">
                 <div class=" d-block w-100 p-5 tender">
                     <div class="col-lg-9 col-md-12 col-sm-12 ">
-                        <h1 class="header-text">List, Search and With Tenders</h1>
+                        <h1 class="title header-text">List, Search and With Tenders</h1>
                         <div *ngFor='let data of tenderData'>
                             <ul class="ms-3 ">
                                 <li class="text-white fs-5">{{data.tender_List}}</li>
@@ -282,14 +282,14 @@
 <div class="partnership background">
     <div class="container-fluid p-5">
         <div class="row">
-            <div *ngFor="let data of partnershipData" class="col-lg-4 col-md-12 col-sm-12 mx-auto">
+            <div *ngFor="let data of partnershipData" class="col-lg-6 col-md-12 col-sm-12">
                 <div class="text-center">
-                    <div class="card mx-auto shadow p-2">
-                        <h3 class="header-text">{{data.card_title}}</h3>
-                        <img [src]="data.image" class="" alt="...">
+                    <div class="card  shadow p-2">
+                        <h3 class="header-text pt-5">{{data.card_title}}</h3>
+                        <img [src]="data.image" class="w-50 mx-auto" alt="...">
                         <p class="paragraph-text p-2">{{data.card_para}}</p>
                     </div>
-                    <button class="btn-sm bt mt-2 mb-4 mx-auto">Explore Now</button>
+                    <button class="btn-sm bt mt-2 mb-4 mx-auto">Connect with us</button>
                 </div>
             </div>
         </div>

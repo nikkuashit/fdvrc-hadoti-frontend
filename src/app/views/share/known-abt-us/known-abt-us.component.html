@@ -1,19 +1,19 @@
-<div class="container mb-5">
+<div class="container-fluid mb-5">
     <div class="row">
-        <div class="col-12 col-sm-12 mx-auto">
+        <div class="col-lg-6 col-sm-12 ">
             <h1 class="header-text">Know About Us</h1>
-            <img src="/assets/slider/D7398DF7.jpg" class="img-fluid shadow" alt="">
+            <img src="/assets/slider/Know-About-us.jpg" class="d-block w-100 shadow" alt="">
         </div>
-        <div class=" col-sm-12 mx-auto mt-3 ">
+        <div class="col-lg-6 col-sm-12 mt-7 ">
             <div [ngClass]="{'limitTextHeight':isReadMore}">
-                <p *ngIf="showLess" class="paragraph-text">{{about_para | slice:0:600}}
+                <h5 *ngIf="showLess" class="paragraph-text">{{about_para | slice:0:600}}
                     <span *ngIf="about_para.length>600">...</span>
-                </p>
-                <p *ngIf="!showLess" class="paragraph-text">{{about_para}}
+                </h5>
+                <h5 *ngIf="!showLess" class="paragraph-text">{{about_para}}
 
-                </p>
+                </h5>
             </div>
-            <button class=" btn-sm bt" type='button' (click)='showText()'>{{isReadMore?'Read More':'Read
+            <button class=" btn-sm  bt" type='button' (click)='showText()'>{{isReadMore?'Read More':'Read
                 Less'}}</button>
         </div>
     </div>

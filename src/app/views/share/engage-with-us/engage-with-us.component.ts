@@ -29,18 +29,6 @@ export class EngageWithUsComponent implements OnInit {
 			image: '/assets/partnership/Group 256.png',
 			card_para:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pretium in sit arcu magna nascetur et vel.'
-		},
-		{
-			card_title: 'Distribution',
-			image: '/assets/partnership/local-business-data-distribution 1.png',
-			card_para:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pretium in sit arcu magna nascetur et vel.'
-		},
-		{
-			card_title: 'Vendor',
-			image: '/assets/partnership/Group 257.png',
-			card_para:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pretium in sit arcu magna nascetur et vel.'
 		}
 	];
 	// tender

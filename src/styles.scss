@@ -27,6 +27,7 @@ html,
 body {
 	height: 100%;
 }
+
 body {
 	margin: 0;
 	font-family: "Roboto", "Helvetica Neue", sans-serif;
@@ -34,29 +35,30 @@ body {
 
 .header-text {
 	color: #ef4e58;
-	font-size: 2rem !important;
-	word-spacing: 2px;
+	font-weight: 700;
 	text-transform: capitalize;
 }
+
 .subtitle-text {
 	color: #ef4e58;
-	font-size: 1.5rem !important;
+	font-weight: 600;
 	text-transform: capitalize;
 }
 
 .paragraph-text {
 	color: rgb(49, 49, 49);
-	font-size: 1rem !important;
-	line-height: 1.375rem;
+	line-height: 1.375em;
 }
+
 .bt {
-	font-size: 1.2rem;
 	background-color: #ef4e58;
+	font-size: 1.1rem !important;
 	color: #fff;
 	border: none;
 	border-radius: 0px !important;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .theme-color {
 	color: #ef4e58;
 }

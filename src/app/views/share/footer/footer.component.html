@@ -43,9 +43,9 @@
                     <div class="footer-widget">
                         <h4>Media</h4>
                         <ul>
-                            <li><a href="#">Gallery</a></li>
+                            <li><a [routerLink]="['/media']">Gallery</a></li>
                             <li><a href="#">Latest Update</a></li>
-                            <li><a class="text-uppercase" href="#">Faq</a></li>
+                            <li><a class="text-uppercase" [routerLink]="['/member']">Faq</a></li>
                         </ul>
                     </div>
                 </div>
@@ -76,7 +76,9 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                     <div class="footer-copyright-text text-white p-1">
-                        <p>Copyright &copy;2021 All rights reserved with an FDRVC promoted producer enterprise.</p>
+                        <p class="text-muted pt-5">Copyright &copy;2021 All rights reserved with an FDRVC promoted
+                            producer
+                            enterprise.</p>
                     </div>
                 </div>
             </div>
