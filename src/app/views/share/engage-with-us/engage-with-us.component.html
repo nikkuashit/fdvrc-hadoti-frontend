@@ -279,18 +279,85 @@
 </div>
 
 <!-- partnership -->
+
 <div class="partnership background">
+    <h1 class="header-text text-center py-3 "> Our Partners </h1>
+    <p-carousel [value]="partner" [numVisible]="3" [numScroll]="3" [circular]="false"
+        [responsiveOptions]="responsiveOptions">
+        <ng-template let-partner pTemplate="item">
+            <div class="partner-item ms-5">
+                <div>
+                    <img [src]="partner.image" alt="" class="d-block ms-2 w-75">
+                </div>
+                <div>
+                    <h4 class="text-center me-5  text-uppercase theme-color mt-3">{{partner.title}}</h4>
+                    <h6 class="text-center me-5  text-uppercase">{{partner.position}}</h6>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+
     <div class="container-fluid p-5">
         <div class="row">
             <div *ngFor="let data of partnershipData" class="col-lg-6 col-md-12 col-sm-12">
-                <div class="text-center">
+                <div class=" text-center">
                     <div class="card  shadow p-2">
-                        <h2 class="theme-color pt-5">{{data.card_title}}</h2>
+                        <h2 class="theme-color pt-5 text-center">{{data.card_title}}</h2>
                         <img [src]="data.image" class="w-50 mx-auto" alt="...">
-                        <h5 class="paragraph-text p-2">{{data.card_para}}</h5>
+                        <h5 class="paragraph-text p-2 text-center">{{data.card_para}}</h5>
                     </div>
-                    <button class="btn-sm bt mt-2 mb-4 mx-auto">Connect with us</button>
+                    <button type="button" class="btn bt mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo">Connect with us</button>
                 </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Fill your details here..</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Enter your
+                                            Name
+                                            here</label>
+                                        <input type="text" class="form-control" id="recipient-name"
+                                            placeholder="Full Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Enter your E-mail
+                                            address
+                                        </label>
+                                        <input type="text" class="form-control" id="recipient-name"
+                                            placeholder="E-mail address">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="me-auto col-form-label ">Enter your
+                                            Mobile
+                                            Number
+                                        </label>
+                                        <input type="number" class="form-control" id="recipient-name"
+                                            placeholder="Mobile Number">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Topic</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="p-1 shadow btn-danger" data-bs-dismiss="modal"
+                                    style="border:none;">Close</button>
+                                <button type="button" class="p-1 shadow  btn-success" style="border:none;">Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

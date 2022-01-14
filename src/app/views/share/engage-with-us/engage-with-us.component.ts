@@ -21,6 +21,17 @@ export class EngageWithUsComponent implements OnInit {
 		this.showLess1 = !this.showLess1;
 		this.isCarrer = !this.isCarrer;
 	}
+	// patnership
+	partner: any = [
+		{ image: '/assets/about_us/memb_1.png', title: 'mr.ahuja', position: 'lorem ipsum' },
+		{ image: '/assets/about_us/memb_2.png', title: 'kumar seti', position: 'lorem ipsum' },
+		{ image: '/assets/about_us/memb_3.png', title: 'rahul saksena', position: 'lorem ipsum' },
+		{ image: '/assets/about_us/memb_4.png', title: 'mr.Mukesh kr', position: 'lorem ipsum' },
+		{ image: '/assets/about_us/memb_5.png', title: 'mr.jon', position: 'lorem ipsum' },
+		{ image: '/assets/about_us/memb_6.png', title: 'Miss rita ', position: 'lorem ipsum' },
+		{ image: '/assets/about_us/memb_7.png', title: 'Ali khan', position: 'lorem ipsum' },
+		{ image: '/assets/about_us/memb_7.png', title: 'mr.ahuja', position: 'lorem ipsum' }
+	];
 
 	// partnership
 	partnershipData = [
@@ -38,7 +49,31 @@ export class EngageWithUsComponent implements OnInit {
 				'Lorem ipsum dolor sit amet, consectetura dipiscing elit. Massa egestaslaoreet massa duisaliquam.'
 		}
 	];
-	constructor() {}
+	responsiveOptions: any;
+	constructor() {
+		this.responsiveOptions = [
+			{
+				breakpoint: '1920px',
+				numVisible: 4,
+				numScroll: 4
+			},
+			{
+				breakpoint: '1200px',
+				numVisible: 3,
+				numScroll: 3
+			},
+			{
+				breakpoint: '968px',
+				numVisible: 2,
+				numScroll: 2
+			},
+			{
+				breakpoint: '568px',
+				numVisible: 1,
+				numScroll: 1
+			}
+		];
+	}
 
 	ngOnInit(): void {}
 }

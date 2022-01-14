@@ -27,13 +27,12 @@ select {
 }
 
 // partnership
-.partnership img {
-	height: 400px;
-}
 .partnership .card {
 	border: none;
 }
-
+label .col-form-label {
+	text-align: left !important;
+}
 // tender
 .tender {
 	background: url(/assets/engage-wth-us/tender.jpg);
