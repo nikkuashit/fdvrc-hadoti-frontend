@@ -28,6 +28,9 @@ a:hover {
 .navbar-nav {
 	margin-left: -70px;
 }
+.active {
+	color: #ef4e58 !important;
+}
 .navbar-light .navbar-toggler {
 	color: #ef4e58;
 	border-color: #ef4e58;
@@ -42,14 +45,13 @@ a:hover {
 }
 .dropdown-item.active,
 .dropdown-item:active {
-	color: #fff;
 	text-decoration: none;
-	background-color: #ef4e58;
+	background-color: #ffe7f0;
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
-	color: #fff;
-	background-color: #ef4e58;
+	color: rgb(82, 74, 74);
+	background-color: #ffe7f0;
 }
 .dropdown-menu {
 	padding: 0px;
