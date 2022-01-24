@@ -10,49 +10,38 @@ export class OurProductComponent implements OnInit {
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/prod-1.png',
+			image: '/assets/our product/HadotiZip1.png',
 			name: 'Bamboo Watch'
 		},
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/prod-2.png',
+			image: '/assets/our product/HadotiZip2.png',
 			name: 'Bamboo Watch'
 		},
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/prod-3.png',
+			image: '/assets/our product/HadotiZip3.png',
+			name: 'Bamboo Watch'
+		},
+
+		{
+			description: 'Product Description',
+			id: '1000',
+			image: '/assets/our product/HadotiZip4.png',
 			name: 'Bamboo Watch'
 		},
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/prod-4.png',
+			image: '/assets/our product/HadotiZip5.png',
 			name: 'Bamboo Watch'
 		},
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/prod-5.png',
-			name: 'Bamboo Watch'
-		},
-		{
-			description: 'Product Description',
-			id: '1000',
-			image: '/assets/our product/prod-6.png',
-			name: 'Bamboo Watch'
-		},
-		{
-			description: 'Product Description',
-			id: '1000',
-			image: '/assets/our product/prod-7.png',
-			name: 'Bamboo Watch'
-		},
-		{
-			description: 'Product Description',
-			id: '1000',
-			image: '/assets/our product/prod-8.png',
+			image: '/assets/our product/HadotiZip6.png',
 			name: 'Bamboo Watch'
 		}
 	];
@@ -62,18 +51,18 @@ export class OurProductComponent implements OnInit {
 		this.responsiveOptions = [
 			{
 				breakpoint: '1920px',
-				numVisible: 4,
-				numScroll: 4
-			},
-			{
-				breakpoint: '1200px',
 				numVisible: 3,
 				numScroll: 3
 			},
 			{
-				breakpoint: '968px',
+				breakpoint: '1200px',
 				numVisible: 2,
 				numScroll: 2
+			},
+			{
+				breakpoint: '968px',
+				numVisible: 1,
+				numScroll: 1
 			},
 			{
 				breakpoint: '600px',

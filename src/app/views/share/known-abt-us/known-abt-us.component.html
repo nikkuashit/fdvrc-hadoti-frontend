@@ -4,14 +4,27 @@
             <h1 class="header-text">Know About Us</h1>
             <img src="/assets/slider/Know-About-us.jpg" class="d-block w-100 shadow" alt="">
         </div>
-        <div class="col-lg-6 col-sm-12 mt-7 ">
-            <div [ngClass]="{'limitTextHeight':isReadMore}">
-                <h5 *ngIf="showLess" class="paragraph-text">{{about_para | slice:0:600}}
-                    <span *ngIf="about_para.length>600">...</span>
-                </h5>
-                <h5 *ngIf="!showLess" class="paragraph-text">{{about_para}}
+        <div class="col-lg-6 col-sm-12 pt-6 ">
+            <p class="fw-bold text-justify">The company would follow the design features of the Farmer Producer Company
+                recommended
+                by the FDRVC.
+                These design features ensure transparency and fairness in the operations, objectivity and inclusiveness
+                in Governance besides induction of professional management. The design features are
+                as under:</p>
 
-                </h5>
+
+            <div [ngClass]="{'limitTextHeight':isReadMore}">
+
+                <div *ngIf="!showLess" class="paragraph-text">
+                    <ul *ngFor="let data of aboutPara">
+                        <li>{{data.name}}</li>
+                    </ul>
+                </div>
+                <div *ngIf="showLess" class="paragraph-text">
+                    <ul *ngFor="let data of tempaboutPara">
+                        <li>{{data.name}}</li>
+                    </ul>
+                </div>
             </div>
             <button class=" btn-sm  bt" type='button' (click)='showText()'>{{isReadMore?'Read More':'Read
                 Less'}}</button>

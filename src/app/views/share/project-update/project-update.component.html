@@ -1,26 +1,26 @@
 <!-- progress at glance -->
 <div class="project-update background">
     <div class="container pt-3 pb-5">
-        <h1 class="header-text pb-2">Progress at Glance</h1>
+        <h1 class="theme-color pb-2">Progress at a Glance</h1>
 
         <div class="row mx-auto p-4 shadow" style="background: #ef4e58">
 
             <div class="col-lg-3 p-3 text-center">
                 <p class="fs-2 text-white">{{farmerMemberCount}}</p>
-                <p class="fw-bold text-white fs-5">Farmer Member</p>
+                <p class="fw-bold text-white fs-5">No of Farmers</p>
 
             </div>
             <div class="col-lg-3 p-3 text-center">
-                <p class="fs-2" style="color: yellow;"> {{farmerMemberCount}}</p>
-                <p class="fw-bold text-white fs-5">Average Under Cultivation</p>
+                <p class="fs-2" style="color: yellow;"> {{dc3Count}}</p>
+                <p class="fw-bold text-white fs-5">No of DC3</p>
             </div>
             <div class="col-lg-3 p-3 text-center">
-                <p class="fs-2 text-white">{{dc3Count}}</p>
-                <p class="fw-bold text-white fs-5">DC3</p>
+                <p class="fs-2 text-white">{{productCount}}</p>
+                <p class="fw-bold text-white fs-5">No of Product Line</p>
             </div>
             <div class="col-lg-3 p-3 text-center">
-                <p class="fs-2" style="color: yellow;">{{productCount}}</p>
-                <p class=" fw-bold text-white fs-5">products</p>
+                <p class="fs-2" style="color: yellow;">{{villageCount}}</p>
+                <p class=" fw-bold text-white fs-5">No Of Villages</p>
             </div>
 
         </div>
@@ -29,22 +29,18 @@
 
 <!-- Crops Production -->
 <div class="chart" style="background: whitesmoke;">
-    <div class="container pt-3">
-        <h1 class="header-text mt-3">Crops Production</h1>
-        <div class="row mt-5">
-            <div class="col-lg-6 col-sm-12 mb-5">
+
+    <div class="container pt-3 ">
+        <h1 class="header-text">Crop Production</h1>
+        <h4 class="mt-3  text-center">Production(Lakh MT)</h4>
+        <div class="row">
+            <div class="col-9 mb-5 mx-auto">
 
                 <div id="divChart">
                     <canvas id="myChart"></canvas>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12">
 
-                <div class="mx-auto d-block w-50" id="divChart_1">
-                    <canvas id="pieChart"></canvas>
-
-                </div>
-            </div>
         </div>
 
 
@@ -60,20 +56,7 @@
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9">
                 <h2 class="subtitle-text">Procurement</h2>
-                <div [ngClass]="{'limitTextHeight': isProcurement}">
-
-                    <p *ngIf="showLess" class="paragraph-text mt-2 ">
-                        {{procurement_para | slice:0:600}}
-                        <span *ngIf="procurement_para.length>600">...</span>
-                    </p>
-                    <p *ngIf="!showLess" class="paragraph-text mt-2 ">
-                        {{procurement_para}}
-
-                    </p>
-                </div>
-                <button class="btn-sm fs-6 bt bt mt-1" type="button" (click)="showText()">
-                    {{ isProcurement ? 'Read More': 'Read Less' }}
-                </button>
+                <p class="paragraph-text mt-2 text-justify">{{procurement_para}}</p>
 
             </div>
 
@@ -82,24 +65,12 @@
         <div class="row pt-3">
             <div class="col-lg-9 col-md-9 col-sm-9 mt-2">
                 <h2 class="subtitle-text">member enrollment</h2>
-                <div [ngClass]="{'limitTextHeight': isMember}">
+                <p class="paragraph-text mt-2 text-justify">{{member_para}}</p>
 
-                    <p *ngIf="showLess1" class="paragraph-text mt-2">
-                        {{member_para | slice:0:600 }}
-                        <span *ngIf="member_para.length>600">...</span>
-                    </p>
-                    <p *ngIf="!showLess1" class="paragraph-text mt-2">
-                        {{member_para }}
-
-                    </p>
-                </div>
-                <button class="btn-sm fs-6 bt bt  mb-4" type="button" (click)="showText1()">
-                    {{ isMember ? 'Read More': 'Read Less' }}
-                </button>
 
             </div>
             <div class="col-lg-3  col-md-3 col-sm-3">
-                <img src="/assets/project update/member-enrollment.png" alt="member-enrollment">
+                <img src="/assets/project update/Member-Enrollment.png" alt="member-enrollment">
             </div>
 
         </div>
@@ -110,21 +81,14 @@
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 mb-3">
                 <h2 class="subtitle-text">Process and Services </h2>
+                <p class=" mt-2 text-justify fw-bold">The Producer Company will provide following processes and
+                    services to its members:</p>
+                <p class="paragraph-text"> 1. Capacity Building of the Members</p>
+                <p class="paragraph-text"> 2. Setting up of Procurement Centers - (D3C)</p>
+                <p class="paragraph-text">3. Setting up Warehouse and Processing Plant</p>
+                <p class="paragraph-text">4. Producer Company Operations</p>
+                <p class="paragraph-text">5. Marketing Linkage</p>
 
-                <div [ngClass]="{'limitTextHeight': isProcess}">
-
-                    <p *ngIf="showLess2" class="paragraph-text mt-2 ">
-                        {{process_para | slice:0:600}}
-                        <span *ngIf="process_para.length>600">...</span>
-                    </p>
-                    <p *ngIf="!showLess2" class="paragraph-text mt-2 ">
-                        {{process_para}}
-
-                    </p>
-                </div>
-                <button class="btn-sm bt mt-1" type="button" (click)="showText2()">
-                    {{ isProcess ? 'Read More': 'Read Less' }}
-                </button>
 
             </div>
         </div>
