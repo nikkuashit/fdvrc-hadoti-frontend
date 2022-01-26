@@ -10,45 +10,34 @@ export class AboutComponent implements OnInit {
 	aboutMission: any = [
 		{
 			abt_title: 'Mission and Vission',
-			abt_image: '/assets/about_us/mission and vission.png',
+			abt_image: '/assets/about_us/Hadoti M&V.png',
 			abt_paragraph:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices sit. Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis sit egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi nulla. Nunc diam consectetur amet ut dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices sit. Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis sit egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi nulla. Nunc diam consectetur amet ut dapibus.'
+				'The Producer Company will empower its shareholder’s and help them increase their standard of living on financial, economic and social aspects.The Mission of the Producer Company is to provide benefit such as pooled price for their produce, transparent pricing, adoption of best practices such as price discovery, effecient operations, market linkages. Producer company will also aim to provide a great value proposition for its customer in form of high-quality standard, continuous bulk supply and better price affordability for end consumers.'
 		}
 	];
 	aboutProduct: any = [
 		{
 			abt_title: 'Product and Services',
-			abt_image: 'assets/about_us/prod and services.png',
+			abt_image: '/assets/about_us/Product&Services-Picture.png',
 			abt_paragraph:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices sit. Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis sit egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi nulla. Nunc diam consectetur amet ut dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices sit. Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis sit egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi nulla. Nunc diam consectetur amet ut dapibus.'
+				'The proposed value chain intervention is a step towards it and will ensure higher price realization for the beneficiaries through the following:',
+			productPara:
+				'-Form and leverage Producer Company for volume aggregation, primary and secondary processing, value addition, collective marketing, brand building and ensuring better price bargains.',
+			productPara1:
+				'-Creation of shorter, reliable and transparent supply chains with fewer market intermediaries and higher mutual trust, and',
+			productPara2: '-Access to a trustworthy, sustainable and authentic source of market information.',
+			productPara3:
+				'The Producer Company would be in the business of procuring Soybean and Coriander from its member-owners at the prevailing market prices. Its warehousing and trading and subsequent processing in factories. It would be sold under different finished goods domestically and internationally.The final product would be positioned as direct from Farmer’s own hand with bio-fertilizers and chemical free production.'
 		}
 	];
 	aboutWho: any = [
 		{
 			abt_title: 'Who We are',
-			abt_image: '/assets/about_us/who we are.png',
+			abt_image: '/assets/about_us/Who-We_Are-Picture.jpeg',
 			abt_paragraph:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices sit. Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis sit egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi nulla. Nunc diam consectetur amet ut dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices sit. Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis sit egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam mi nulla. Nunc diam consectetur amet ut dapibus.'
+				'We are a farmer producer company owned by small and marginal women farmers, who has come together as a collective and together with efficient professional management, scale and technolgy aims to empower women farmers of the country.'
 		}
 	];
-	showLess = true;
-	isReadMore = true;
-	showText() {
-		this.showLess = !this.showLess;
-		this.isReadMore = !this.isReadMore;
-	}
-	showLess1 = true;
-	isReadMore_1 = true;
-	showText_1() {
-		this.showLess1 = !this.showLess1;
-		this.isReadMore_1 = !this.isReadMore_1;
-	}
-	showLess2 = true;
-	isReadMore_2 = true;
-	showText_2() {
-		this.showLess2 = !this.showLess2;
-		this.isReadMore_2 = !this.isReadMore_2;
-	}
 
 	// value and objective
 	valueData: any = [
@@ -56,50 +45,93 @@ export class AboutComponent implements OnInit {
 			val_imag: '/assets/about_us/global_solid.png',
 			val_subtitle: 'STRATEGIC PLAN',
 			val_para:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames sit dictum a aliquet diam. Sit maecenas pellentesque nec vulputate semper consectetur nibh metus, egestas.'
+				'Producer enterprise value proposition over other company or market has an advantage as its able reduce transactional cost of the commodity and bulk transaction will enable better price realisation for the company.'
 		},
 		{
 			val_imag: '/assets/about_us/simple-line-icons_notebook.png',
 			val_subtitle: 'Initiative',
 			val_para:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames sit dictum a aliquet diam. Sit maecenas pellentesque nec vulputate semper consectetur nibh metus, egestas.'
+				'The professional management support would bring in initatives such as best practices SOPs, Technology driven Systems, Price discovery mechnaisms using national and international metrics and opertaions effeicieny systems.'
 		},
 		{
 			val_imag: '/assets/about_us/codicon_graph.png',
 			val_subtitle: 'ACCOUNTABILITY',
 			val_para:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames sit dictum a aliquet diam. Sit maecenas pellentesque nec vulputate semper consectetur nibh metus, egestas.'
+				'An appropriate mechanism has been put in place to map accountibilty and technology would be leveraged in the areas of information collection, datamanagement and payments etc. for transparency and effective management.'
 		},
 		{
 			val_imag: '/assets/about_us/cil_graph.png',
 			val_subtitle: 'Evaluate & Iterate',
 			val_para:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames sit dictum a aliquet diam. Sit maecenas pellentesque nec vulputate semper consectetur nibh metus, egestas.'
+				'A strong Governance mechanism has been adopted to ensure transparency, information disclosure,grievance redressal and monitoring with utmost importance to ensure good governance and course correction.'
 		}
 	];
 	// board member
 	teamMember: any = [
-		{ team_img: '/assets/about_us/team-memb_1.png', team_title: 'Miss Puja', team_subt: 'Head of Department' },
-		{ team_img: '/assets/about_us/team-memb_2.png', team_title: 'Mr. Ahuja', team_subt: 'Social Worker' },
-		{ team_img: '/assets/about_us/team-memb_3.png', team_title: 'Mr. Rathor', team_subt: 'Director General' },
-		{ team_img: '/assets/about_us/team-memb_4.png', team_title: 'Ajay Sinha', team_subt: 'Media Anchor' }
+		{ team_img: '/assets/about_us/favicon.ico', team_title: 'Ranjan Kumar', team_subt: 'CEO' },
+		{
+			team_img: '/assets/about_us/favicon.ico',
+			team_title: 'Saurabh Singh Shekhawat',
+			team_subt: 'Procurement Manager'
+		},
+		{ team_img: '/assets/about_us/favicon.ico', team_title: 'Lavis Khandelwal', team_subt: 'Finance Manager' },
+		{ team_img: '/assets/about_us/favicon.ico', team_title: 'Praveen Sharma', team_subt: 'Finance Executive' }
 	];
 	teamMember1: any = [
-		{ team_img1: '/assets/about_us/team-memb_5.png', team_title1: 'Mr.Kapoor', team_subt1: 'Social Worker' },
-		{ team_img1: '/assets/about_us/team-memb_6.png', team_title1: 'Ranveer Kumar', team_subt1: 'Police Dept.' },
-		{ team_img1: '/assets/about_us/team-memb_7.png', team_title1: 'Kumar Gaurav', team_subt1: 'Poltical Worker' },
-		{ team_img1: '/assets/about_us/team-memb_4.png', team_title1: 'MD. Irfan', team_subt1: 'Head of Department' }
+		{
+			team_img1: '/assets/about_us/favicon.ico',
+			team_title1: 'Piyush Garg',
+			team_subt1: 'Procurement Area Officer'
+		},
+		{
+			team_img1: '/assets/about_us/favicon.ico',
+			team_title1: 'Bhawani Rathore',
+			team_subt1: 'Procurement Area Officer'
+		},
+		{
+			team_img1: '/assets/about_us/favicon.ico',
+			team_title1: 'Pramod nagar',
+			team_subt1: 'Procurement Area Officer'
+		},
+		{
+			team_img1: '/assets/about_us/favicon.ico',
+			team_title1: 'Rajesh Sharma',
+			team_subt1: 'Procurement Area Officer'
+		}
+	];
+	teamMember2: any = [
+		{
+			team_img1: '/assets/about_us/favicon.ico',
+			team_title1: 'Ramesh Gujjar',
+			team_subt1: 'Procurement Area Officer'
+		},
+		{
+			team_img1: '/assets/about_us/favicon.ico',
+			team_title1: 'Amit Langadi',
+			team_subt1: 'Procurement Area Officer'
+		},
+		{
+			team_img1: '/assets/about_us/favicon.ico',
+			team_title1: 'Ajay Rathore',
+			team_subt1: 'Procurement Area Officer'
+		},
+		{
+			team_img1: '/assets/about_us/favicon.ico',
+			team_title1: 'Arshad Mohamamd Chisti',
+			team_subt1: 'Procurement Area Officer'
+		}
 	];
 	// board of director
 	product: any = [
-		{ image: '/assets/about_us/memb_1.png', title: 'mr.ahuja', position: 'lorem ipsum' },
-		{ image: '/assets/about_us/memb_2.png', title: 'kumar seti', position: 'lorem ipsum' },
-		{ image: '/assets/about_us/memb_3.png', title: 'rahul saksena', position: 'lorem ipsum' },
-		{ image: '/assets/about_us/memb_4.png', title: 'mr.Mukesh kr', position: 'lorem ipsum' },
-		{ image: '/assets/about_us/memb_5.png', title: 'mr.jon', position: 'lorem ipsum' },
-		{ image: '/assets/about_us/memb_6.png', title: 'Miss rita ', position: 'lorem ipsum' },
-		{ image: '/assets/about_us/memb_7.png', title: 'Ali khan', position: 'lorem ipsum' },
-		{ image: '/assets/about_us/memb_7.png', title: 'mr.ahuja', position: 'lorem ipsum' }
+		{ image: '/assets/about_us/ReenaMalav.png', title: 'Reena Malav', position: 'Director' },
+		{ image: '/assets/about_us/LeelaBai.png', title: 'Leela Bai', position: 'Director' },
+		{ image: '/assets/about_us/RenuMeena.png', title: 'Renu Bai', position: 'Director' },
+		{ image: '/assets/about_us/RajeshBai.png', title: 'Rajesh Bai', position: 'Director' },
+		{ image: '/assets/about_us/Nirmala.png', title: 'Nirmala', position: 'Director' },
+		{ image: '/assets/about_us/KrishanaKumaMali.png', title: 'Krishna kumari Mali ', position: 'Director' },
+		{ image: '/assets/about_us/MeenaKumari.png', title: 'Meena Bai', position: 'Director' },
+		{ image: '/assets/about_us/Avinash.jpeg', title: 'Avinash Kumar Choudhary', position: 'Expert Director' },
+		{ image: '/assets/about_us/RanjanKumar.png', title: 'Ranjan Kumar', position: 'CEO' }
 	];
 	responsiveOptions: any;
 	constructor() {

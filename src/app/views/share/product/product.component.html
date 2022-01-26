@@ -2,38 +2,65 @@
 <div class="container mb-3">
     <h1 class="text-center header-text"> Product</h1>
     <div class="row text-center">
+
         <div class="col-12">
-            <h3 class="subtitle-text"><a class="bulk" href=""> Bulk Unit</a> <a href=""><span class="m-3 consumer">
-                        Consumer Pack
-                    </span></a></h3>
-        </div>
-    </div>
-    <div class="row text-center">
-        <div *ngFor="let data of productItem" class="col-lg-3 col-md-6 col-sm-6">
-            <div class="card c-size mx-auto border border-danger background p-3 m-2 shadow ">
-                <img class="card-img-top prod-img mx-auto" [src]="data.img" alt="...">
-                <div class="card-body bg-white">
-                    <a href="">
-                        <h3 class="card-title subtitle-text ">{{ data.title1}}</h3>
-                    </a>
-                    <p class="card-text paragraph-text ">{{data.title2}}</p>
+            <p>
+                <a class="btn fw-bold hower" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+
+                </a>
+                <a class="btn fw-bold hower" data-bs-toggle="collapse.show" href="#collapseExample1" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+
+                </a>
+                <button class="btn fw-bold hower" type="button" data-bs-toggle="collapse.show"
+                    data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                    Bulk Unit
+                </button>
+                <button class="btn fw-bold hower" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Consumer Pack
+                </button>
+            </p>
+            <div class="collapse.show" id="collapseExample1">
+                <div class="card card-body" style="border: none;">
+                    <div class="row text-center">
+                        <div *ngFor="let data of productItem" class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="card c-size mx-auto border border-danger background p-3 m-2 shadow ">
+                                <img class="card-img-top prod-img mx-auto" [src]="data.img" alt="...">
+                                <div class="card-body bg-white">
+                                    <a href="">
+                                        <h5 class="card-title subtitle-text ">{{ data.title1}}</h5>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body" style="border: none;">
+                    <div class="row text-center">
+                        <div *ngFor="let data of productItem1" class="col-lg-3 col-md-6 col-sm-6 ">
+                            <div class="card c-size mx-auto border border-danger background p-3 m-2 shadow">
+                                <img class="card-img-top  prod-img mx-auto" [src]="data.img" alt="...">
+                                <div class="card-body bg-white">
+                                    <a href="">
+                                        <h5 class="card-title subtitle-text ">{{ data.title1}}</h5>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row text-center">
-        <div *ngFor="let data of productItem1" class="col-lg-3 col-md-6 col-sm-6 ">
-            <div class="card c-size mx-auto border border-danger background p-3 m-2 shadow">
-                <img class="card-img-top  prod-img mx-auto" [src]="data.img" alt="...">
-                <div class="card-body bg-white">
-                    <a href="">
-                        <h3 class="card-title subtitle-text ">{{ data.title1}}</h3>
-                    </a>
-                    <p class="card-text paragraph-text">{{data.title2}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
 </div>
 
 <!-- product enquire -->
@@ -43,7 +70,7 @@
         <h1 class="text-center header-text"> Product Enquire</h1>
     </div>
 </div>
-<div class="product background mb-5">
+<div class="product background mt-2">
     <div class="container">
         <div class="row mb-3">
             <div class="col-lg-6 col-sm-12">
@@ -68,101 +95,96 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 mt-3 mx-auto">
-                <div class="mb-3">
-                    <ul class="list-group ">
 
-                        <h3 class="subtitle-text">Let's work together</h3>
-                        <li class="list-group-item mb-3 ">
-                            <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nisl tellus
-                                scelerisque
-                                mattis
-                                erat dolor cursus venenatis tincidunt. Mattis in amet id risus enim leo nunc in non.
-                                Commodo
-                                commodo id libero ut ullamcorper. Ut urna est augue cras purus bibendum viverra
-                                suspendisse.
-                            </p>
-                        </li>
-                        <li class="list-group-item mb-3">
-                            <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nisl tellus
-                                scelerisque
-                                mattis
-                                erat dolor cursus venenatis tincidunt. Mattis in amet id risus enim leo nunc in non.
-                                Commodo
-                                commodo id libero ut ullamcorper. Ut urna est augue cras purus bibendum viverra
-                                suspendisse.
-                            </p>
-                        </li>
-                        <li class="list-group-item mb-3">
-                            <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nisl tellus
-                                scelerisque
-                                mattis
-                                erat dolor cursus venenatis tincidunt. Mattis in amet id risus enim leo nunc in non.
-                                Commodo
-                                commodo id libero ut ullamcorper. Ut urna est augue cras purus bibendum viverra
-                                suspendisse.
-                            </p>
-                        </li>
+                <h3 class="subtitle-text">Let's work together</h3>
+                <ul class="list-group ">
+                    <div [ngClass]="{'limitTextHeight':isReadMore}">
 
-                    </ul>
-                </div>
+                        <div *ngIf="showLess" class="paragraph-text">
+                            <li class="">
+                                <p class="">PC would be marketing its products via professionals to all possible
+                                    channels
+                                    it can develop. Apart from own direct selling, it will be supported by
+                                    brokers/commission agent. Below mentioned channels will be used to sell products of
+                                    PC.
+                                </p>
+                            </li>
+
+                            <li class="">
+                                <p class=""><strong>Large Companies:-</strong> Various MNCs like -Cargill, MDH will be
+                                    sold products in
+                                    standard packets as desired in bulk. MDH, Catch, Everest etc can use facility of PC
+                                    to
+                                    be packed in their own brand.
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class=""><strong>SME:</strong> - Various small and medium scaled industries has been
+                                    approached
+                                    ensuring to buy produce at prevailing market rate. They further guided to buy
+                                    cleaned
+                                    and moisture- controlled commodity to ensure long life of commodities and losses
+                                    incurred due to moisture condition.
+                                </p>
+                            </li>
+                        </div>
+
+                        <div *ngIf="!showLess" class="paragraph-text">
+                            <li class="">
+                                <p class=""><strong>SME:</strong> - Various small and medium scaled industries has been
+                                    approached
+                                    ensuring to buy produce at prevailing market rate. They further guided to buy
+                                    cleaned
+                                    and moisture- controlled commodity to ensure long life of commodities and losses
+                                    incurred due to moisture condition.
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class=""><strong>Export:-</strong>Large quantity of Soya-meal is exported
+                                    internationally
+                                    which will be explored to play on quality basis.
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class=""><strong>Collaboration with Modern sales channel:-</strong> Modern sales
+                                    channel
+                                    can be used to
+                                    sell the products directly to Consumers.
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class=""><strong>Institutional Sales:-</strong> As institutions like -catering
+                                    services,
+                                    five-star
+                                    chains, hospitals, government institutions etc who are highly concerned for quality
+                                    will
+                                    be ready to pay even premium for high grade hygienic quality.
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class=""><strong> Government Institutions:-</strong> Government institutions, defence
+                                    bulk order will
+                                    further add to countless list market players available to PC.
+                                </p>
+                            </li>
+                            <li class="">
+                                <p class=""><strong>Cattle Feed Industry:-</strong> Large Cattle feed industry will be
+                                    of
+                                    bulk buyers of Soya-meal.
+
+                                </p>
+                            </li>
+                            <p>Collaborate with us in case you want to source commodity from us.</p>
+                        </div>
+
+                        <button class=" btn-sm bt mb-3" type='button' (click)='showText()'>{{isReadMore?'Read
+                            More':'Read
+                            Less'}}</button>
+                    </div>
+                </ul>
+
             </div>
 
         </div>
     </div>
-</div>
-<!-- market linkage -->
-<div class="container my-5">
-    <div class="row text-center">
-        <h1 class="header-text">Market Linkage</h1>
-        <a href="">
-            <h5 class="theme-color underline">Lorem ipsum dolor sit amet </h5>
-        </a>
-        <a href="">
-            <p class="paragraph-text">Lorem ipsum </p>
-        </a>
-        <a href="">
-            <p class="paragraph-text">Lorem ipsum </p>
-        </a>
-    </div>
-    <div class="row text-center">
-        <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
-            <div class="card  text-white border-danger mb-3 shadow">
-                <img src="/assets/product/Rectangle 32.png" class=" p-2" alt="...">
-                <div class="card-img-overlay">
-                    <h3 class="card-title subtitle-text mt-3">Card title</h3>
-                    <p class="card-text mt-3">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                    <p class="card-text my-4">Last updated 3 mins ago</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
-            <div class="card  text-white border-danger mb-3 shadow">
-                <img src="/assets/product/Rectangle 33.png" class=" p-2" alt="...">
-                <div class="card-img-overlay">
-                    <h3 class="card-title subtitle-text mt-3">Card title</h3>
-                    <p class="card-text mt-3">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                    <p class="card-text my-4">Last updated 3 mins ago</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mx-auto">
-            <div class="card  text-white border-danger mb-3 shadow">
-                <img src="/assets/product/Rectangle 34.png" class=" p-2" alt="...">
-                <div class="card-img-overlay">
-                    <h3 class="card-title subtitle-text mt-3">Card title</h3>
-                    <p class="card-text mt-3">This is a wider card with supporting text below as a natural lead-in to
-                        additional
-                        content. This content is a little bit longer.</p>
-                    <p class="card-text my-4">Last updated 3 mins ago</p>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
 </div>

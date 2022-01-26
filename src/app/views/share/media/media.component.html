@@ -1,36 +1,32 @@
 <!-- Article -->
 <div class="container mb-3 article ">
-    <h1 class="header-text ms-3">Articles</h1>
-    <div class="card-group text-center">
-        <div class="card m-3 border shadow">
-            <img class="responsive" src="/assets/media/ali-shah-lakhani-dwbzzB03gUE-unsplash.jpg" class="card-img-top"
-                alt="...">
-            <div class="card-body">
-                <h3 class="card-title subtitle-text">Card title</h3>
-                <p class="card-text paragraph-text">This card has supporting text below as a natural lead-in to
-                    additional content.</p>
-                <button class="btn-sm fs-6 bt bt">Read More</button>
+    <h1 class="header-text">Articles</h1>
+    <div class="row text-center text-white">
+        <div class="col-lg-4 col-md-12 mb-3">
+            <div class="card shadow">
+                <img src="/assets/media/WhatsAppImage2.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+
+                </div>
             </div>
         </div>
-        <div class="card  m-3 border shadow">
-            <img class="responsive" src="/assets/media/ashni-Wh9ZC4727e4-unsplash.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h3 class="card-title subtitle-text">Card title</h3>
-                <p class="card-text paragraph-text">This card has supporting text below as a natural lead-in to
-                    additional content.</p>
-                <button class="btn-sm fs-6 bt bt">Read More</button>
+        <div class="col-lg-4 col-md-12 mb-3">
+            <div class="card shadow">
+                <img src="/assets/media/WhatsAppImage1.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+
+                </div>
             </div>
         </div>
-        <div class="card  m-3 border shadow">
-            <img class="responsive" src="/assets/media/markus-winkler-cxoR55-bels-unsplash.jpg" class="card-img-top"
-                alt="...">
-            <div class="card-body">
-                <h3 class="card-title subtitle-text">Card title</h3>
-                <p class="card-text paragraph-text">This card has supporting text below as a natural lead-in to
-                    additional content.</p>
-                <button class="btn-sm fs-6 bt bt">Read More</button>
+        <div class="col-lg-4 col-md-12 mb-3">
+            <div class="card shadow">
+                <img src="/assets/media/WhatsAppImage3.jpeg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+
+                </div>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -130,16 +126,13 @@
 <div class="gallery my-5">
     <div class="container">
 
-        <h1 class="title header-text">Gallery</h1>
+        <h1 class="text-center header-text ">Gallery</h1>
 
         <div class="col-12  pb-3 ">
             <div class="row">
-                <div *ngFor="let data of memberData" class="col-lg-3 col-md-6 col-sm-12 ">
+                <div *ngFor="let data of memberData" class="col-lg-4">
                     <div class="col">
-                        <div class="card border shadow mb-2 p-1">
-                            <a href="">
-                                <h3 class="theme-color text-center">{{data.gal_title}}</h3>
-                            </a>
+                        <div class="card shadow mb-2">
                             <img [src]="data.image" alt="...">
                         </div>
 
@@ -147,24 +140,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12  mb-1 pt-3 pb-3 ">
-            <div class="row ">
-                <div *ngFor="let data of memberData_2" class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="col">
-                        <div class="card border shadow mb-2 p-1">
-                            <a href="">
-                                <h3 class="theme-color text-center">{{data.gal_title}}</h3>
-                            </a>
-                            <img [src]="data.image" alt="...">
 
-
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
@@ -196,3 +172,4 @@
 
         </div>
     </div>
+</div>

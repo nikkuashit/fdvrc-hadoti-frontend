@@ -6,6 +6,11 @@
 		margin-top: 10px !important;
 	}
 }
+@media (max-width: 768px) {
+	.prod {
+		margin-top: 0px !important;
+	}
+}
 .team-member .card img {
 	border-radius: 50%;
 }

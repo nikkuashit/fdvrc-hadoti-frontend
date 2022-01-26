@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './member.component.scss' ]
 })
 export class MemberComponent implements OnInit {
-	groupList = [ { list_title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' } ];
+	groupList = [ { list_title: 'Find important downloadable resources related to Hadoti MKPCL here.' } ];
 	constructor() {}
 
 	ngOnInit(): void {}

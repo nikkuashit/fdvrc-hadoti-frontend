@@ -2,25 +2,17 @@
 <div class="engage-with-us">
     <div class="container">
         <div class="row">
-            <div class="col-6 mt-5">
-                <h3 class=" text-white">Think outside the box</h3>
-                <h1 class=" text-white">Evolve Your Career</h1>
-                <div [ngClass]="{'limitTextHeight': isBox}">
-                    <p *ngIf="showLess" class="paragraph-text text-white">
-                        {{engage_para| slice:0:200 }}
-                        <span *ngIf="engage_para.length>100">...</span>
-                    </p>
-                    <p *ngIf="!showLess" class="paragraph-text text-white">
-                        {{engage_para}}
-                    </p>
-                </div>
-                <button class="btn-sm bt mb-2" type="button" (click)="showText()">
-                    {{ isBox ? 'Read More': 'Read Less' }}
-                </button>
+            <div class="col-lg-6 col-md-12 mt-7">
+
+                <h1 class=" text-white">Your Career</h1>
+                <p class="paragraph-text text-white lead">Join our journey to create sustainable and inclusive rural
+                    value
+                    chains by combining traditional
+                    wisdom with professional expertise</p>
 
             </div>
-            <div class="col-6 p-0 ">
-                <img class="d-block w-100  images" src="/assets/engage-wth-us/1327679_Wallpaper2 1.png" alt="">
+            <div class="col-lg-6 col-md-12 pt-7">
+                <img class=" images" src="/assets/engage-wth-us/Hadoti_career.png" alt="">
             </div>
 
         </div>
@@ -64,34 +56,22 @@
         <div class="row">
             <div class="col-12">
                 <div class="box">
-                    <div class="col-lg-6 col-md-9 col-sm-12 pt-2 ">
+                    <div class="col-lg-6 col-md-9 col-sm-12 p-5 ">
                         <h1 class="mt-5 mb-1 ms-5  theme-color">Learn</h1>
                         <h4 class=" ms-5 subtitle-text">How to apply for internhip for program</h4>
-                        <div [ngClass]="{'limitTextHeight': isCarrer}">
-                            <p *ngIf="showLess1" class="paragraph-text  ms-5 theme-color">
-                                {{internhip_para | slice:0:250}}
-                                <span *ngIf="internhip_para.length>250">...</span>
-                            </p>
-                            <p *ngIf="!showLess1" class="paragraph-text  ms-5 theme-color">
-                                {{internhip_para}}
-
-                            </p>
-                        </div>
-                        <button class="btn-sm bt  ms-5 mb-5" type="button" (click)="showText1()">
-                            {{ isCarrer ? 'Read More': 'Read Less' }}
-                        </button>
+                        <h5 class=" ms-5  theme-color">{{internhip_para}}</h5>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mx-auto mb-2 p-2 background ">
+        <!-- <div class="row mx-auto mb-2 p-2 background ">
             <div class="col-lg-6 col-md-9 col-sm-12 mx-auto mt-2">
                 <h2 class="theme-color">Why internship program?</h2>
                 <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit
                     adipiscing luctus est, proin
                     pellentesque facilisi ullamcorper. Vestibulum lorem amet et, quam pharetra cursus.</p>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -272,20 +252,13 @@
 
 <!-- partnership -->
 
-<div class="partnership background">
-    <h1 class="header-text text-center py-2 "> Our Partners </h1>
+<div class="partnership background p-5">
+    <h1 class="header-text text-center py-3 "> Our Partners </h1>
     <p-carousel [value]="partner" [numVisible]="2" [numScroll]="2" [circular]="false"
         [responsiveOptions]="responsiveOptions">
         <ng-template let-partner pTemplate="item">
-            <div class="partner-item ms-5">
-                <div>
-                    <img [src]="partner.image" alt="" class="d-block ms-2 w-75">
-                </div>
-                <div>
-                    <h4 class="text-center me-5  text-uppercase theme-color mt-2">{{partner.title}}</h4>
-                    <h6 class="text-center me-5  text-uppercase">{{partner.position}}</h6>
-                </div>
-            </div>
+            <img [src]="partner.image" alt="" class="d-block  mx-auto" height="200">
+
         </ng-template>
     </p-carousel>
 
@@ -295,10 +268,10 @@
                 <div class=" text-center">
                     <div class="card  shadow p-2">
                         <h2 class="theme-color pt-5 text-center">{{data.card_title}}</h2>
-                        <img [src]="data.image" class="w-50 mx-auto" alt="...">
-                        <h5 class="paragraph-text p-2 text-center">{{data.card_para}}</h5>
+                        <img [src]="data.image" class="w-50 mx-auto mb-5" alt="...">
+
                     </div>
-                    <button type="button" class="btn bt mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    <button type="button" class="btn bt mt-2 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal"
                         data-bs-whatever="@mdo">Connect with us</button>
                 </div>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -351,5 +324,20 @@
                 </div>
 
             </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <h5 class="theme-color">Partner with Hadoti MKPCL for engagement with our project on
+                    strengthening women
+                    farmer producer of
+                    Rajasthan on the following :-</h5>
+                <ol>
+                    <li class="mb-3"> Sourcing of Agri Commodity</li>
+                    <li class="mb-3"> Technology Solutions for Farmers</li>
+                    <li class="mb-3"> Marketing of Agri Produce</li>
+                    <li class="mb-3"> Supply of Agri Input products and Services</li>
+                    <li class="mb-3"> Partner with us for socio-Impact project</li>
+                    <li class="mb-3"> Training and capacity building of the producers</li>
+                </ol>
+            </div>
+
         </div>
     </div>
