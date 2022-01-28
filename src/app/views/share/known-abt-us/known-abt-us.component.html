@@ -15,12 +15,12 @@
 
             <div [ngClass]="{'limitTextHeight':isReadMore}">
 
-                <div *ngIf="!showLess" class="paragraph-text">
+                <div *ngIf="!showLess" class="paragraph-text ms-3">
                     <ul *ngFor="let data of aboutPara">
                         <li>{{data.name}}</li>
                     </ul>
                 </div>
-                <div *ngIf="showLess" class="paragraph-text">
+                <div *ngIf="showLess" class="paragraph-text ms-3">
                     <ul *ngFor="let data of tempaboutPara">
                         <li>{{data.name}}</li>
                     </ul>

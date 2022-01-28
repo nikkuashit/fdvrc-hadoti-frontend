@@ -24,3 +24,13 @@
 .sm-box:hover {
 	transform: scale(1.1);
 }
+
+@media (max-width: 992px) {
+	.grivances {
+		margin-top: 30px;
+		text-align: center !important;
+	}
+	.mandetory {
+		text-align: center !important;
+	}
+}

@@ -10,9 +10,18 @@
 	.prod {
 		margin-top: 0px !important;
 	}
+	.bod {
+		height: 160px;
+	}
 }
 .team-member .card img {
 	border-radius: 50%;
+}
+
+@media (max-width: 568px) {
+	.bod {
+		height: 180px;
+	}
 }
 
 // value & objective

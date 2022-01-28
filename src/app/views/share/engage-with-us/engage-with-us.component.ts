@@ -20,8 +20,7 @@ export class EngageWithUsComponent implements OnInit {
 		{ image: '/assets/engage-wth-us/NRLM_logo-HR.png' },
 		{ image: '/assets/engage-wth-us/Rajeevika.jpeg' },
 		{ image: '/assets/engage-wth-us/Saras_FINAL_eng_Compact.png' },
-		{ image: '/assets/engage-wth-us/FDVRCLogo.png' },
-		{ image: '/assets/engage-wth-us/favicon.ico' }
+		{ image: '/assets/engage-wth-us/FDVRCLogo.png' }
 	];
 
 	// partnership
