@@ -11,7 +11,7 @@ export class ProjectGlanceComponent implements OnInit {
 			glaimg1: '/assets/glance/member.png',
 			glatiltle1: 'MEMBERS',
 			glapara1:
-				'Producer company will procure commodities from both SHG and Non-SHG households inthe covered villages. In order to ensure convergence, RAJEEVIKA shall consider includingnon-SHG households in its fold wherever feasible and also make efforts for SHG formationin the Non-SHG villages.'
+				'The producer company will procure commodities from SHG and Non-SHG households in the covered villages. To ensure convergence, RAJEEVIKA shall consider including non-SHG households in its fold wherever feasible and form new SHG in those villages.'
 		}
 	];
 	isReadMore = true;
@@ -27,7 +27,7 @@ export class ProjectGlanceComponent implements OnInit {
 			glaimg2: '/assets/glance/produce.png',
 			glatiltle2: 'PRODUCE',
 			glapara2:
-				'The Producer Company would be in the business of procuring Soybean and Coriander from its member-owners at the prevailing market prices. Its warehousing and trading and subsequent processing in factories. It would be sold under different finished goods domestically and internationally.The final product would be positioned as direct from Farmer’s own hand with bio-fertilizers and chemical free production.'
+				'The Producer Company would procure Soybean and Coriander from its member-owners at the prevailing market prices. Then provide services such as warehousing, trading and subsequent processing in factories. PC would sell its products domestically and internationally and position them as chemical-free or bio-fertilizers treated produce sourced directly from Farmer’s hands.'
 		}
 	];
 	isReadMore1 = true;
@@ -58,7 +58,7 @@ export class ProjectGlanceComponent implements OnInit {
 		{
 			glaimg4: '/assets/glance/tender.png',
 			glatiltle4: 'TENDER DETAILS',
-			glapara4: 'The News and information about upcoming tender would be avialable here.'
+			glapara4: 'The News and information about upcoming tender would be available here.'
 		}
 	];
 	isReadMore3 = true;

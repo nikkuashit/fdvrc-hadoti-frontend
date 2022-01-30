@@ -9,7 +9,7 @@ export class AboutComponent implements OnInit {
 	// mission
 	aboutMission: any = [
 		{
-			abt_title: 'Mission and Vission',
+			abt_title: 'Mission and Vision',
 			abt_image: '/assets/about_us/Hadoti M&V.png',
 			abt_paragraph:
 				'The Producer Company will empower its shareholder’s and help them increase their standard of living on financial, economic and social aspects.The Mission of the Producer Company is to provide benefit such as pooled price for their produce, transparent pricing, adoption of best practices such as price discovery, effecient operations, market linkages. Producer company will also aim to provide a great value proposition for its customer in form of high-quality standard, continuous bulk supply and better price affordability for end consumers.'
@@ -57,7 +57,7 @@ export class AboutComponent implements OnInit {
 			val_imag: '/assets/about_us/codicon_graph.png',
 			val_subtitle: 'ACCOUNTABILITY',
 			val_para:
-				'An appropriate mechanism has been put in place to map accountibilty and technology would be leveraged in the areas of information collection, datamanagement and payments etc. for transparency and effective management.'
+				'An appropriate mechanism has been put in place to map accountibilty and technology would be leveraged in the areas of information collection, data management and payments etc. for transparency and effective management.'
 		},
 		{
 			val_imag: '/assets/about_us/cil_graph.png',

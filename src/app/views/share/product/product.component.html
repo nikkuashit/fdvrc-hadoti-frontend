@@ -13,7 +13,7 @@
                     aria-expanded="false" aria-controls="collapseExample">
 
                 </a>
-                <button class="btn fw-bold hower" type="button" data-bs-toggle="collapse.show"
+                <button class="btn fw-bold hower me-2" type="button" data-bs-toggle="collapse.show"
                     data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                     Bulk Unit
                 </button>
@@ -26,7 +26,7 @@
                 <div class="card card-body" style="border: none;">
                     <div class="row text-center">
                         <div *ngFor="let data of productItem" class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="card c-size mx-auto border border-danger background p-3 m-2 shadow ">
+                            <div class="card c-size mx-auto border border-danger background p-3 m-3 shadow ">
                                 <img class="card-img-top prod-img mx-auto" [src]="data.img" alt="...">
                                 <div class="card-body bg-white">
                                     <a href="">
@@ -44,7 +44,7 @@
                 <div class="card card-body" style="border: none;">
                     <div class="row text-center">
                         <div *ngFor="let data of productItem1" class="col-lg-3 col-md-6 col-sm-6 ">
-                            <div class="card c-size mx-auto border border-danger background p-3 m-2 shadow">
+                            <div class="card c-size mx-auto border border-danger background p-3 m-3 shadow">
                                 <img class="card-img-top  prod-img mx-auto" [src]="data.img" alt="...">
                                 <div class="card-body bg-white">
                                     <a href="">
@@ -70,9 +70,9 @@
         <h1 class="text-center header-text"> Product Enquire</h1>
     </div>
 </div>
-<div class="product background mt-2">
+<div class="container-fluid background mt-3">
     <div class="container">
-        <div class="row mb-3">
+        <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <div class="mb-1">
                     <label for="exampleFormControlTextarea1" class="form-label"></label>
@@ -81,17 +81,17 @@
                 </div>
                 <div class="mb-1">
                     <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" rows="2">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" rows="3">
                 </div>
                 <div class="mb-1">
                     <label for="exampleFormControlInput1" class="form-label"></label>
                     <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Mobile Number"
-                        rows="2">
+                        rows="3">
                 </div>
-                <div class="mb-3">
+                <div class="mb-5">
                     <label for="exampleFormControlInput1" class="form-label"></label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address"
-                        rows="2">
+                        rows="3">
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 mt-3 mx-auto">
@@ -101,7 +101,7 @@
                     <div [ngClass]="{'limitTextHeight':isReadMore}">
 
                         <div *ngIf="showLess" class="paragraph-text">
-                            <li class="">
+                            <li class="ms-3">
                                 <p class="">PC would be marketing its products via professionals to all possible
                                     channels
                                     it can develop. Apart from own direct selling, it will be supported by
@@ -110,7 +110,7 @@
                                 </p>
                             </li>
 
-                            <li class="">
+                            <li class="ms-3">
                                 <p class=""><strong>Large Companies:-</strong> Various MNCs like -Cargill, MDH will be
                                     sold products in
                                     standard packets as desired in bulk. MDH, Catch, Everest etc can use facility of PC
@@ -118,7 +118,7 @@
                                     be packed in their own brand.
                                 </p>
                             </li>
-                            <li class="">
+                            <li class="ms-3">
                                 <p class=""><strong>SME:</strong> - Various small and medium scaled industries has been
                                     approached
                                     ensuring to buy produce at prevailing market rate. They further guided to buy
@@ -130,7 +130,7 @@
                         </div>
 
                         <div *ngIf="!showLess" class="paragraph-text">
-                            <li class="">
+                            <li class="ms-3">
                                 <p class=""><strong>SME:</strong> - Various small and medium scaled industries has been
                                     approached
                                     ensuring to buy produce at prevailing market rate. They further guided to buy
@@ -139,20 +139,20 @@
                                     incurred due to moisture condition.
                                 </p>
                             </li>
-                            <li class="">
+                            <li class="ms-3">
                                 <p class=""><strong>Export:-</strong>Large quantity of Soya-meal is exported
                                     internationally
                                     which will be explored to play on quality basis.
                                 </p>
                             </li>
-                            <li class="">
+                            <li class="ms-3">
                                 <p class=""><strong>Collaboration with Modern sales channel:-</strong> Modern sales
                                     channel
                                     can be used to
                                     sell the products directly to Consumers.
                                 </p>
                             </li>
-                            <li class="">
+                            <li class="ms-3">
                                 <p class=""><strong>Institutional Sales:-</strong> As institutions like -catering
                                     services,
                                     five-star
@@ -161,13 +161,13 @@
                                     be ready to pay even premium for high grade hygienic quality.
                                 </p>
                             </li>
-                            <li class="">
+                            <li class="ms-3">
                                 <p class=""><strong> Government Institutions:-</strong> Government institutions, defence
                                     bulk order will
                                     further add to countless list market players available to PC.
                                 </p>
                             </li>
-                            <li class="">
+                            <li class="ms-3">
                                 <p class=""><strong>Cattle Feed Industry:-</strong> Large Cattle feed industry will be
                                     of
                                     bulk buyers of Soya-meal.

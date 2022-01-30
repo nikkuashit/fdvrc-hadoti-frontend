@@ -1,122 +1,46 @@
 <!-- Article -->
-<div class="container mb-3 article ">
-    <h1 class="header-text">Articles</h1>
-    <div class="row text-center text-white">
-        <div class="col-lg-4 col-md-12 mb-3">
-            <div class="card shadow">
-                <img src="/assets/media/WhatsAppImage2.jpeg" class="card-img" alt="...">
-                <div class="card-img-overlay">
+<div class="container m3-5">
 
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-12 mb-3">
-            <div class="card shadow">
-                <img src="/assets/media/WhatsAppImage1.jpeg" class="card-img" alt="...">
-                <div class="card-img-overlay">
+    <h1 class="header-text text-center">Articles</h1>
+    <div class="col-12 offset-lg-4">
+        <ul>
 
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-12 mb-3">
-            <div class="card shadow">
-                <img src="/assets/media/WhatsAppImage3.jpeg" class="card-img" alt="...">
-                <div class="card-img-overlay">
+            <a href="/assets/media/Coriander Case Study.pdf" target="_blank">
+                <li class="ms-3 theme-color fw-bold ms-5">Case Study(Coriander Value Chain Analysis) </li>
+            </a>
 
-                </div>
-            </div>
-        </div>
-
+        </ul>
     </div>
 </div>
 
+
 <!-- Annoncement Archieve -->
 <div class="annoncement-a my-5 background">
-    <div class="container p-5">
-        <div class="row mt-3">
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3 ">
-                <h2 class="theme-color text-center"> Annoucement Archive</h2>
+    <div class="container py-5">
+        <h1 class="theme-color text-center"> Annoucement Archive</h1>
 
-                <ol class="ms-5">
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+        <div class="col-12 mt-3">
+            <h5 class="display-6 text-center theme-color">New annoncement will be made soon by MKPCL</h5>
+        </div>
 
-                </ol>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                <h2 class="theme-color text-center"> Annoucement Archive</h2>
-
-                <ol class="ms-5">
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
-
-                </ol>
-            </div>
-
-            <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+        <!-- <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
                 <div class="date-picker text-center">
                     <input type="date" class="p-2 text-uppercase text-danger fs-5 border shadow"><span><i
                             class="fas fa-calendar-alt calender fs-1 ms-1 theme-color"></i></span>
                 </div>
-            </div>
-
-
-        </div>
-
+            </div> -->
     </div>
 </div>
 
 <!-- video section -->
-<div class="conatiner m-3 bg-light shadow border-success my-5">
-    <h1 class="header-text pt-4 ms-4">Things To know</h1>
+<div class="conatiner bg-light shadow border-success my-5">
+    <h1 class="header-text pt-4 text-center">Things To know</h1>
     <div class="row p-4">
         <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-            <iframe height="450" src="https://www.youtube.com/embed/W3P9deLFkk8" class="shadow d-block w-100">
-            </iframe>
-            <h3> <a class="subtitle-text d-block w-100 mb-4 mt-2" href=""> Title</a></h3>
-            <p class="video-para">Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Quam
-                distinctio vel
-                eum! Vitae,
-                nostrum?
-                Consequatur ipsa dignissimos, odio veritatis esse voluptate cumque, atque quasi alias, laudantium
-                possimus illum adipisci? Voluptatem?</p>
 
 
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
 
-            <iframe height="250" src="https://www.youtube.com/embed/b-4bQjBiXxA" class="shadow d-block w-100 mx-auto">
-            </iframe>
-            <h4> <a class="video-title" href=""> Title-3</a></h4>
-
-            <div class="col-12">
-
-                <iframe height="250" src="https://www.youtube.com/embed/b2XYLEliMhQ"
-                    class="shadow d-block w-100 mx-auto">
-                </iframe>
-                <h4> <a class="video-title" href=""> Title-4</a></h4>
-            </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-12 text-center">
-
-            <iframe height="250" src="https://www.youtube.com/embed/b-4bQjBiXxA" class="shadow d-block w-100 mx-auto">
-            </iframe>
-            <h4> <a class="video-title" href=""> Title-3</a></h4>
-
-            <div class="col-12">
-
-                <iframe height="250" src="https://www.youtube.com/embed/b2XYLEliMhQ"
-                    class="shadow d-block w-100 mx-auto">
-                </iframe>
-                <h4> <a class="video-title" href=""> Title-4</a></h4>
-            </div>
-        </div>
 
 
     </div>
@@ -130,7 +54,7 @@
 
         <div class="col-12  pb-3 ">
             <div class="row">
-                <div *ngFor="let data of memberData" class="col-lg-4">
+                <div *ngFor="let data of memberData" class="col-lg-3">
                     <div class="col">
                         <div class="card shadow mb-2">
                             <img [src]="data.image" alt="...">
@@ -145,31 +69,15 @@
 </div>
 
 <!-- Newspaper Article -->
-<div class="article background">
-    <div class="container p-5">
+<div class="background my-5">
+    <div class="container pt-5">
         <div class="row mx-auto">
-            <h1 class="title header-text mb-3"> Newspaper Articles</h1>
-            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
-                <p class=" fs-5">1.Lorem ipsum dolor sit amet.<a class="theme-color ms-3" href=""><span>Link</span></a>
-                </p>
-                <p class="fs-5">2.Lorem ipsum dolor sit amet.<a class="theme-color ms-3" href=""><span>Link</span></a>
-                </p>
-                <p class="fs-5">3.Lorem ipsum dolor sit amet.<a class="theme-color ms-3" href=""><span>Link</span></a>
-                </p>
-                <p class="fs-5">4.Lorem ipsum dolor sit amet.<a class="theme-color ms-3" href=""><span>Link</span></a>
-                </p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 mx-auto">
-                <p class="fs-5">5.Lorem ipsum dolor sit amet.<a class="theme-color ms-3" href=""><span>Link</span></a>
-                </p>
-                <p class="fs-5">6.Lorem ipsum dolor sit amet.<a class="theme-color ms-3" href=""><span>Link</span></a>
-                </p>
-                <p class="fs-5">7.Lorem ipsum dolor sit amet.<a class="theme-color ms-3" href=""><span>Link</span></a>
-                </p>
-                <p class="fs-5">8.Lorem ipsum dolor sit amet.<a class="theme-color ms-3" href=""><span>Link</span></a>
-                </p>
-            </div>
+            <h1 class="header-text text-center"> Newspaper Articles</h1>
+
+            <h5 class="display-6 text-center theme-color mb-5">Newspaper Articles will be appear soon</h5>
 
         </div>
     </div>
 </div>
+
+<!-- <img src="/src/assets/media/WhatsAppImage2.jpeg" alt=""> -->

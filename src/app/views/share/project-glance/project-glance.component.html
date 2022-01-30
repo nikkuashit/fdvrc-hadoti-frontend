@@ -28,8 +28,7 @@
                     <div [ngClass]="{'limitTextHeight': isReadMore}">
                         <h5 class="card-title subtitle-text">{{data.glatiltle2}}</h5>
                         <p *ngIf="showLess1" class="card-text paragraph-text mt-3">{{data.glapara2 | slice:0:80 }}
-                            <span *ngIf="data.glapara2.length>150">
-                                ...
+                            <span *ngIf="data.glapara2.length>150">...
                             </span>
                         </p>
                         <p *ngIf="!showLess1" class="card-text paragraph-text mt-3">{{data.glapara2 }}

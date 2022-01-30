@@ -51,26 +51,26 @@
 </div>
 
 <!-- job opening -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="theme-color mt-3 ">Open Positions Describtion</h2>
-            <p class="paragraph-text">Hadoti Mahila Kisan Producer Company Limited (Hadoti MKPCL), Kota-Baran
-                (Rajasthan), a Producer
-                Company
-                being incubated by FDRVC and supported under National Rural Livelihoods Mission, is offering unique
-                opportunities to those who have the passion to work with rural poor and willing take up the challenge to
-                work for the small and marginal farmers.
-            </p>
-            <p class="paragraph-text">The Producer Company will be dealing in coriander, soybean and other agriculture
-                produce involving procurement, processing and its bulk, retail packaging/consumer packs by investing in
-                large scale processing units and marketing of the commodity and the value-added products. It is going to
-                be working with a large farmer base and will have modern equipment for commodity handling and IT based
-                business processes.
-                FDRVC has been retained by Hadoti MKPCL to hire for the position and requires qualified candidates for
-                the following positions.
-            </p>
-        </div>
+<div class="container">
+    <div class="col-12">
+        <h2 class="theme-color mt-3 ">Open Positions Describtion</h2>
+        <p class="paragraph-text text-justify">Hadoti Mahila Kisan Producer Company Limited (Hadoti MKPCL),
+            Kota-Baran
+            (Rajasthan), a Producer
+            Company
+            being incubated by FDRVC and supported under National Rural Livelihoods Mission, is offering unique
+            opportunities to those who have the passion to work with rural poor and willing take up the challenge to
+            work for the small and marginal farmers.
+        </p>
+        <p class="paragraph-text text-justify">The Producer Company will be dealing in coriander, soybean and other
+            agriculture
+            produce involving procurement, processing and its bulk, retail packaging/consumer packs by investing in
+            large scale processing units and marketing of the commodity and the value-added products. It is going to
+            be working with a large farmer base and will have modern equipment for commodity handling and IT based
+            business processes.
+            FDRVC has been retained by Hadoti MKPCL to hire for the position and requires qualified candidates for
+            the following positions.
+        </p>
     </div>
     <div class="col-12">
         <h3 class="theme-color">Open Position</h3>
@@ -104,15 +104,13 @@
 
 <!-- Internship -->
 <div class="internship mt-5">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="box">
-                    <div class="col-lg-6 col-md-9 col-sm-12 p-5 text-white">
-                        <h1 class="mb-1 ">Learn</h1>
-                        <h4 class="">How to apply for internhip for program</h4>
-                        <h5 class="">{{internhip_para}}</h5>
-                    </div>
+    <div class="container">
+        <div class="col-12">
+            <div class="box">
+                <div class="col-lg-6 col-md-9 col-sm-12 py-5 text-white">
+                    <h1 class="mb-1 ">Learn</h1>
+                    <h4 class="">How to apply for internhip for program</h4>
+                    <h5 class="">{{internhip_para}}</h5>
                 </div>
             </div>
         </div>
@@ -134,10 +132,10 @@
 
 <!-- Tender search -->
 <div class="tender-search">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
 
-            <div class="col-lg-2 col-md-6 col-sm-12 ">
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
                 <h2 class="theme-color">Tender Search</h2>
                 <select name="apply" class="p-2 d-block w-100 rounded option-bg" id="tender-type" form="tenderform">
                     <option value="tender-type">Tender Type</option>
@@ -239,7 +237,7 @@
 
 <!-- partnership -->
 
-<div class="partnership background p-5">
+<div class="partnership background py-5">
     <h1 class="header-text text-center py-3 "> Our Partners </h1>
     <p-carousel [value]="partner" [numVisible]="2" [numScroll]="2" [circular]="false"
         [responsiveOptions]="responsiveOptions">
@@ -249,7 +247,7 @@
         </ng-template>
     </p-carousel>
 
-    <div class="container-fluid p-5">
+    <div class="container py-5">
         <div class="row">
             <div *ngFor="let data of partnershipData" class="col-lg-6 col-md-12 col-sm-12">
                 <div class=" text-center">

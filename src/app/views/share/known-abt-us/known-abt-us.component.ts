@@ -28,12 +28,13 @@ export class KnownAbtUsComponent implements OnInit {
 		},
 		{
 			name:
-				'The company would leverage technology in the areas of information collection, data management and payments etc. for transparency and effective management.'
+				'The operations of the Farmer Producer Company would be managed to ensure viability and self-sustenance of the organization.'
 		},
 		{
 			name:
-				'An appropriate mechanism would be put in place for various communications, including their grievance redressal, with the members.'
+				'The company would leverage technology in the areas of information collection, data management and payments etc. for transparency and effective management.'
 		},
+
 		{
 			name: 'A Chief Executive along with other professionals would manage the operations of the Company.'
 		}
