@@ -10,38 +10,38 @@ export class OurProductComponent implements OnInit {
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/HadotiZip1.png',
+			image: '/assets/our product/HadotiZip1.jpg',
 			name: 'Bamboo Watch'
 		},
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/HadotiZip2.png',
+			image: '/assets/our product/HadotiZip2.jpg',
 			name: 'Bamboo Watch'
 		},
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/HadotiZip3.png',
+			image: '/assets/our product/HadotiZip3.jpg',
 			name: 'Bamboo Watch'
 		},
 
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/HadotiZip4.png',
+			image: '/assets/our product/HadotiZip4.jpg',
 			name: 'Bamboo Watch'
 		},
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/HadotiZip5.png',
+			image: '/assets/our product/HadotiZip5.jpg',
 			name: 'Bamboo Watch'
 		},
 		{
 			description: 'Product Description',
 			id: '1000',
-			image: '/assets/our product/HadotiZip6.png',
+			image: '/assets/our product/HadotiZip6.jpg',
 			name: 'Bamboo Watch'
 		}
 	];

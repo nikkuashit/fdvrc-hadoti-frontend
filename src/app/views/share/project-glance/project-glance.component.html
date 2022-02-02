@@ -2,7 +2,7 @@
     <div class="row">
         <div *ngFor="let data of glanceData1" class="col-lg-3 col-md-6 col-sm-12">
             <div class="card text-center mx-auto shadow">
-                <img [src]="data.glaimg1" class="card-img-top mx-auto" />
+                <img [src]="data.glaimg1" class="card-img-top mx-auto" alt="Member-logo" />
                 <div class="card-body">
                     <div [ngClass]="{'limitTextHeight': isReadMore}">
                         <h5 class="card-title subtitle-text">{{data.glatiltle1}}</h5>
@@ -23,7 +23,7 @@
 
         <div *ngFor="let data of glanceData2" class="col-lg-3 col-md-6 col-sm-12">
             <div class="card text-center mx-auto shadow">
-                <img [src]="data.glaimg2" class="card-img-top mx-auto" />
+                <img [src]="data.glaimg2" class="card-img-top mx-auto" alt="Produce-logo" />
                 <div class="card-body">
                     <div [ngClass]="{'limitTextHeight': isReadMore}">
                         <h5 class="card-title subtitle-text">{{data.glatiltle2}}</h5>
@@ -44,7 +44,7 @@
 
         <div *ngFor="let data of glanceData3" class="col-lg-3 col-md-6 col-sm-12">
             <div class="card text-center mx-auto shadow">
-                <img [src]="data.glaimg3" class="card-img-top mx-auto" />
+                <img [src]="data.glaimg3" class="card-img-top mx-auto" alt="Innovation-logo" />
                 <div class="card-body">
                     <div [ngClass]="{'limitTextHeight': isReadMore}">
                         <h5 class="card-title subtitle-text">{{data.glatiltle3}}</h5>
@@ -65,7 +65,7 @@
 
         <div *ngFor="let data of glanceData4" class="col-lg-3 col-md-6 col-sm-12">
             <div class="card text-center mx-auto shadow">
-                <img [src]="data.glaimg4" class="card-img-top mx-auto" />
+                <img [src]="data.glaimg4" class="card-img-top mx-auto" alt="Tender-logo" />
                 <div class="card-body">
                     <div [ngClass]="{'limitTextHeight': isReadMore}">
                         <h5 class="card-title subtitle-text">{{data.glatiltle4}}</h5>

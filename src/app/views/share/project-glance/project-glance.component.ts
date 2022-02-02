@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectGlanceComponent implements OnInit {
 	glanceData1 = [
 		{
-			glaimg1: '/assets/glance/member.png',
+			glaimg1: '/assets/glance/Member.svg',
 			glatiltle1: 'MEMBERS',
 			glapara1:
 				'The producer company will procure commodities from SHG and Non-SHG households in the covered villages. To ensure convergence, RAJEEVIKA shall consider including non-SHG households in its fold wherever feasible and form new SHG in those villages.'
@@ -24,7 +24,7 @@ export class ProjectGlanceComponent implements OnInit {
 
 	glanceData2 = [
 		{
-			glaimg2: '/assets/glance/produce.png',
+			glaimg2: '/assets/glance/Produce.svg',
 			glatiltle2: 'PRODUCE',
 			glapara2:
 				'The Producer Company would procure Soybean and Coriander from its member-owners at the prevailing market prices. Then provide services such as warehousing, trading and subsequent processing in factories. PC would sell its products domestically and internationally and position them as chemical-free or bio-fertilizers treated produce sourced directly from Farmer’s hands.'
@@ -40,7 +40,7 @@ export class ProjectGlanceComponent implements OnInit {
 
 	glanceData3 = [
 		{
-			glaimg3: '/assets/glance/innovation.png',
+			glaimg3: '/assets/glance/Innovation.svg',
 			glatiltle3: 'INNOVATION',
 			glapara3:
 				'The company would follow the design features of the Farmer Producer Company recommended by the FDRVC. These design features ensure transparency and fairness in the operations, objectivity and inclusiveness in Governance besides induction of professional management.'
@@ -56,7 +56,7 @@ export class ProjectGlanceComponent implements OnInit {
 
 	glanceData4 = [
 		{
-			glaimg4: '/assets/glance/tender.png',
+			glaimg4: '/assets/glance/Tender.svg',
 			glatiltle4: 'TENDER DETAILS',
 			glapara4: 'The News and information about upcoming tender would be available here.'
 		}

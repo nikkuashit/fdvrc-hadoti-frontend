@@ -12,7 +12,7 @@
 
             </div>
             <div class="col-lg-6 col-md-12 pt-7">
-                <img class=" images" src="/assets/engage-wth-us/Hadoti_career.png" alt="">
+                <img class=" images" src="/assets/engage-wth-us/Hadoti_career.svg" alt="Career-jpg">
             </div>
 
         </div>
@@ -239,13 +239,15 @@
 
 <div class="partnership background py-5">
     <h1 class="header-text text-center py-3 "> Our Partners </h1>
-    <p-carousel [value]="partner" [numVisible]="2" [numScroll]="2" [circular]="false"
-        [responsiveOptions]="responsiveOptions">
-        <ng-template let-partner pTemplate="item">
-            <img [src]="partner.image" alt="" class="d-block  mx-auto" height="200">
+    <div class="container">
+        <p-carousel [value]="partner" [numVisible]="2" [numScroll]="2" [circular]="false"
+            [responsiveOptions]="responsiveOptions">
+            <ng-template let-partner pTemplate="item">
+                <img [src]="partner.image" alt="Partner-jpg" class="d-block  mx-auto" height="200">
 
-        </ng-template>
-    </p-carousel>
+            </ng-template>
+        </p-carousel>
+    </div>
 
     <div class="container py-5">
         <div class="row">
@@ -253,7 +255,7 @@
                 <div class=" text-center">
                     <div class="card  shadow p-2">
                         <h2 class="theme-color pt-5 text-center">{{data.card_title}}</h2>
-                        <img [src]="data.image" class="w-50 mx-auto mb-5" alt="...">
+                        <img [src]="data.image" class="w-50 mx-auto mb-5" alt="Partnership">
 
                     </div>
                     <button type="button" class="btn bt mt-2 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal"

@@ -8,44 +8,44 @@ import { Component, OnInit } from '@angular/core';
 export class ProductComponent implements OnInit {
 	productItem = [
 		{
-			img: '/assets/product/CorianderPowder.png',
+			img: '/assets/product/CorianderPowder.jpg',
 			title1: 'Coriander Powder ',
 			title2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 		},
 		{
-			img: '/assets/product/Corianderwhole.png',
+			img: '/assets/product/Corianderwhole.jpg',
 			title1: 'Coriander Whole ',
 			title2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 		},
 		{
-			img: '/assets/product/GarlicBulbs.png',
+			img: '/assets/product/GarlicBulbs.jpg',
 			title1: 'Garlic Bulbs ',
 			title2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 		},
 		{
-			img: '/assets/product/HadotiChanaDal.png',
+			img: '/assets/product/HadotiChanaDal.jpg',
 			title1: ' ChanaDal',
 			title2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 		}
 	];
 	productItem1 = [
 		{
-			img: '/assets/product/HadotiZipBa2.png',
+			img: '/assets/product/HadotiZipBa2.jpg',
 			title1: 'AaharDal',
 			title2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 		},
 		{
-			img: '/assets/product/HadotiZipBag3.png',
+			img: '/assets/product/HadotiZipBag3.jpg',
 			title1: 'Coriander Powder',
 			title2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 		},
 		{
-			img: '/assets/product/HadotiZipBag6.png',
+			img: '/assets/product/HadotiZipBag6.jpg',
 			title1: 'Coriander Whole ',
 			title2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 		},
 		{
-			img: '/assets/product/MustardSeeds.png',
+			img: '/assets/product/MustardSeeds.jpg',
 			title1: 'MustardSeeds',
 			title2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 		}

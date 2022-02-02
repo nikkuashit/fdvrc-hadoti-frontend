@@ -17,17 +17,17 @@ export class EngageWithUsComponent implements OnInit {
 	}
 	// patnership
 	partner: any = [
-		{ image: '/assets/engage-wth-us/NRLM_logo-HR.png' },
-		{ image: '/assets/engage-wth-us/Rajeevika.jpeg' },
-		{ image: '/assets/engage-wth-us/Saras_FINAL_eng_Compact.png' },
-		{ image: '/assets/engage-wth-us/FDVRCLogo.png' }
+		{ image: '/assets/engage-wth-us/NRLM_logo-HR.jpg' },
+		{ image: '/assets/engage-wth-us/Rajeevika.jpg' },
+		{ image: '/assets/engage-wth-us/Saras_FINAL_eng_Compact.jpg' },
+		{ image: '/assets/engage-wth-us/FDVRCLogo.jpg' }
 	];
 
 	// partnership
 	partnershipData = [
 		{
 			card_title: 'Partnership',
-			image: '/assets/engage-wth-us/Hadoti-Partnership.png'
+			image: '/assets/engage-wth-us/Hadoti-Partnership.jpg'
 		}
 	];
 	// tender

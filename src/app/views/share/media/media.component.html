@@ -1,16 +1,16 @@
 <!-- Article -->
-<div class="container m3-5">
+<div class="container my-5 text-center">
 
-    <h1 class="header-text text-center">Articles</h1>
-    <div class="col-12 offset-lg-4">
-        <ul>
+    <h1 class="header-text">Articles</h1>
 
-            <a href="/assets/media/Coriander Case Study.pdf" target="_blank">
-                <li class="ms-3 theme-color fw-bold ms-5">Case Study(Coriander Value Chain Analysis) </li>
-            </a>
+    <ul class="list-unstyled">
 
-        </ul>
-    </div>
+        <a class="theme-color" href="/assets/media/Coriander Case Study.pdf" target="_blank">
+            <li class="ms-3">Case Study(Coriander Value Chain Analysis) </li>
+        </a>
+
+    </ul>
+
 </div>
 
 
@@ -23,27 +23,12 @@
             <h5 class="display-6 text-center theme-color">New annoncement will be made soon by MKPCL</h5>
         </div>
 
-        <!-- <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
-                <div class="date-picker text-center">
-                    <input type="date" class="p-2 text-uppercase text-danger fs-5 border shadow"><span><i
-                            class="fas fa-calendar-alt calender fs-1 ms-1 theme-color"></i></span>
-                </div>
-            </div> -->
     </div>
 </div>
 
 <!-- video section -->
-<div class="conatiner bg-light shadow border-success my-5">
-    <h1 class="header-text pt-4 text-center">Things To know</h1>
-    <div class="row p-4">
-        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-
-
-        </div>
-
-
-
-    </div>
+<div class="conatiner bg-light shadow border-success my-5 py-5">
+    <h1 class="header-text py-3 text-center">Things To know</h1>
 
 </div>
 <!-- Gallery -->
@@ -57,7 +42,7 @@
                 <div *ngFor="let data of memberData" class="col-lg-3">
                     <div class="col">
                         <div class="card shadow mb-2">
-                            <img [src]="data.image" alt="...">
+                            <img [src]="data.image" alt="Gallery-Image">
                         </div>
 
                     </div>
