@@ -1,65 +1,20 @@
-.mission {
-	background-color: #fffaec;
+.textHeight {
+	text-align: justify;
 }
-.about h3 {
-	color: #ef4e58;
-	text-decoration: underline;
-	text-transform: capitalize;
-	font-size: 21px;
+@media (max-width: 1200px) {
+	.head {
+		margin-top: 10px !important;
+	}
 }
-
-/* board-sec */
-.carousel-item img {
-	margin-top: -15px;
-}
-
-.carousel-control-prev-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000'  viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-	height: 15px;
-	margin-top: -25px;
-	margin-left: -6rem;
-}
-.carousel-control-next-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-	height: 15px;
-	margin-top: -25px;
-	margin-right: -6rem;
-}
-
-.box h5 {
-	margin-top: -35px;
-	font-size: 18px;
-	color: #ef4e58;
-}
-
-/* Team Member-sec */
-.team-member {
-	background-color: #fffaec;
-}
-.card {
-	background-color: transparent;
-	border: none;
-}
-.card img {
+.team-member .card img {
 	border-radius: 50%;
 }
 
-.card .deg {
-	margin-top: -15px;
+// value & objective
+.value .card {
+	transition: 1.5s all;
 }
-.team-member h5 {
-	color: #ef4e58;
-	font-size: 18px;
-	text-transform: capitalize;
-	margin-top: -35px;
-}
-
-// responsive
-@media (max-width: 767px) {
-	.carousel-control-prev-icon {
-		margin-left: -4rem;
-	}
-	.carousel-control-next-icon {
-		margin-right: -4rem;
-	}
+.value .card:hover {
+	transform: scale(1.1);
+	border: 1px solid #ef4e58;
 }

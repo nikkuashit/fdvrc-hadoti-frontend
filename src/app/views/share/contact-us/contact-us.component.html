@@ -1,37 +1,41 @@
 <div class="container mb-3">
+    <div class=" mb-3">
+        <h1 class=" header-text">Contact Us </h1>
+
+    </div>
     <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
+        <div class="col-lg-6 col-sm-12 ">
+            <div class="card mb-3 border-danger">
                 <div class="card-body">
-                    <span class="c-icon card-text card text-center"><i class="fas fa-street-view"></i></span>
+                    <span class="card-text card text-center theme-color"><img
+                            src="/assets/social_media_icons/address.gif" class="mx-auto" height="100px" width="100px"
+                            alt=""></span>
                     <h3 class="card-title card text-center subtitle-text mb-1">Our Address</h3>
-                    <p class="card-text card text-center  mb-1">D-55, janakpuri Indutrial Area</p>
-                    <p class="card-text card text-center  mb-1">New Delhi</p>
-                    <p class="card-text card text-center  mb-1">100058,India</p>
-
-
-
+                    <p class="card-text card text-center  mb-1 theme-color">D-55, janakpuri Indutrial Area,New
+                        Delhi-100058,India</p>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
-            <div class="card">
-                <div class="card-body">
-                    <span class="c-icon card-text card text-center"><i class="fas fa-envelope"></i></span>
+        <div class="col-lg-3 col-sm-6">
+            <div class="card mb-3 border-danger">
+                <div class="card-body ">
+                    <span class="card-text card text-center theme-color"><img src="/assets/social_media_icons/email.gif"
+                            class="mx-auto" height="100px" width="100px" alt=""></span>
                     <h3 class="card-title card text-center subtitle-text">Email Us</h3>
                     <a href="mailto:contact@drvc.in" target="_blank">
-                        <p class="card card-text text-center">contact@drvc.in</p>
+                        <p class="card card-text text-center theme-color">contact@drvc.in</p>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
-            <div class="card">
+        <div class="col-lg-3 col-sm-6">
+            <div class="card border-danger">
                 <div class="card-body">
-                    <span class="c-icon card-text card text-center "><i class="fas fa-phone"></i></span>
+                    <span class="card-text card text-center theme-color"><img src="/assets/social_media_icons/call.gif"
+                            class="mx-auto" height="100px" width="100px" alt=""></span>
                     <h3 class="card-title card text-center subtitle-text">Call Us</h3>
                     <a href="">
-                        <p class="card-text card text-center">+91 XXXX-XXXX</p>
+                        <p class="card-text card text-center theme-color">+91 XXXX-XXXX</p>
                     </a>
                 </div>
             </div>
@@ -44,36 +48,31 @@
         <div class="col-lg-6  col-sm-12">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.4812955558!2d77.06889903721685!3d28.527280343226316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sus!4v1636088466556!5m2!1sen!2sus"
-                width="550" height="450" style="border:0;box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;"
-                loading="lazy"></iframe>
+                height="450" class="shadow d-block w-100" loading="lazy"></iframe>
         </div>
 
 
         <div class="col-lg-6 col-sm-12">
-            <div class="mb-0 mt-2">
-                <h1 class="header-text">Contact Us </h1>
-
-            </div>
-
             <form action="">
-                <div class="mb-3">
+                <div class="mb-2">
                     <label for="exampleInputPassword1" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" required>
+                    <input type="text" class="form-control" id="exampleInputPassword1" name="text" ngModule required>
                 </div>
                 <div class="mb-1">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" required
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="email" ngModule required
                         aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-1">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <label for="exampleFormControlTextarea1" class="form-label">Topic</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1"
                         placeholder="Write your message here.." rows="8">
                 </textarea>
                 </div>
-                <button type="submit" class="btn bt">Submit</button>
+                <button type="submit" class=" btn-sm  bt mb-3">Submit</button>
             </form>
+
         </div>
     </div>
 </div>

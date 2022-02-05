@@ -1,63 +1,56 @@
 import { Component, OnInit } from '@angular/core';
+import { CoreService } from 'src/app/services/core.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+	selector: 'app-header',
+	templateUrl: './header.component.html',
+	styleUrls: [ './header.component.scss' ]
 })
 export class HeaderComponent implements OnInit {
-  menuList: any = [
-    {
-      title: 'Home',
-      child: []
-    },
-    {
-      title: 'About Us',
-      child: [
-        {
-          title: 'Member'
-        },
-        {
-          title: 'Another action'
-        },
-        {
-          title: 'Something else here'
-        }
+  companyData: any;
+	ToggleNavBar() {
+		let element: HTMLElement = document.getElementsByClassName('navbar-toggler')[0] as HTMLElement;
+		if (element.getAttribute('aria-expanded') == 'true') {
+			element.click();
+		}
+	}
 
-      ]
-    },
-    {
-      title: 'Product Update',
-      child: [
-        {
-          title: 'Product'
-        },
-        {
-          title: 'Another action'
-        },
-        {
-          title: 'Something else here'
-        }
-      ]
-    },
-    {
-      title: 'Media',
-      child: [
-        {
-          title: 'Contact us'
-        },
-        {
-          title: 'Engage With Us'
-        }
-      ]
-    }
-  ]
-  constructor() { }
+  menuList : any = [];
 
-  ngOnInit(): void {
+	constructor(public coreService: CoreService) {
+    this.getMenuList();
+    this.getCompanyProfile();
   }
 
-  navigatePage(test=null){
+	ngOnInit(): void {
 
   }
+
+  getCompanyProfile(){
+    this.coreService.getCompanyProfile().subscribe(
+      res => {
+        let data: any = res;
+        this.companyData = data[0];
+        console.log(res);
+        console.log('company test ',this.companyData);
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
+  getMenuList(){
+    this.coreService.getMenuList().subscribe(
+      res => {
+        this.menuList = res;
+        console.log('menuListtest ',this.menuList);
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
+	navigatePage(test = null) {}
 }

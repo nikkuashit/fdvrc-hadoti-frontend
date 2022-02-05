@@ -1,4 +1,4 @@
-.carousel-item .box {
+.box {
 	width: 400px;
 	height: 400px;
 	left: 107px;
@@ -6,7 +6,7 @@
 	background-color: #fff;
 	padding: 20px;
 	margin: auto;
-	margin-bottom: 30px;
+	margin-bottom: 80px;
 	box-shadow: 5px 10px 18px #bbbbbb;
 }
 
@@ -14,7 +14,6 @@
 	position: absolute;
 	z-index: 1;
 	margin: auto;
-	margin-top: 0px;
 	margin-left: 135px;
 	height: 100px;
 }
@@ -23,127 +22,16 @@
 	height: 200px;
 	clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
 	border-radius: 0px 0px 0px 0px;
-	background: linear-gradient(180deg, #ef4e58 35.94%, #b8000c 100%);
+	background: linear-gradient(180deg, #ef4e58 35.94%, #6d070e 100%);
 	margin-left: -20px;
 	margin-top: 50px;
 }
 
 .box .sm-box h6 {
 	padding-top: 85px;
-	text-align: center;
-	font-weight: 400;
-	color: #fff;
 }
-.social-links {
-	text-align: center;
-	padding-top: 10px;
-}
+
 .social-links a {
 	color: #fff;
 	margin: 10px;
-}
-
-.carousel-item .box h2 {
-	color: #ef4e58;
-}
-.carousel-item .box p {
-	text-align: center;
-}
-
-/* Responsive */
-
-@media (max-width: 1200px) {
-	.carousel-control-prev-icon {
-		margin-left: -130px;
-	}
-	.carousel-control-next-icon {
-		margin-right: -130px;
-	}
-}
-
-@media (max-width: 992px) {
-	.carousel-control-prev-icon {
-		margin-left: -93px;
-		height: 13px;
-	}
-	.carousel-control-next-icon {
-		margin-right: -93px;
-		height: 13px;
-	}
-	.carousel-item .box {
-		width: 280px;
-		height: 340px;
-	}
-	.carousel-item .box .sm-box {
-		width: 280px;
-		height: 150px;
-		margin-top: 30px;
-	}
-	.carousel-item .box p {
-		font-size: 13px;
-		margin-top: -20px;
-	}
-	.top img {
-		height: 60px;
-		margin-left: 95px;
-		margin-top: 10px;
-	}
-
-	.box .sm-box h6 {
-		padding-top: 65px;
-
-		font-size: 13px;
-	}
-}
-
-@media (max-width: 768px) {
-	.carousel-control-prev-icon {
-		margin-left: -93px;
-		height: 13px;
-	}
-	.carousel-control-next-icon {
-		margin-right: -93px;
-		height: 13px;
-	}
-	.carousel-item .box {
-		width: 200px;
-		height: 300px;
-	}
-	.carousel-item .box .sm-box {
-		width: 200px;
-		height: 100px;
-		margin-top: -10px;
-	}
-	.carousel-item .box p {
-		font-size: 11px;
-		margin-top: -20px;
-	}
-	.top img {
-		height: 40px;
-		margin-left: 65px;
-		margin-top: -10px;
-	}
-	.testimonial h3 {
-		font-size: 33px;
-	}
-	.social-links {
-		padding-top: px;
-	}
-	.box .sm-box h6 {
-		padding-top: 45px;
-
-		font-size: 11px;
-	}
-	.social-links {
-		margin-top: -10px;
-		font-size: 10px;
-	}
-	.carousel-control-prev-icon {
-		margin-left: -70px;
-		height: 11px;
-	}
-	.carousel-control-next-icon {
-		margin-right: -70px;
-		height: 11px;
-	}
 }

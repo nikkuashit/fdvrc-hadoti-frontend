@@ -8,8 +8,8 @@ import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ProjectGlanceComponent } from './project-glance/project-glance.component';
 import { OurProductComponent } from './our-product/our-product.component';
 import { KnownAbtUsComponent } from './known-abt-us/known-abt-us.component';
-import { INewsComponent } from './i-news/i-news.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
+// import { INewsComponent } from './i-news/i-news.component';
+// import { TestimonialComponent } from './testimonial/testimonial.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MediaComponent } from './media/media.component';
 import { ProductComponent } from './product/product.component';
@@ -17,7 +17,13 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MemberComponent } from './member/member.component';
 import { AboutComponent } from './about/about.component';
 import { EngageWithUsComponent } from './engage-with-us/engage-with-us.component';
-import { ProjectUpdateComponent } from 'src/app/project-update/project-update.component';
+import { ProjectUpdateComponent } from './project-update/project-update.component';
+import { AccordionModule } from 'primeng/accordion';
+import { CarouselModule } from 'primeng/carousel';
+import { ButtonModule } from 'primeng/button';
+import { ComponentCenterEndComponent } from './component-center-end/component-center-end.component';
+import { ComponentLeftEndComponent } from './component-left-end/component-left-end.component';
+import { ComponentRightEndComponent } from './component-right-end/component-right-end.component';
 
 @NgModule({
 	declarations: [
@@ -28,17 +34,20 @@ import { ProjectUpdateComponent } from 'src/app/project-update/project-update.co
 		ProjectGlanceComponent,
 		OurProductComponent,
 		KnownAbtUsComponent,
-		INewsComponent,
-		TestimonialComponent,
+		// INewsComponent,
+		// TestimonialComponent,
 		MediaComponent,
 		ProductComponent,
 		ContactUsComponent,
 		MemberComponent,
 		AboutComponent,
 		ProjectUpdateComponent,
-		EngageWithUsComponent
+		EngageWithUsComponent,
+  ComponentCenterEndComponent,
+  ComponentLeftEndComponent,
+  ComponentRightEndComponent
 	],
-	imports: [ BrowserModule, CommonModule, RouterModule ],
+	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
 		HeaderComponent,
 		FooterComponent,
@@ -47,15 +56,18 @@ import { ProjectUpdateComponent } from 'src/app/project-update/project-update.co
 		ProjectGlanceComponent,
 		OurProductComponent,
 		KnownAbtUsComponent,
-		INewsComponent,
-		TestimonialComponent,
+		// INewsComponent,
+		// TestimonialComponent,
 		MediaComponent,
 		ProductComponent,
 		ContactUsComponent,
 		MemberComponent,
 		AboutComponent,
 		EngageWithUsComponent,
-		ProjectUpdateComponent
+		ProjectUpdateComponent,
+    ComponentCenterEndComponent,
+    ComponentLeftEndComponent,
+    ComponentRightEndComponent
 	]
 })
 export class ShareModule {}

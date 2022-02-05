@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './media.component.scss' ]
 })
 export class MediaComponent implements OnInit {
-	memberData :any = [
+	memberData: any = [
 		{ gal_title: 'Title', image: '/assets/gallery/farmer-unions_1606391149.jpeg' },
 		{
 			gal_title: 'Title',

@@ -1,233 +1,130 @@
 <!-- mission vission -->
 
-<div class="mission">
-    <div class="container mb-3 mx-auto">
-        <div class="about">
-
-            <div class="row abt pt-3">
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img class="responsive" src="/assets/about_us/mission and vission.png" alt="">
-                </div>
-                <div class="col-lg-9 col-md-9 col-sm-9">
-                    <h3>mission & vission</h3>
-                    <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam,
-                        interdum ultrices sit.
-                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis
-                        sit
-                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
-                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam
-                        mi
-                        nulla. Nunc diam consectetur amet ut dapibus.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices sit.
-                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis
-                        sit
-                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
-                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam
-                        mi
-                        nulla. Nunc diam consectetur amet ut dapibus.
-                    </p>
-                    <button class="btn-sm bt">Read More</button>
-                </div>
-
+<div class="container-fluid  background mx-auto mb-5 p-3">
+    <div *ngFor='let data of aboutMission'>
+        <div class="row mx-auto mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="d-block w-100 " [src]="data.abt_image">
             </div>
-
-            <div class="row abt pt-3">
-
-                <div class="col-lg-9 col-md-9 col-sm-9">
-                    <h3>Product and services</h3>
-                    <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam,
-                        interdum
-                        ultrices sit.
-                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis
-                        sit
-                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
-                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam
-                        mi
-                        nulla. Nunc diam consectetur amet ut dapibus.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices sit.
-                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis
-                        sit
-                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
-                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam
-                        mi
-                        nulla. Nunc diam consectetur amet ut dapibus.
+            <div class="col-lg-9 col-md-6 col-sm-12">
+                <h2 class="subtitle-text text-decoration-underline">{{data.abt_title}}</h2>
+                <div [ngClass]="{'textHeight':isReadMore}">
+                    <p *ngIf="showLess" class="paragraph-text">{{data.abt_paragraph | slice:0:550}}
+                        <span *ngIf="data.abt_paragraph.length>500">
+                            ...
+                        </span>
                     </p>
-                    <button class="btn-sm bt">Read More</button>
-                </div>
+                    <p *ngIf="!showLess" class="paragraph-text">{{data.abt_paragraph}}
 
-                <div class="col-lg-3 col-md-3 col-sm-3 mt-2">
-                    <img class="responsive" src="/assets/about_us/prod and services.png" alt="">
-                </div>
-
-            </div>
-
-
-
-            <div class="row abt pt-3">
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img class="responsive" src="/assets/about_us/who we are.png" alt="">
-                </div>
-
-                <div class="col-lg-9 col-md-9 col-sm-9 mb-3">
-                    <h3>Product and services</h3>
-                    <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam,
-                        interdum ultrices sit.
-                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis
-                        sit
-                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
-                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam
-                        mi
-                        nulla. Nunc diam consectetur amet ut dapibus.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam, interdum ultrices sit.
-                        Turpis iaculis lacus, tortor ut sagittis suscipit auctor ut. Praesent nunc, dui montes, sagittis
-                        sit
-                        egestas gravida eget. Amet a in in enim duis fames id sagittis mi. Tellus tortor sed turpis
-                        convallis nec lobortis id. Elit lectus sodales in vitae. Ac posuere gravida id egestas morbi nam
-                        mi
-                        nulla. Nunc diam consectetur amet ut dapibus.
                     </p>
-                    <button class="btn-sm bt">Read More</button>
                 </div>
-
-
-
+                <button class="btn-sm  bt mt-1 mb-3" type="button" (click)="showText()">
+                    {{ isReadMore ? 'Read More': 'Read Less' }}
+                </button>
             </div>
-
-
         </div>
     </div>
-</div>
+    <div *ngFor='let data of aboutProduct'>
+        <div class="row mx-auto mb-5">
+            <div class="col-lg-9 col-md-6 col-sm-12 ">
+                <h2 class="subtitle-text head text-decoration-underline">{{data.abt_title}}</h2>
+                <div [ngClass]="{'textHeight':isReadMore_1}">
+                    <p *ngIf="showLess1" class="paragraph-text">{{data.abt_paragraph | slice:0:550}}
+                        <span *ngIf="data.abt_paragraph.length>550">
+                            ...
+                        </span>
+                    </p>
+                    <p *ngIf="!showLess1" class="paragraph-text">{{data.abt_paragraph}}
 
-
-<!-- board member -->
-
-<div class="container mb-3">
-    <div class="row">
-        <div class="board-dir col-12 ">
-            <h1 class="header-text">Board of director</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner ">
-
-
-                    <div class="carousel-item active">
-
-                        <div class="row mx-auto">
-
-                            <div class="box col-lg-3 col-md-6 col-sm-6">
-                                <img class="board-img responsive p-4" src="/assets/our team/team_1.png" alt="">
-                                <h5 class="text-center">Mr Ag Marhotra</h5>
-                                <h6 class="text-center">Formal Mang(xyz)</h6>
-                            </div>
-
-                            <div class="box col-lg-3 col-md-6 col-sm-6">
-                                <img class="board-img responsive p-4" src="/assets/our team/team_2.png" alt="">
-                                <h5 class=" text-center">Mr Ag Marhotra</h5>
-                                <h6 class=" text-center">Formal Mang(xyz)</h6>
-                            </div>
-
-                            <div class="box col-lg-3 col-md-6  col-sm-6">
-                                <img class="board-img  responsive p-4" src="/assets/our team/team_3.png" alt="">
-                                <h5 class=" text-center">Mr Ag Marhotra</h5>
-                                <h6 class=" text-center">Formal Mang(xyz)</h6>
-                            </div>
-                            <div class="box col-lg-3  col-md-6 col-sm-6 ">
-                                <img class="board-img responsive p-4" src="/assets/our team/team_3.png" alt="">
-                                <h5 class=" text-center">Mr Ag Marhotra</h5>
-                                <h6 class=" text-center">Formal Mang(xyz)</h6>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-                    <div class="carousel-item">
-                        <div class="row mx-auto">
-                            <div class="box col-lg-3  col-md-6  col-sm-6">
-                                <img class="board-img responsive p-4" src="/assets/our team/team_4.png" alt="">
-                                <h5 class=" text-center">Mr Ag Marhotra</h5>
-                                <h6 class=" text-center">Formal Mang(xyz)</h6>
-                            </div>
-
-                            <div class="box col-lg-3  col-md-6  col-sm-6">
-                                <img class="board-img responsive p-4" src="/assets/our team/team_5.png" alt="">
-                                <h5 class=" text-center">Mr Ag Marhotra</h5>
-                                <h6 class="text-center">Formal Mang(xyz)</h6>
-                            </div>
-
-                            <div class="box col-lg-3  col-md-6  col-sm-6 ">
-                                <img class="board-img responsive p-4" src="/assets/our team/team_6.png" alt="">
-                                <h5 class=" text-center">Mr Ag Marhotra</h5>
-                                <h6 class=" text-center">Formal Mang(xyz)</h6>
-                            </div>
-                            <div class="box col-lg-3 col-md-6   col-sm-6">
-                                <img class="board-img responsive p-4" src="/assets/our team/team_6.png" alt="">
-                                <h5 class=" text-center">Mr Ag Marhotra</h5>
-                                <h6 class=" text-center">Formal Mang(xyz)</h6>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
-                    <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    </p>
 
                 </div>
+                <button class="btn-sm  bt mt-1 mb-3" (click)="showText_1()">{{isReadMore_1? 'Read More':'Read
+                    Less'}}</button>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="d-block w-100" [src]="data.abt_image">
+            </div>
+        </div>
+    </div>
+    <div *ngFor='let data of aboutWho'>
+        <div class="row mx-auto mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="d-block w-100" [src]="data.abt_image">
+            </div>
+            <div class="col-lg-9 col-md-6 col-sm-12 ">
+                <h2 class="subtitle-text  text-decoration-underline">{{data.abt_title}}</h2>
+                <div [ngClass]="{'textHeight':isReadMore_2}">
+                    <p *ngIf="showLess2" class="paragraph-text ">{{data.abt_paragraph |slice:0:550}}
+                        <span *ngIf="data.abt_paragraph.length>550">...</span>
+                    </p>
+                    <p *ngIf="!showLess2" class="paragraph-text ">{{data.abt_paragraph}}
 
+                    </p>
+                </div>
+                <button class="btn-sm  bt mt-1 mb-3" (click)="showText_2()">{{isReadMore_2? 'Read
+                    More':'Read
+                    Less'}}</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- team memeber -->
-<div class="team-member mt-3 mx-auto">
-    <div class="container ">
-
-        <h1 class="header-text p-3">Team member of an Organization</h1>
-        <div class="col-12 mt-1 mb-1 pt-3 pb-3 ">
-            <div class="row ">
-                <div *ngFor="let data of memberData_1" class="col-lg-3 col-md-6 col-sm-6 ">
-                    <div class="col mb-3">
-                        <div class="card">
-                            <img [src]="data.image" class="responsive p-5" alt="...">
-
-                            <h5 class="text-center mb-3">{{data.mem_title}}</h5>
-                            <h6 class="deg text-center">{{data.deg_title}}</h6>
-                        </div>
-
-                    </div>
+<!-- Board of Director -->
+<div class="container-fluid my-5">
+    <h1 class="header-text text-center pb-3"> Board of Directors </h1>
+    <p-carousel [value]="product" [numVisible]="3" [numScroll]="3" [circular]="false"
+        [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+            <div class="product-item ms-5">
+                <div>
+                    <img [src]="product.image" alt="" class="d-block ms-2 w-75">
+                </div>
+                <div>
+                    <h4 class="text-center me-5  text-uppercase theme-color mt-3">{{product.title}}</h4>
+                    <h6 class="text-center me-5  text-uppercase">{{product.position}}</h6>
                 </div>
             </div>
-            <div class="row ">
-                <div *ngFor="let data of memberData_2" class="col-lg-3 col-md-6 col-sm-6 ">
-                    <div class="col">
-                        <div class="card">
-                            <img [src]="data.image" class="responsive p-5" alt="...">
+        </ng-template>
+    </p-carousel>
+</div>
 
-                            <h5 class="text-center mb-3">{{data.mem_title}}</h5>
-                            <h6 class="deg text-center">{{data.deg_title}}</h6>
-                        </div>
-
-                    </div>
+<!-- Value & Object -->
+<div class="container-fluid my-5 bg-light p-3 value">
+    <div class="row ">
+        <h1 class=" header-text text-center mb-3">Value & Objective</h1>
+        <div *ngFor="let data of valueData" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-center p-4 mb-5 shadow">
+                <img [src]="data.val_imag" height="40px" class="mx-auto mt-4 color-white" />
+                <div class="card-body">
+                    <h5 class="theme-color text-uppercase">{{data.val_subtitle}}</h5>
+                    <p class=" paragraph-text mt-3">{{data.val_para}}</p>
                 </div>
             </div>
-
         </div>
+    </div>
+</div>
 
+
+<!-- Team Organization -->
+<div class="container-fluid background p-5 mt-5">
+    <h1 class="header-text text-center mb-3">Team member of an organization</h1>
+    <div class="row  mb-3">
+        <div *ngFor='let data of teamMember' class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <div>
+                <img [src]="data.team_img">
+                <h3 class="subtitle-text mt-1">{{data.team_title}}</h3>
+                <p class="mb-3">{{data.team_subt}}</p>
+            </div>
+        </div>
+    </div>
+    <div class=" row ">
+        <div *ngFor='let data of teamMember1' class="col-lg-3 col-md-6 col-sm-12 text-center ">
+            <div>
+                <img [src]="data.team_img1">
+                <h3 class="subtitle-text mt-1">{{data.team_title1}}</h3>
+                <p class="mb-3">{{data.team_subt1}}</p>
+            </div>
+        </div>
     </div>
 </div>

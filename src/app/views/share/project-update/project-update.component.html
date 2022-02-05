@@ -1,0 +1,97 @@
+<!-- progress at glance -->
+<div class="project-update background">
+    <div class="container pt-3 pb-5">
+        <h1 class="theme-color pb-2">Progress at a Glance</h1>
+
+        <div class="row mx-auto p-4 shadow" style="background: #ef4e58">
+
+            <div class="col-lg-3 p-3 text-center">
+                <p class="fs-2 text-white">{{farmerMemberCount}}</p>
+                <p class="fw-bold text-white fs-5">No of Farmers</p>
+
+            </div>
+            <div class="col-lg-3 p-3 text-center">
+                <p class="fs-2" style="color: yellow;"> {{dc3Count}}</p>
+                <p class="fw-bold text-white fs-5">No of DC3</p>
+            </div>
+            <div class="col-lg-3 p-3 text-center">
+                <p class="fs-2 text-white">{{productCount}}</p>
+                <p class="fw-bold text-white fs-5">No of Product Line</p>
+            </div>
+            <div class="col-lg-3 p-3 text-center">
+                <p class="fs-2" style="color: yellow;">{{villageCount}}</p>
+                <p class=" fw-bold text-white fs-5">No Of Villages</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Crops Production -->
+<div class="chart" style="background: whitesmoke;">
+
+    <div class="container pt-3 ">
+        <h1 class="header-text">Crop Production</h1>
+        <h4 class="mt-3  text-center">Production(Lakh MT)</h4>
+        <div class="row">
+            <div class="col-9 mb-5 mx-auto">
+
+                <div id="divChart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+<!-- bottom -->
+<div class="bottom-sec background mx-auto ">
+    <div class="container-fluid p-4">
+        <div class="row pt-3">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <img src="/assets/project update/procurement.png" alt="procurement">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9">
+                <h2 class="subtitle-text">Procurement</h2>
+                <p class="paragraph-text mt-2 text-justify">{{procurement_para}}</p>
+
+            </div>
+
+        </div>
+
+        <div class="row pt-3">
+            <div class="col-lg-9 col-md-9 col-sm-9 mt-2">
+                <h2 class="subtitle-text">member enrollment</h2>
+                <p class="paragraph-text mt-2 text-justify">{{member_para}}</p>
+
+
+            </div>
+            <div class="col-lg-3  col-md-3 col-sm-3">
+                <img src="/assets/project update/Member-Enrollment.png" alt="member-enrollment">
+            </div>
+
+        </div>
+
+        <div class="row pt-3">
+            <div class="col-lg-3  col-md-3 col-sm-3">
+                <img src="/assets/project update/prod-and-services.png" alt="product & services">
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 mb-3">
+                <h2 class="subtitle-text">Process and Services </h2>
+                <p class=" mt-2 text-justify fw-bold">The Producer Company will provide following processes and
+                    services to its members:</p>
+                <p class="paragraph-text"> 1. Capacity Building of the Members</p>
+                <p class="paragraph-text"> 2. Setting up of Procurement Centers - (D3C)</p>
+                <p class="paragraph-text">3. Setting up Warehouse and Processing Plant</p>
+                <p class="paragraph-text">4. Producer Company Operations</p>
+                <p class="paragraph-text">5. Marketing Linkage</p>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,110 +1,116 @@
 <!-- Engage with us -->
-
 <div class="engage-with-us">
-    <div class="container-fluid">
-        <div class="background-img">
-            <div class="row">
-                <div class="col-6">
-                    <h6>Think outside the box</h6>
-                    <h4>Evolve Your Career</h4>
-                    <p class="paragraph-text" style="color: #ef4e58;">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit.<br> Eget vitae
-                        egestas sed posuere
-                        lorem.
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mt-5">
+                <h3 class=" text-white">Think outside the box</h3>
+                <h1 class=" text-white">Evolve Your Career</h1>
+                <div [ngClass]="{'limitTextHeight': isBox}">
+                    <p *ngIf="showLess" class="paragraph-text text-white">
+                        {{engage_para| slice:0:200 }}
+                        <span *ngIf="engage_para.length>100">...</span>
                     </p>
-                    <button class="btn-sm bt">Leran More</button>
+                    <p *ngIf="!showLess" class="paragraph-text text-white">
+                        {{engage_para}}
+                    </p>
                 </div>
-                <div class="col-6 ">
-                    <img src="/assets/engage-wth-us/1327679_Wallpaper2 1.png" alt="">
-                </div>
+                <button class="btn-sm bt mb-2" type="button" (click)="showText()">
+                    {{ isBox ? 'Read More': 'Read Less' }}
+                </button>
 
             </div>
-            <div class="container info ">
-                <div class="row mx-auto ">
+            <div class="col-6 p-0 ">
+                <img class="d-block w-100  images" src="/assets/engage-wth-us/1327679_Wallpaper2 1.png" alt="">
+            </div>
 
-
-                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2 ">
-
-                        <input type="text" placeholder="search">
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
-                        <select name="All Ctegories" class="engage" id="category" form="categoryform">
-                            <option value="all-categories ">Select all categories</option>
-                            <option value="all-categories"></option>
-                            <option value="all-categories"></option>
-                            <option value="all-categories"></option>
-                        </select>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
-                        <select name="location" class="engage" id="location" form="locationform">
-                            <option value="all-location">Select location</option>
-                            <option value="all-location"></option>
-                            <option value="all-location"></option>
-                            <option value="all-location"></option>
-                            <option value="all-location"></option>
-
-                        </select>
-                    </div>
-                    <div class="col-3 mt-2">
-                        <button class="btn-sm bt" id="btn-1">Find Job</button>
-                    </div>
+        </div>
+        <div class="container p-2 shadow background">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-9 my-1">
+                    <input type="text" placeholder=" search" class="p-2 d-block w-100  rounded">
                 </div>
 
+                <div class="col-lg-2 col-md-4  col-sm-9 my-1">
+                    <select name="All Ctegories" class="d-block w-100 p-2 rounded " id="category" form="categoryform">
+                        <option value="all-categories ">Select all categories</option>
+                        <option value="all-categories"></option>
+                        <option value="all-categories"></option>
+                        <option value="all-categories"></option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-9 my-1">
+                    <select name="location" class="d-block w-100 p-2 rounded " id="location" form="locationform">
+                        <option value="all-location">Select location</option>
+                        <option value="all-location"></option>
+                        <option value="all-location"></option>
+                        <option value="all-location"></option>
+                        <option value="all-location"></option>
+
+                    </select>
+                </div>
+                <div class="col-lg-2 col-sm-9 my-1">
+                    <button class="btn-sm bt mx-auto" id="btn-1">Find Job</button>
+                </div>
             </div>
+
         </div>
     </div>
+
 </div>
 
 <!-- Internship -->
-<div class="internship">
+<div class="internship mt-5">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-
                 <div class="box">
-                    <div class="col-lg-4 col-md-6 col-sm-6 pt-3 offset-2">
-                        <h4 class="mt-5 mb-3">Learn</h4>
-                        <h5>How to apply for internhip for program</h5>
-                        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue mollis
-                            convallis ipsu risus
-                            etiam sit ac. Consectetur<br> laoreet mauris condimentum lorem enim arcu scelerisque quis
-                            nulla.
-                        </p>
-                        <button class="btn-sm bt">Learn More</button>
+                    <div class="col-lg-6 col-md-9 col-sm-12 pt-2 ">
+                        <h1 class="mt-5 mb-1 ms-5  theme-color">Learn</h1>
+                        <h4 class=" ms-5 subtitle-text">How to apply for internhip for program</h4>
+                        <div [ngClass]="{'limitTextHeight': isCarrer}">
+                            <p *ngIf="showLess1" class="paragraph-text  ms-5 theme-color">
+                                {{internhip_para | slice:0:250}}
+                                <span *ngIf="internhip_para.length>250">...</span>
+                            </p>
+                            <p *ngIf="!showLess1" class="paragraph-text  ms-5 theme-color">
+                                {{internhip_para}}
+
+                            </p>
+                        </div>
+                        <button class="btn-sm bt  ms-5 mb-5" type="button" (click)="showText1()">
+                            {{ isCarrer ? 'Read More': 'Read Less' }}
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mx-auto">
-            <div class="why-prg">
-                <div class="col-lg-6 col-md-9 col-sm-12 mx-auto mt-3">
-                    <h3 class="subtitle-text">Why internship program?</h3>
-                    <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit
-                        adipiscing luctus est, proin
-                        pellentesque facilisi ullamcorper. Vestibulum lorem amet et, quam pharetra cursus.</p>
-                </div>
+        <div class="row mx-auto mb-2 p-2 background ">
+            <div class="col-lg-6 col-md-9 col-sm-12 mx-auto mt-2">
+                <h2 class="theme-color">Why internship program?</h2>
+                <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hendrerit
+                    adipiscing luctus est, proin
+                    pellentesque facilisi ullamcorper. Vestibulum lorem amet et, quam pharetra cursus.</p>
             </div>
         </div>
     </div>
 </div>
 
 <!-- apply form -->
-<div class="form mb-3 bg-light">
+<div class="form mb-5 background">
     <div class="container-fluid">
 
-        <div class="row">
-            <div class="col-12 mt-3">
-                <h3 class="subtitle-text">Enter Your Name here</h3>
+        <div class="row mx-auto">
+            <div class="col-12 mt-2">
+                <h2 class="theme-color mx-auto">Enter Your Name here</h2>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-9 mt-2 ">
-                <input type="text" placeholder="Enter your name here..">
+            <div class="col-lg-4 col-md-4 col-sm-9 mt-2">
+                <input class="p-2 border rounded " type="text" placeholder="Enter your name here..">
 
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-9 mt-2">
-                <select name="education" class="apply-form" id="education" form="educationform">
+                <select name="education" class=" p-2 border rounded " id="education" form="educationform">
                     <option value="Education">Educational Qualification</option>
                     <option value="Education"></option>
                     <option value="Education"></option>
@@ -113,7 +119,7 @@
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-9 mt-2">
-                <select name="city" class="apply-form" id="city" form="cityform">
+                <select name="city" class=" p-2 border rounded " id="city" form="cityform">
                     <option value="city ">City</option>
                     <option value="city"></option>
                     <option value="city"></option>
@@ -123,24 +129,24 @@
 
         </div>
 
-        <div class="row">
+        <div class="row mx-auto">
             <div class="col-lg-4 col-md-4 col-sm-9  mt-2 ">
-                <input type="email" placeholder="E-mail">
+                <input class="p-2 border rounded " type="email" placeholder="E-mail">
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-9 mt-2">
-                <select name="mobile" class="apply-form" id="mobile" form="mobileform">
+                <select name="mobile" class=" p-2 border rounded " id="mobile" form="mobileform">
                     <option value="number ">+91</option>
                     <option value="number"></option>
                     <option value="number"></option>
                     <option value="number"></option>
 
                 </select>
-                <input type="number" class="apply-form" id="number" placeholder="xxxx-xxxx">
+                <input type="number" class=" p-2 border rounded" id="number" placeholder="xxxx-xxxx">
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-9 mt-2">
-                <select name="apply" class="apply-form" id="apply" form="applyform">
+                <select name="apply" class=" p-2 border rounded " id="apply" form="applyform">
                     <option value="apply ">applied for</option>
                     <option value="apply"></option>
                     <option value="apply"></option>
@@ -150,9 +156,9 @@
 
         </div>
 
-        <div class="row ">
-            <div class="col-lg-3 col-md-3 col-sm-3">
-                <button class="btn-sm bt mt-2 mb-3 ">Apply Now</button>
+        <div class="row mx-auto">
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <button class="btn-sm  bt my-2 ">Apply Now</button>
             </div>
         </div>
 
@@ -162,131 +168,188 @@
 <!-- Tender search -->
 <div class="tender-search">
     <div class="container-fluid">
-        <div class="row m-3 ">
-            <h3 class="subtitle-text">Tender Search</h3>
-            <div class="col-3">
-                <select name="apply" class="tender" id="tender-type" form="tenderform">
-                    <option value="tender-type ">Tender Type</option>
+        <div class="row">
+
+            <div class="col-lg-2 col-md-6 col-sm-12 ">
+                <h2 class="theme-color">Tender Search</h2>
+                <select name="apply" class="p-2 d-block w-100 rounded option-bg" id="tender-type" form="tenderform">
+                    <option value="tender-type">Tender Type</option>
                     <option value="tender"></option>
                 </select>
-                <div class="col-3 mt-3 mb-2">
-                    <select name="apply" class="tender" id="field" form="tenderform">
+                <div class="mt-2 mb-2">
+                    <select name="apply" class="p-2 d-block w-100 rounded option-bg" id="field" form="tenderform">
                         <option value="field of experties">Field of experties</option>
                         <option value="tender"></option>
                     </select>
                 </div>
-                <div class="col-3 mt-3 mb-2">
-                    <select name="apply" class="tender" id="region" form="tenderform">
+                <div class="mt-2 mb-2">
+                    <select name="apply" class="p-2 d-block w-100 rounded option-bg" id="region" form="tenderform">
                         <option value="apply ">applied for</option>
                         <option value="tender"></option>
                     </select>
                 </div>
-                <div class="col-3 mt-3 mb-2">
-                    <select name="apply" class="tender" id="region" form="tenderform">
+                <div class=" mt-2 mb-2">
+                    <select name="apply" class="p-2 d-block w-100  rounded option-bg" id="region" form="tenderform">
                         <option value="region">Region</option>
                         <option value="tender"></option>
                     </select>
                 </div>
-                <div class="col-3 mt-3 mb-2">
-                    <select name="apply" class="tender" id="keyward" form="tenderform">
+                <div class="col-sm-12 mt-2 mb-2">
+                    <select name="apply" class="p-2 d-block w-100 rounded option-bg" id="keyward" form="tenderform">
                         <option value="keyward">Keyward</option>
                         <option value="tender"></option>
                     </select>
                 </div>
 
-                <div class="row mb-3">
+                <div class="row mb-2">
                     <h5 class="mt-2">Capture Date</h5>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 ">
-                        <select name="apply" class="tender" id="to" form="applyform">
+                    <div class="col-lg-6 col-md-6 col-sm-6 ">
+                        <select name="apply" class="p-2 d-block w-100 mb-2  rounded option-bg" id="to" form="applyform">
                             <option value="to">To</option>
                         </select>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 ">
-                        <select name="apply" class="tender" id="from" form="applyform">
+                    <div class="col-lg-6 col-md-6 col-sm-6 ">
+                        <select name="apply" class="p-2  d-block w-100 rounded option-bg" id="from" form="applyform">
                             <option value="from">From</option>
                         </select>
                     </div>
 
                 </div>
 
-                <div class="col-lg-6 col-md-9 col-sm-9 mb-3">
-                    <button class="btn-sm bt">Search Now</button>
+                <div class="col-md-12 col-sm-12 mb-2">
+                    <button class="btn-sm bt mb-2">Search</button>
                 </div>
 
             </div>
 
-            <div class="col-9 tender-rt mt-3">
-                <div class="t_bg">
-
-                    <div class="col-lg-9 col-md-12 col-sm-12">
-                        <h1 class="header-text mb-3">List, Search and With Tenders</h1>
-                        <p class="paragraph-text" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Massa egestas
-                            laoreet massa
-                            duis
-                            aliquam.</p>
-                        <p class="paragraph-text" style="color: #fff;">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Massa egestas
-                            laoreet massa duis
-                            aliquam.</p>
+            <div class="col-lg-9 col-md-12 my-5">
+                <div class=" d-block w-100 p-5 tender">
+                    <div class="col-lg-9 col-md-12 col-sm-12 ">
+                        <h1 class="title header-text">List, Search and With Tenders</h1>
+                        <div *ngFor='let data of tenderData'>
+                            <ul class="ms-2 ">
+                                <li class="text-white fs-5">{{data.tender_List}}</li>
+                                <li class="text-white fs-5">{{data.tender_List}}</li>
+                                <li class="text-white fs-5">{{data.tender_List}}</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                        <div class="col-lg-2 col-md-2 col-sm-2  bg-white text-center p-2 shadow mx-2 mb-2  rounded">
                             <a href="">
-                                <h4>Lorem Ipsum</h4>
+                                <h4 class="theme-color ">Lorem Ipsum</h4>
                             </a>
                             <a href="">
-                                <h6>Lorem Ipsum</h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 ">
-                            <a href="">
-                                <h4>Lorem Ipsum</h4>
-                            </a>
-                            <a href="">
-                                <h6>Lorem Ipsum</h6>
+                                <h6 class="paragraph-text">Lorem Ipsum</h6>
                             </a>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3 ">
+                        <div class="col-lg-2 col-md-2 col-sm-2 bg-white text-center p-2 shadow mx-2 mb-2  rounded ">
                             <a href="">
-                                <h4>Lorem Ipsum</h4>
+                                <h4 class="theme-color"> Lorem Ipsum</h4>
                             </a>
                             <a href="">
-                                <h6>Lorem Ipsum</h6>
+                                <h6 class="paragraph-text">Lorem Ipsum</h6>
                             </a>
                         </div>
-
-
-
+                        <div class="col-lg-2 col-md-2 col-sm-2  bg-white text-center p-2 shadow mx-2 mb-2  rounded ">
+                            <a href="">
+                                <h4 class="theme-color">Lorem Ipsum</h4>
+                            </a>
+                            <a href="">
+                                <h6 class="paragraph-text">Lorem Ipsum</h6>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
-
-
             </div>
-
-
         </div>
     </div>
 </div>
 
 <!-- partnership -->
-<div class="partnership">
-    <div class="container-fluid">
-        <div class="row">
 
-            <div *ngFor="let data of partnershipData" class="col-lg-4 col-md-4 col-sm-3 mx-auto">
-                <div class="col">
-                    <div class="card">
-                        <h3 class="mx-auto mt-3 subtitle-text">{{data.card_title}}</h3>
-                        <img class="mx-auto" [src]="data.image" alt="...">
-                        <p class="paragraph-text p-2 text-center">{{data.card_para}}</p>
-                    </div>
-                    <button class="btn-sm bt mt-3 mx-auto">Explore Now</button>
+<div class="partnership background">
+    <h1 class="header-text text-center py-2 "> Our Partners </h1>
+    <p-carousel [value]="partner" [numVisible]="2" [numScroll]="2" [circular]="false"
+        [responsiveOptions]="responsiveOptions">
+        <ng-template let-partner pTemplate="item">
+            <div class="partner-item ms-5">
+                <div>
+                    <img [src]="partner.image" alt="" class="d-block ms-2 w-75">
                 </div>
+                <div>
+                    <h4 class="text-center me-5  text-uppercase theme-color mt-2">{{partner.title}}</h4>
+                    <h6 class="text-center me-5  text-uppercase">{{partner.position}}</h6>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+
+    <div class="container-fluid p-5">
+        <div class="row">
+            <div *ngFor="let data of partnershipData" class="col-lg-6 col-md-12 col-sm-12">
+                <div class=" text-center">
+                    <div class="card  shadow p-2">
+                        <h2 class="theme-color pt-5 text-center">{{data.card_title}}</h2>
+                        <img [src]="data.image" class="w-50 mx-auto" alt="...">
+                        <h5 class="paragraph-text p-2 text-center">{{data.card_para}}</h5>
+                    </div>
+                    <button type="button" class="btn bt mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@mdo">Connect with us</button>
+                </div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Fill your details here..</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-2">
+                                        <label for="recipient-name" class="col-form-label">Enter your
+                                            Name
+                                            here</label>
+                                        <input type="text" class="form-control" id="recipient-name"
+                                            placeholder="Full Name">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="recipient-name" class="col-form-label">Enter your E-mail
+                                            address
+                                        </label>
+                                        <input type="text" class="form-control" id="recipient-name"
+                                            placeholder="E-mail address">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="recipient-name" class="me-auto col-form-label ">Enter your
+                                            Mobile
+                                            Number
+                                        </label>
+                                        <input type="number" class="form-control" id="recipient-name"
+                                            placeholder="Mobile Number">
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="message-text" class="col-form-label">Topic</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="p-1 shadow btn-danger" data-bs-dismiss="modal"
+                                    style="border:none;">Close</button>
+                                <button type="button" class="p-1 shadow  btn-success" style="border:none;">Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

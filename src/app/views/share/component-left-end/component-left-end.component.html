@@ -1,0 +1,29 @@
+<p>component-left-end works!</p>
+<div class="container-fluid mb-5">
+  <div class="row">
+      <div class="col-lg-6 col-sm-12 ">
+          <h1 class="header-text">{{pageData?.title}}</h1>
+          <img [src]="pageData?.media" class="d-block w-100 shadow" alt="">
+      </div>
+      <div class="col-lg-6 col-sm-12 pt-6 ">
+          <p class="fw-bold text-justify">{{pageData?.description}}</p>
+
+
+          <div [ngClass]="{'limitTextHeight':isReadMore}">
+
+              <div *ngIf="!showLess" class="paragraph-text">
+                  <!-- <ul *ngFor="let data of aboutPara"> -->
+                      <li>{{pageData?.description}}</li>
+                  <!-- </ul> -->
+              </div>
+              <div *ngIf="showLess" class="paragraph-text">
+                  <!-- <ul *ngFor="let data of tempaboutPara"> -->
+                      <li>{{pageData?.description}}</li>
+                  <!-- </ul> -->
+              </div>
+          </div>
+          <button class=" btn-sm  bt" type='button' (click)='showText()'>{{isReadMore?'Read More':'Read
+              Less'}}</button>
+      </div>
+  </div>
+</div>

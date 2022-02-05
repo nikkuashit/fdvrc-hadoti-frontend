@@ -1,21 +1,90 @@
-<div class="container mb-3">
-    <div class="row ">
-        <div *ngFor="let data of glanceData" class="col-lg-3 col-md-3 col-sm-6">
+<div class="container">
+    <div class="row">
+        <div *ngFor="let data of glanceData1" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-center mx-auto shadow">
+                <img [src]="data.glaimg1" class="card-img-top mx-auto" />
+                <div class="card-body">
+                    <div [ngClass]="{'limitTextHeight': isReadMore}">
+                        <h5 class="card-title subtitle-text">{{data.glatiltle1}}</h5>
+                        <p *ngIf="showLess" class="card-text paragraph-text mt-3">{{data.glapara1 | slice:0:80 }}
+                            <span *ngIf="data.glapara1.length>150">
+                                ...
+                            </span>
+                        </p>
+                        <p *ngIf="!showLess" class="card-text paragraph-text mt-3">{{data.glapara1 }}
 
-            <div class="col">
-                <div class="card mt-3">
-
-                    <img [src]="data.image" class="card-img-top" />
-
-                    <div class="card-body">
-                        <h3 class="card-title text-center subtitle-text">{{data.title}}</h3>
-                        <p class="card-text text-center paragraph-text">{{data.discription}}</p>
-                        <a href="#">
-                            <h6>Read More...</h6>
-                        </a>
+                        </p>
                     </div>
+                    <span class=" theme-color" (click)="showText()"> {{ isReadMore ? 'Read More': 'Read
+                        Less' }} </span>
                 </div>
             </div>
         </div>
+
+        <div *ngFor="let data of glanceData2" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-center mx-auto shadow">
+                <img [src]="data.glaimg2" class="card-img-top mx-auto" />
+                <div class="card-body">
+                    <div [ngClass]="{'limitTextHeight': isReadMore}">
+                        <h5 class="card-title subtitle-text">{{data.glatiltle2}}</h5>
+                        <p *ngIf="showLess1" class="card-text paragraph-text mt-3">{{data.glapara2 | slice:0:80 }}
+                            <span *ngIf="data.glapara2.length>150">
+                                ...
+                            </span>
+                        </p>
+                        <p *ngIf="!showLess1" class="card-text paragraph-text mt-3">{{data.glapara2 }}
+
+                        </p>
+                    </div>
+                    <span class=" theme-color" (click)="showText1()"> {{ isReadMore1 ? 'Read More': 'Read
+                        Less' }} </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div *ngFor="let data of glanceData3" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-center mx-auto shadow">
+                <img [src]="data.glaimg3" class="card-img-top mx-auto" />
+                <div class="card-body">
+                    <div [ngClass]="{'limitTextHeight': isReadMore}">
+                        <h5 class="card-title subtitle-text">{{data.glatiltle3}}</h5>
+                        <p *ngIf="showLess2" class="card-text paragraph-text mt-3">{{data.glapara3 | slice:0:80 }}
+                            <span *ngIf="data.glapara3.length>150">
+                                ...
+                            </span>
+                        </p>
+                        <p *ngIf="!showLess2" class="card-text paragraph-text mt-3">{{data.glapara3 }}
+
+                        </p>
+                    </div>
+                    <span class=" theme-color" (click)="showText2()"> {{ isReadMore1 ? 'Read More': 'Read
+                        Less' }} </span>
+                </div>
+            </div>
+        </div>
+
+        <div *ngFor="let data of glanceData4" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-center mx-auto shadow">
+                <img [src]="data.glaimg4" class="card-img-top mx-auto" />
+                <div class="card-body">
+                    <div [ngClass]="{'limitTextHeight': isReadMore}">
+                        <h5 class="card-title subtitle-text">{{data.glatiltle4}}</h5>
+                        <p *ngIf="showLess3" class="card-text paragraph-text mt-3">{{data.glapara4 | slice:0:80 }}
+                            <span *ngIf="data.glapara4.length>150">
+                                ...
+                            </span>
+                        </p>
+                        <p *ngIf="!showLess3" class="card-text paragraph-text mt-3">{{data.glapara4 }}
+
+                        </p>
+                    </div>
+                    <span class=" theme-color" (click)="showText3()"> {{ isReadMore1 ? 'Read More': 'Read
+                        Less' }} </span>
+                </div>
+            </div>
+        </div>
+
     </div>
+
 </div>
