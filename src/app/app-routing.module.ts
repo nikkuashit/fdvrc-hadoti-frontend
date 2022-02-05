@@ -11,6 +11,7 @@ import { LandingPageComponent } from '../app/views/core/landing-page/landing-pag
 
 const routes: Routes = [
 	{ path: '', component: LandingPageComponent },
+  { path: 'home', component: LandingPageComponent },
 	{ path: 'engage-with-us', component: EngageWithUsComponent },
 	{ path: 'about', component: AboutComponent },
 	{ path: 'project-update', component: ProjectUpdateComponent },

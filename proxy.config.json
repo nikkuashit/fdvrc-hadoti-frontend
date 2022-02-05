@@ -1,0 +1,17 @@
+{
+    "/menu": {
+        "target": "http://hadoti.curiositydesk.com/api/api/core/menu/",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+
+    },
+    "/api/*": {
+      "target": "http://hadoti.curiositydesk.com/",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true
+
+  }
+
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CoreService } from 'src/app/services/core.service';
 
 @Component({
 	selector: 'app-header',
@@ -6,15 +7,50 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './header.component.scss' ]
 })
 export class HeaderComponent implements OnInit {
+  companyData: any;
 	ToggleNavBar() {
 		let element: HTMLElement = document.getElementsByClassName('navbar-toggler')[0] as HTMLElement;
 		if (element.getAttribute('aria-expanded') == 'true') {
 			element.click();
 		}
 	}
-	constructor() {}
 
-	ngOnInit(): void {}
+  menuList : any = [];
+
+	constructor(public coreService: CoreService) {
+    this.getMenuList();
+    this.getCompanyProfile();
+  }
+
+	ngOnInit(): void {
+
+  }
+
+  getCompanyProfile(){
+    this.coreService.getCompanyProfile().subscribe(
+      res => {
+        let data: any = res;
+        this.companyData = data[0];
+        console.log(res);
+        console.log('company test ',this.companyData);
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
+  getMenuList(){
+    this.coreService.getMenuList().subscribe(
+      res => {
+        this.menuList = res;
+        console.log('menuListtest ',this.menuList);
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
 
 	navigatePage(test = null) {}
 }

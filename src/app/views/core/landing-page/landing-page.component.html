@@ -3,5 +3,35 @@
 <app-project-glance></app-project-glance>
 <app-our-product></app-our-product>
 <app-known-abt-us></app-known-abt-us>
+
+
 <!-- <app-i-news></app-i-news>
 <app-testimonial></app-testimonial> -->
+
+
+<!-- Card center -->
+<div *ngFor="let core of coreDetailData;">
+  <div *ngFor="let sectionData of core.core_page">
+
+    <app-hero-img ></app-hero-img>
+
+    <ng-container *ngIf="sectionData.component_type == 'left card' ">
+      <app-component-left-end></app-component-left-end>
+    </ng-container>
+
+    <ng-container *ngIf="sectionData.component_type == 'center card' ">
+      <div *ngFor="let section of sectionData.component_data">
+        <app-component-center-end [item]="section" class="col-lg-3 col-md-6 col-sm-12"></app-component-center-end>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="sectionData.component_type == 'right card' ">
+      <app-component-right-end></app-component-right-end>
+    </ng-container>
+  </div>
+</div>
+
+
+
+
+

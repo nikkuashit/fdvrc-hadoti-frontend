@@ -26,7 +26,7 @@ a:hover {
 	color: #ef4e58;
 }
 .navbar-nav {
-	margin-left: -70px;
+	// margin-left: -70px;
 }
 .active {
 	color: #ef4e58 !important;
@@ -98,4 +98,7 @@ a:hover {
 	.navbar-light .navbar-toggler {
 		margin-right: 0px !important;
 	}
+}
+.filter-green{
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }

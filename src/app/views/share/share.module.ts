@@ -21,6 +21,9 @@ import { ProjectUpdateComponent } from './project-update/project-update.componen
 import { AccordionModule } from 'primeng/accordion';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
+import { ComponentCenterEndComponent } from './component-center-end/component-center-end.component';
+import { ComponentLeftEndComponent } from './component-left-end/component-left-end.component';
+import { ComponentRightEndComponent } from './component-right-end/component-right-end.component';
 
 @NgModule({
 	declarations: [
@@ -39,7 +42,10 @@ import { ButtonModule } from 'primeng/button';
 		MemberComponent,
 		AboutComponent,
 		ProjectUpdateComponent,
-		EngageWithUsComponent
+		EngageWithUsComponent,
+  ComponentCenterEndComponent,
+  ComponentLeftEndComponent,
+  ComponentRightEndComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
@@ -58,7 +64,10 @@ import { ButtonModule } from 'primeng/button';
 		MemberComponent,
 		AboutComponent,
 		EngageWithUsComponent,
-		ProjectUpdateComponent
+		ProjectUpdateComponent,
+    ComponentCenterEndComponent,
+    ComponentLeftEndComponent,
+    ComponentRightEndComponent
 	]
 })
 export class ShareModule {}
