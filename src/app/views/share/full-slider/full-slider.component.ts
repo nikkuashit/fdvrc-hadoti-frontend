@@ -1,11 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-hero-img',
-  templateUrl: './hero-img.component.html',
-  styleUrls: ['./hero-img.component.scss']
+  selector: 'app-full-slider',
+  templateUrl: './full-slider.component.html',
+  styleUrls: ['./full-slider.component.scss']
 })
-export class HeroImgComponent implements OnInit {
+export class FullSliderComponent implements OnInit {
+
   @Input() item: any;
   products: any;
   responsiveOptions: any = [];
@@ -37,7 +38,7 @@ export class HeroImgComponent implements OnInit {
 
   ngOnInit(): void {
     this.products = this.item.component_data;
-    console.log('pageData slider', this.products)
+    console.log('pageData slider', this.products);
   }
 
 }
