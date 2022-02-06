@@ -1,26 +1,26 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-hero-img',
-  templateUrl: './hero-img.component.html',
-  styleUrls: ['./hero-img.component.scss']
+  selector: 'app-card-slider-square',
+  templateUrl: './card-slider-square.component.html',
+  styleUrls: ['./card-slider-square.component.scss']
 })
-export class HeroImgComponent implements OnInit {
+export class CardSliderSquareComponent implements OnInit {
+  responsiveOptions: any;
   @Input() item: any;
-  products: any;
-  responsiveOptions: any = [];
+  items: any;
 
   constructor() {
     this.responsiveOptions = [
 			{
 				breakpoint: '1920px',
-				numVisible: 1,
-				numScroll: 1
+				numVisible: 3,
+				numScroll: 3
 			},
 			{
 				breakpoint: '1200px',
-				numVisible: 1,
-				numScroll: 1
+				numVisible: 2,
+				numScroll: 2
 			},
 			{
 				breakpoint: '968px',
@@ -36,8 +36,8 @@ export class HeroImgComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.products = this.item.component_data;
-    console.log('pageData slider', this.products)
+    this.items = this.item;
+    console.log('pageData slider', this.items);
   }
 
 }

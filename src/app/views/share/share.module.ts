@@ -24,6 +24,9 @@ import { ButtonModule } from 'primeng/button';
 import { ComponentCenterEndComponent } from './component-center-end/component-center-end.component';
 import { ComponentLeftEndComponent } from './component-left-end/component-left-end.component';
 import { ComponentRightEndComponent } from './component-right-end/component-right-end.component';
+import { FullSliderComponent } from './full-slider/full-slider.component';
+import { InfoCardCenterComponent } from './info-card-center/info-card-center.component';
+import { CardSliderSquareComponent } from './card-slider-square/card-slider-square.component';
 
 @NgModule({
 	declarations: [
@@ -43,9 +46,12 @@ import { ComponentRightEndComponent } from './component-right-end/component-righ
 		AboutComponent,
 		ProjectUpdateComponent,
 		EngageWithUsComponent,
-  ComponentCenterEndComponent,
-  ComponentLeftEndComponent,
-  ComponentRightEndComponent
+    ComponentCenterEndComponent,
+    ComponentLeftEndComponent,
+    ComponentRightEndComponent,
+    FullSliderComponent,
+    InfoCardCenterComponent,
+    CardSliderSquareComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
@@ -67,7 +73,11 @@ import { ComponentRightEndComponent } from './component-right-end/component-righ
 		ProjectUpdateComponent,
     ComponentCenterEndComponent,
     ComponentLeftEndComponent,
-    ComponentRightEndComponent
+    ComponentRightEndComponent,
+    InfoCardCenterComponent,
+    CardSliderSquareComponent,
+    FullSliderComponent
+
 	]
 })
 export class ShareModule {}

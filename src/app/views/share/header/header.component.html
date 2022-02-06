@@ -19,17 +19,17 @@
 
                 <ul class="navbar-nav mb-2 mb-lg-0 mt-5" *ngFor="let menu of menuList">
                     <li class="nav-item dropdown ">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link" (click)="navigatePage(menu,'true')" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" *ngIf="menu?.page.length == 0">
                             {{menu?.title}}
                         </a>
-                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle " id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" *ngIf="menu?.page.length > 0">
                             {{menu?.title}}
                         </a>
                         <span *ngIf="menu.page.length" class="dropdown-menu mx-5 shadow " aria-labelledby="navbarDropdown">
-                          <li *ngFor="let menuItem of menu.page"><a class="dropdown-item " [routerLink]="['/about']"
-                                  (click)="ToggleNavBar()">{{menuItem?.fields?.title}}</a></li>
+                          <li *ngFor="let menuItem of menu.page"><a class="dropdown-item " [routerLink]="['/slug']"
+                                  (click)="navigatePage(menuItem,'false');ToggleNavBar()">{{menuItem?.fields?.title}}</a></li>
                           <li><hr class="dropdown-divider"></li>
                         </span>
                     </li>

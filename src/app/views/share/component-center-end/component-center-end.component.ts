@@ -16,7 +16,7 @@ export class ComponentCenterEndComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.pageData = this.item;
+    this.pageData = this.item.component_data;
     console.log('pageData', this.pageData)
   }
 

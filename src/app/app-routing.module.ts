@@ -8,9 +8,11 @@ import { ProductComponent } from './views/share/product/product.component';
 import { MemberComponent } from './views/share/member/member.component';
 import { ContactUsComponent } from './views/share/contact-us/contact-us.component';
 import { LandingPageComponent } from '../app/views/core/landing-page/landing-page.component';
+import { CoreDetailComponent } from './views/core/core-detail/core-detail.component';
 
 const routes: Routes = [
 	{ path: '', component: LandingPageComponent },
+  { path: ':id', component: CoreDetailComponent },
   { path: 'home', component: LandingPageComponent },
 	{ path: 'engage-with-us', component: EngageWithUsComponent },
 	{ path: 'about', component: AboutComponent },

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CoreService } from 'src/app/services/core.service';
 
 @Component({
@@ -17,7 +18,7 @@ export class HeaderComponent implements OnInit {
 
   menuList : any = [];
 
-	constructor(public coreService: CoreService) {
+	constructor(public coreService: CoreService, public router: Router) {
     this.getMenuList();
     this.getCompanyProfile();
   }
@@ -52,5 +53,14 @@ export class HeaderComponent implements OnInit {
     );
   }
 
-	navigatePage(test = null) {}
+
+  navigatePage(data: any, data2:any){
+    console.log(data);
+    if(data2){
+      this.router.navigate(['/'+data.pk]);
+    }else{
+      this.router.navigate(['/'+data.pk]);
+    }
+
+  }
 }

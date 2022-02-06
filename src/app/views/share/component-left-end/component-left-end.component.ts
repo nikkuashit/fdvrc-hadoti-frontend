@@ -14,8 +14,8 @@ export class ComponentLeftEndComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.pageData = this.item;
-    console.log('pageData', this.pageData)
+    this.pageData = this.item.component_data;
+    console.log('left card center', this.pageData)
   }
 
   showText() {

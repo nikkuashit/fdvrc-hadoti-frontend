@@ -1,4 +1,5 @@
-<div *ngFor="let core of coreDetailData;">
+<p>core-detail works!</p>
+<div *ngFor="let core of contentData;">
   <div *ngFor="let sectionData of core.core_page">
 
     <ng-container *ngIf="sectionData.component_type == 'slider'">
@@ -31,15 +32,9 @@
       <!-- </div> -->
     </ng-container>
 
+    <ng-container *ngIf="sectionData.component_type == 'contact' ">
+      <app-contact-us></app-contact-us>
+    </ng-container>
+
   </div>
 </div>
-
-<!-- <app-what-we-do></app-what-we-do> -->
-<!-- <app-project-glance></app-project-glance> -->
-<!-- <app-our-product></app-our-product> -->
-<!-- <app-known-abt-us></app-known-abt-us> -->
-
-
-
-
-

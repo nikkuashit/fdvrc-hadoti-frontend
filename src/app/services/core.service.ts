@@ -69,7 +69,8 @@ export class CoreService {
 
   /** Get Core page detail**/
   getCorePageDetail(data: any) {
-    return this.http.post(`${this.baseUrl}/api/core/core-page/`,data,).pipe(
+    console.log(data);
+    return this.http.get(`${this.baseUrl}/api/core/core-page/`+data).pipe(
         map((res) => {
             return res;
     }),catchError(this.handleError));
