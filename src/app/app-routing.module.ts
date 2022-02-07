@@ -8,6 +8,7 @@ import { ProductComponent } from './views/share/product/product.component';
 import { MemberComponent } from './views/share/member/member.component';
 import { ContactUsComponent } from './views/share/contact-us/contact-us.component';
 import { LandingPageComponent } from '../app/views/core/landing-page/landing-page.component';
+import { WhatWeDoComponent } from './views/share/what-we-do/what-we-do.component';
 
 const routes: Routes = [
 	{ path: '', component: LandingPageComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
 	{ path: 'media', component: MediaComponent },
 	{ path: 'product', component: ProductComponent },
 	{ path: 'member', component: MemberComponent },
-	{ path: 'contact-us', component: ContactUsComponent }
+	{ path: 'contact-us', component: ContactUsComponent },
+	{ path: 'who-we-are', component: WhatWeDoComponent }
 ];
 
 @NgModule({
