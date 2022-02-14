@@ -57,6 +57,7 @@ export class ProductComponent implements OnInit {
 		this.showLess = !this.showLess;
 		this.isReadMore = !this.isReadMore;
 	}
+
 	constructor() {}
 
 	ngOnInit(): void {}

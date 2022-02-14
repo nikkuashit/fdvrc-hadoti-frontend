@@ -8,13 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class EngageWithUsComponent implements OnInit {
 	internhip_para: string = 'Apply for the open internship positions at Hadoti MKPCL or drop your resume with us if you want to volunteer/work with us.';
 
-	engage_para: string = 'Lorem ipsum dolor sitamet, consectetur adipiscing elit.Eget vitaee gestas sed posuerelorem.Lorem ipsum dolor sit amet, consec teturadi piscingelit.Eget vitaeegestas sed posuere lorem.lorem.Lorem ipsum dolor sit amet, consecte turadipis cingelit.Eget vitaeegestas sed posuere lorem.';
-	showLess1 = true;
-	isCarrer = true;
-	showText1() {
-		this.showLess1 = !this.showLess1;
-		this.isCarrer = !this.isCarrer;
-	}
 	// patnership
 	partner: any = [
 		{ image: '/assets/engage-wth-us/NRLM_logo-HR.jpg' },
@@ -31,12 +24,8 @@ export class EngageWithUsComponent implements OnInit {
 		}
 	];
 	// tender
-	tenderData: any = [
-		{
-			tender_List:
-				'Lorem ipsum dolor sit amet, consectetura dipiscing elit. Massa egestaslaoreet massa duisaliquam.'
-		}
-	];
+	tenderList: any = 'Tender details would be updated here.';
+
 	responsiveOptions: any;
 	constructor() {
 		this.responsiveOptions = [

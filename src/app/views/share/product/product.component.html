@@ -29,9 +29,9 @@
                             <div class="card c-size mx-auto border border-danger background p-3 m-3 shadow ">
                                 <img class="card-img-top prod-img mx-auto" [src]="data.img" alt="product-Image">
                                 <div class="card-body bg-white">
-                                    <a href="">
-                                        <h5 class="card-title subtitle-text ">{{ data.title1}}</h5>
-                                    </a>
+
+                                    <h5 class="card-title subtitle-text ">{{ data.title1}}</h5>
+
 
                                 </div>
                             </div>
@@ -47,9 +47,9 @@
                             <div class="card c-size mx-auto border border-danger background p-3 m-3 shadow">
                                 <img class="card-img-top  prod-img mx-auto" [src]="data.img" alt="product-Image">
                                 <div class="card-body bg-white">
-                                    <a href="">
-                                        <h5 class="card-title subtitle-text ">{{ data.title1}}</h5>
-                                    </a>
+
+                                    <h5 class="card-title subtitle-text ">{{ data.title1}}</h5>
+
 
                                 </div>
                             </div>
@@ -74,25 +74,31 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-sm-12">
-                <div class="mb-1">
-                    <label for="exampleFormControlTextarea1" class="form-label"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enquire Here.."
-                        rows="8"></textarea>
-                </div>
-                <div class="mb-1">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" rows="3">
-                </div>
-                <div class="mb-1">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Mobile Number"
-                        rows="3">
-                </div>
-                <div class="mb-5">
-                    <label for="exampleFormControlInput1" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address"
-                        rows="3">
-                </div>
+                <form action="">
+                    <div class="mb-1">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enquire Here.."
+                            rows="8"></textarea>
+                    </div>
+                    <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name"
+                            rows="3">
+                    </div>
+                    <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Mobile Number" rows="3">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Email Address" rows="3">
+                    </div>
+                    <div class="mb-5">
+                        <button type="submit" class=" btn-sm  bt mb-3">Submit</button>
+                    </div>
+                </form>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 mt-3 mx-auto">
 

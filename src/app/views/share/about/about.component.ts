@@ -124,10 +124,10 @@ export class AboutComponent implements OnInit {
 	// board of director
 	product: any = [
 		{ image: '/assets/about_us/ReenaMalav.jpg', title: 'Reena Malav', position: 'Director' },
-		{ image: '/assets/about_us/LeelaBai.jpg', title: 'Leela Bai', position: 'Director' },
+		{ image: '/assets/about_us/favicon.svg', title: 'Leela Bai', position: 'Director' },
 		{ image: '/assets/about_us/RenuMeena.jpg', title: 'Renu Bai', position: 'Director' },
 		{ image: '/assets/about_us/RajeshBai.jpg', title: 'Rajesh Bai', position: 'Director' },
-		{ image: '/assets/about_us/Nirmala.jpg', title: 'Nirmala', position: 'Director' },
+		{ image: '/assets/about_us/favicon.svg', title: 'Nirmala', position: 'Director' },
 		{ image: '/assets/about_us/KrishanaKumaMali.jpg', title: 'Krishna kumari Mali ', position: 'Director' },
 		{ image: '/assets/about_us/MeenaKumari.jpg', title: 'Meena Bai', position: 'Director' },
 		{ image: '/assets/about_us/Avinash.jpg', title: 'Avinash Kumar Choudhary', position: 'Expert Director' },

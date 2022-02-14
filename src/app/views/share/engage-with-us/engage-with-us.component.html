@@ -123,8 +123,10 @@
     <div class="container text-center">
         <h4 class="theme-color">Upload your resume here</h4>
         <div class="col-12">
-            <input type="file" class="p-2  bg-white" id="exampleFormControlFile1" placeholder="">
-            <button class="btn-sm  bt m-2 ">Apply Now</button>
+            <form action="">
+                <input type="file" class="p-2  bg-white" id="exampleFormControlFile1" placeholder="">
+                <button class="btn-sm  bt m-2 ">Apply Now</button>
+            </form>
         </div>
 
     </div>
@@ -161,7 +163,7 @@
                 </div>
                 <div class="col-sm-12 mt-2 mb-2">
                     <select name="apply" class="p-2 d-block w-100 rounded option-bg" id="keyward" form="tenderform">
-                        <option value="keyward">Keyward</option>
+                        <option value="keyward">Keyword</option>
                         <option value="tender"></option>
                     </select>
                 </div>
@@ -192,41 +194,23 @@
             <div class="col-lg-9 col-md-12 my-5">
                 <div class=" d-block w-100 p-5 tender">
                     <div class="col-lg-9 col-md-12 col-sm-12 ">
-                        <h1 class="title header-text">Details of available tenders</h1>
-                        <div *ngFor='let data of tenderData'>
-                            <ul class="ms-2 ">
-                                <li class="text-white fs-5">{{data.tender_List}}</li>
-                                <li class="text-white fs-5">{{data.tender_List}}</li>
-                                <li class="text-white fs-5">{{data.tender_List}}</li>
-                            </ul>
-                        </div>
+                        <h1 class="title header-text">Details of available tenders
+
+                        </h1>
+                        <h4 class="text-white fs-5">{{tenderList}}</h4>
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-2 col-md-2 col-sm-2  bg-white text-center p-2 shadow mx-2 mb-2  rounded">
-                            <a href="">
-                                <h4 class="theme-color ">Lorem Ipsum</h4>
-                            </a>
-                            <a href="">
-                                <h6 class="paragraph-text">Lorem Ipsum</h6>
-                            </a>
+                        <div class="col-lg-2 col-md-2 col-sm-2">
+                            <ul class="ms-3">
+                                <li class="text-white ">Details 1</li>
+                                <li class="text-white ">Details 2</li>
+                                <li class="text-white ">Details 3</li>
+
+                            </ul>
+
                         </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 bg-white text-center p-2 shadow mx-2 mb-2  rounded ">
-                            <a href="">
-                                <h4 class="theme-color"> Lorem Ipsum</h4>
-                            </a>
-                            <a href="">
-                                <h6 class="paragraph-text">Lorem Ipsum</h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2  bg-white text-center p-2 shadow mx-2 mb-2  rounded ">
-                            <a href="">
-                                <h4 class="theme-color">Lorem Ipsum</h4>
-                            </a>
-                            <a href="">
-                                <h6 class="paragraph-text">Lorem Ipsum</h6>
-                            </a>
-                        </div>
+
                     </div>
 
                 </div>
