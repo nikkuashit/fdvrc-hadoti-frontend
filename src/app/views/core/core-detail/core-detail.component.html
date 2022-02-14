@@ -16,10 +16,6 @@
       <!-- </div> -->
     </ng-container>
 
-    <ng-container *ngIf="sectionData.component_type == 'right_card' ">
-      <app-component-right-end></app-component-right-end>
-    </ng-container>
-
     <ng-container *ngIf="sectionData.component_type == 'info_center'">
       <div *ngFor="let section of sectionData.component_data">
         <app-info-card-center [item]="section" ></app-info-card-center>

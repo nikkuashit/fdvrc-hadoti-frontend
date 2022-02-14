@@ -23,10 +23,14 @@ import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 import { ComponentCenterEndComponent } from './component-center-end/component-center-end.component';
 import { ComponentLeftEndComponent } from './component-left-end/component-left-end.component';
-import { ComponentRightEndComponent } from './component-right-end/component-right-end.component';
 import { FullSliderComponent } from './full-slider/full-slider.component';
 import { InfoCardCenterComponent } from './info-card-center/info-card-center.component';
 import { CardSliderSquareComponent } from './card-slider-square/card-slider-square.component';
+import { CardSliderCircleComponent } from './card-slider-circle/card-slider-circle.component';
+import { LeftToRightComponent } from './left-to-right/left-to-right.component';
+import { RightToLeftComponent } from './right-to-left/right-to-left.component';
+import { SquareCardHoverComponent } from './square-card-hover/square-card-hover.component';
+import { TeamMemberCardComponent } from './team-member-card/team-member-card.component';
 
 @NgModule({
 	declarations: [
@@ -48,10 +52,14 @@ import { CardSliderSquareComponent } from './card-slider-square/card-slider-squa
 		EngageWithUsComponent,
     ComponentCenterEndComponent,
     ComponentLeftEndComponent,
-    ComponentRightEndComponent,
     FullSliderComponent,
     InfoCardCenterComponent,
-    CardSliderSquareComponent
+    CardSliderSquareComponent,
+    CardSliderCircleComponent,
+    LeftToRightComponent,
+    RightToLeftComponent,
+    SquareCardHoverComponent,
+    TeamMemberCardComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
@@ -73,10 +81,14 @@ import { CardSliderSquareComponent } from './card-slider-square/card-slider-squa
 		ProjectUpdateComponent,
     ComponentCenterEndComponent,
     ComponentLeftEndComponent,
-    ComponentRightEndComponent,
     InfoCardCenterComponent,
     CardSliderSquareComponent,
-    FullSliderComponent
+    FullSliderComponent,
+    CardSliderCircleComponent,
+    LeftToRightComponent,
+    RightToLeftComponent,
+    SquareCardHoverComponent,
+    TeamMemberCardComponent
 
 	]
 })

@@ -1,0 +1,14 @@
+<div class="container-fluid my-5 bg-light p-3 value">
+  <div class="row ">
+      <h1 class=" header-text text-center mb-3">{{pageData?.title}}</h1>
+      <div *ngFor="let data of pageData.component_data" class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card text-center p-4 mb-5 shadow">
+              <img [src]="data.media" height="40px" class="mx-auto mt-4 color-white" />
+              <div class="card-body">
+                  <h5 class="theme-color text-uppercase">{{data?.title}}</h5>
+                  <p class=" paragraph-text mt-3">{{data?.description}}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
