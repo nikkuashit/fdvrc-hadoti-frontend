@@ -9,6 +9,7 @@ import { CoreService } from 'src/app/services/core.service';
 export class FooterComponent implements OnInit {
   socialMediaData: any;
   companyData: any;
+  menuList: any;
 
   constructor(public coreService: CoreService) { }
 
@@ -36,9 +37,8 @@ export class FooterComponent implements OnInit {
     this.coreService.getMenuListForFooter(true).subscribe(
       res => {
         let data: any = res;
-        this.socialMediaData = data[0];
-        console.log(res);
-        console.log('socialMediaData',this.socialMediaData);
+        this.menuList = data;
+        console.log('menuList footer',this.menuList);
       },
       error => {
         console.log(error);

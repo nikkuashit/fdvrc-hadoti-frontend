@@ -18,6 +18,13 @@ export class LandingPageComponent implements OnInit {
     this.coreService.getCorePage().subscribe(
       res => {
         let data: any = res;
+        if(data && data.length > 0){
+          data.forEach((element:any,i:any) => {
+            let tempData: any = element.core_page;
+            let newarr = tempData.sort((a:any, b:any) => a.position - b.position);
+            data[i].core_page_data = newarr;
+          });
+        }
         this.coreDetailData = data;
         console.log('coreDetailData',this.coreDetailData);
       },

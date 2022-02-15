@@ -14,6 +14,7 @@ export class CoreDetailComponent implements OnInit {
   constructor( public router: Router, public route: ActivatedRoute, public coreService: CoreService) {
   }
 
+
   ngOnInit(): void {
     this.params = this.route.snapshot.paramMap.get('id');
     console.log(this.params);
@@ -31,5 +32,8 @@ export class CoreDetailComponent implements OnInit {
     );
 
   }
+
+// add to function two numbers
+
 
 }

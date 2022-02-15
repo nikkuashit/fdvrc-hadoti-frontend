@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="logo">
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <a href="#"><img class="ms-3 mt-4" src="/assets/social_media_icons/Group.png" alt=""></a>
+                        <a href="#"><img class="ms-3 mt-4" [src]= "companyData?.footer_icon" alt=""></a>
                         <a href="https://fdrvc.org/mission-i/" target="_blank"><img class="logo_2 mt-4 me-4 float-end"
-                                src="/assets/social_media_icons/brand_logo_2.png" alt=""></a>
+                                [src]= "companyData?.footer_sub_image" alt=""></a>
                         <!-- <a href="https://fdrvc.org/mission-i/" target="_blank"><img class="logo_2 mt-4 me-4 float-end"
                                 src="/assets/brandlogo2.svg" alt=""></a> -->
                         <h3 class="mt-3 text-white ms-5 ps-4"> {{companyData?.title}}
@@ -22,7 +22,7 @@
 
             <div class="row mb-3  mx-auto mt-5 text-center justify-content-center">
 
-                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-3 mb-2">
+                <!-- <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-3 mb-2">
                     <div class="footer-widget">
                         <h4>About Us</h4>
                         <ul>
@@ -44,7 +44,18 @@
                             <li><a href=" contact@fdrvc.in ">Faq</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
+
+                  <div *ngFor="let menu of menuList" class="col-lg-2 offset-lg-1 col-md-3 col-sm-3 mb-2">
+                    <div class="footer-widget">
+                        <h4> {{menu?.title}}</h4>
+                        <ul *ngIf="menu.page.length">
+                            <li *ngFor="let menuItem of menu.page"><a [routerLink]="['/slug']">{{menuItem?.fields?.title}}</a></li>
+                            <!-- <li><a href=" contact@fdrvc.in ">Latest Update</a></li>
+                            <li><a href=" contact@fdrvc.in ">Faq</a></li> -->
+                        </ul>
+                    </div>
+                  </div>
 
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-3 mb-2">
                     <div class="footer-widget">

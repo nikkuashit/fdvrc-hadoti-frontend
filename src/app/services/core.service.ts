@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
 import { environment } from './../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-
-import { catchError } from 'rxjs/internal/operators';
 import { HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError, of } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { catchError, map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -37,7 +35,7 @@ export class CoreService {
 
   /** Get Menu List **/
   getMenuListForFooter(data : any) {
-    return this.http.get(`${this.baseUrl}/api/core/menu/`, data).pipe(
+    return this.http.get(`${this.baseUrl}/api/core/menu/?on_footer=`+data).pipe(
       map((res) => {
         return res;
       }), catchError(this.handleError));
@@ -53,7 +51,7 @@ export class CoreService {
 
   /** Get Company Profile**/
   getCompanyProfile() {
-    return this.http.get(`${this.baseUrl}/api/admin/company-profile/`).pipe(
+    return this.http.get(`${this.baseUrl}/api/administrator/company-profile/`).pipe(
         map((res) => {
             return res;
     }),catchError(this.handleError));
@@ -61,7 +59,7 @@ export class CoreService {
 
   /** Get Core page Data**/
   getSocialMedia() {
-    return this.http.get(`${this.baseUrl}/api/admin/social-link/`).pipe(
+    return this.http.get(`${this.baseUrl}/api/administrator/social-link/`).pipe(
         map((res) => {
             return res;
     }),catchError(this.handleError));
