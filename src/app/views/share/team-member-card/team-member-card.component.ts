@@ -12,7 +12,7 @@ export class TeamMemberCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.pageData = this.item.component_data;
+    this.pageData = this.item;
     console.log('team_member', this.pageData)
   }
 

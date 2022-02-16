@@ -60,7 +60,7 @@ export class HeaderComponent implements OnInit {
       if(data?.pk){
         this.router.navigate(['/'+data.pk]);
       }else{
-        this.router.navigate(['home']);
+        // this.router.navigate(['home']);
       }
 
     }else{

@@ -31,6 +31,7 @@ import { LeftToRightComponent } from './left-to-right/left-to-right.component';
 import { RightToLeftComponent } from './right-to-left/right-to-left.component';
 import { SquareCardHoverComponent } from './square-card-hover/square-card-hover.component';
 import { TeamMemberCardComponent } from './team-member-card/team-member-card.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
 	declarations: [
@@ -59,7 +60,8 @@ import { TeamMemberCardComponent } from './team-member-card/team-member-card.com
     LeftToRightComponent,
     RightToLeftComponent,
     SquareCardHoverComponent,
-    TeamMemberCardComponent
+    TeamMemberCardComponent,
+    FaqComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
@@ -88,7 +90,8 @@ import { TeamMemberCardComponent } from './team-member-card/team-member-card.com
     LeftToRightComponent,
     RightToLeftComponent,
     SquareCardHoverComponent,
-    TeamMemberCardComponent
+    TeamMemberCardComponent,
+    FaqComponent
 
 	]
 })

@@ -1,5 +1,5 @@
-<div *ngFor="let core of coreDetailData;">
-  <div *ngFor="let sectionData of core.core_page_data">
+<!-- <div *ngFor="let core of coreDetailData;"> -->
+  <div *ngFor="let sectionData of coreDetailData">
 
     <ng-container *ngIf="sectionData.component_type == 'slider'">
       <app-full-slider [item]="sectionData" ></app-full-slider>
@@ -43,11 +43,11 @@
     </ng-container>
 
     <ng-container *ngIf="sectionData.component_type == 'team_member'">
-      <!-- <app-team-member-card [item]="sectionData"></app-team-member-card> -->
+      <app-team-member-card [item]="sectionData"></app-team-member-card>
     </ng-container>
 
   </div>
-</div>
+<!-- </div> -->
 
 <!-- <app-what-we-do></app-what-we-do> -->
 <!-- <app-project-glance></app-project-glance> -->
