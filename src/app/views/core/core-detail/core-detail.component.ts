@@ -22,7 +22,8 @@ export class CoreDetailComponent implements OnInit {
     this.coreService.getCorePageDetail(this.params).subscribe(
       res => {
         // this.showloader = false;
-        this.contentData = res;
+        let data: any = res;
+        this.contentData = data.core_page;
         console.log(this.contentData);
       },
       error => {

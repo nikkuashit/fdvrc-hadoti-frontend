@@ -15,17 +15,25 @@ export class LandingPageComponent implements OnInit {
   }
 
   public getCorePage(){
-    this.coreService.getCorePage().subscribe(
+    // this.coreService.getCorePage().subscribe(
+    this.coreService.getCorePageDetail(1).subscribe(
       res => {
         let data: any = res;
-        if(data && data.length > 0){
-          data.forEach((element:any,i:any) => {
-            let tempData: any = element.core_page;
-            let newarr = tempData.sort((a:any, b:any) => a.position - b.position);
-            data[i].core_page_data = newarr;
-          });
+        console.log('data', data);
+        if(data){
+
+          // let tempData: any = data.core_page;
+          data.core_page_data = data.core_page.sort((a:any, b:any) => a.position - b.position);
+          // data[i].core_page_data = newarr;
+
+
+          // data.core_page.forEach((element:any,i:any) => {
+          //   let tempData: any = element.core_page;
+          //   let newarr = tempData.sort((a:any, b:any) => a.position - b.position);
+          //   data[i].core_page_data = newarr;
+          // });
         }
-        this.coreDetailData = data;
+        this.coreDetailData = data.core_page_data;
         console.log('coreDetailData',this.coreDetailData);
       },
       error => {
