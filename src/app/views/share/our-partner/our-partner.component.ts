@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-	selector: 'app-engage-with-us',
-	templateUrl: './engage-with-us.component.html',
-	styleUrls: [ './engage-with-us.component.scss' ]
+	selector: 'app-our-partner',
+	templateUrl: './our-partner.component.html',
+	styleUrls: [ './our-partner.component.scss' ]
 })
-export class EngageWithUsComponent implements OnInit {
+export class OurPartnerComponent implements OnInit {
 	responsiveOptions: any;
 	@Input() item: any;
 	items: any;
@@ -14,7 +14,7 @@ export class EngageWithUsComponent implements OnInit {
 		this.responsiveOptions = [
 			{
 				breakpoint: '1920px',
-				numVisible: 4,
+				numVisible: 3,
 				numScroll: 4
 			},
 			{

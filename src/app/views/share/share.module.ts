@@ -37,6 +37,11 @@ import { ProgressNumberComponent } from './progress-number/progress-number.compo
 import { CollapseComponent } from './collapse/collapse.component';
 import { ProductEnquiryComponent } from './product-enquiry/product-enquiry.component';
 import { NormalCardComponent } from './normal-card/normal-card.component';
+import { BgimageContentComponent } from './bgimage-content/bgimage-content.component';
+import { PositionComponent } from './position/position.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
+import { TenderComponent } from './tender/tender.component';
+import { OurPartnerComponent } from './our-partner/our-partner.component';
 
 @NgModule({
 	declarations: [
@@ -71,7 +76,12 @@ import { NormalCardComponent } from './normal-card/normal-card.component';
 		ProgressNumberComponent,
 		CollapseComponent,
 		ProductEnquiryComponent,
-		NormalCardComponent
+		NormalCardComponent,
+		BgimageContentComponent,
+		PositionComponent,
+		FileuploadComponent,
+		TenderComponent,
+		OurPartnerComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
@@ -106,7 +116,12 @@ import { NormalCardComponent } from './normal-card/normal-card.component';
 		ProgressNumberComponent,
 		CollapseComponent,
 		ProductEnquiryComponent,
-		NormalCardComponent
+		NormalCardComponent,
+		BgimageContentComponent,
+		PositionComponent,
+		FileuploadComponent,
+		TenderComponent,
+		OurPartnerComponent
 	]
 })
 export class ShareModule {}

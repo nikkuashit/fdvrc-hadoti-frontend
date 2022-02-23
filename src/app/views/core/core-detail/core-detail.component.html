@@ -74,5 +74,24 @@
     <app-media [item]="sectionData"></app-media>
   </ng-container>
 
+  <ng-container *ngIf="sectionData.component_type == 'bgimage-content' ">
+    <app-bgimage-content [item]="sectionData"></app-bgimage-content>
+  </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'position' ">
+    <app-position [item]="sectionData"></app-position>
+  </ng-container>
+
+  <ng-container *ngIf="sectionData.component_type == 'fileupload' ">
+    <app-fileupload [item]="sectionData"></app-fileupload>
+  </ng-container>
+
+  <ng-container *ngIf="sectionData.component_type == 'tender' ">
+    <app-tender [item]="sectionData"></app-tender>
+  </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'our_partner' ">
+    <app-our-partner [item]="sectionData"></app-our-partner>
+  </ng-container>
+
+
 </div>
 <!-- </div> -->
