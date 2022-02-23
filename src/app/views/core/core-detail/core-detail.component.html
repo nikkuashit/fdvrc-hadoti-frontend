@@ -53,5 +53,18 @@
       <app-contact-us></app-contact-us>
     </ng-container>
 
+    <ng-container *ngIf="sectionData.component_type == 'progress_number'">
+      <app-progress-number [item]="sectionData"></app-progress-number>
+    </ng-container>
+    <ng-container *ngIf="sectionData.component_type == 'chart'">
+        <app-chart></app-chart>
+    </ng-container>
+    <ng-container *ngIf="sectionData.component_type == 'collapse'">
+        <app-collapse [item]="sectionData"></app-collapse>
+    </ng-container>
+    <ng-container *ngIf="sectionData.component_type == 'product_enquiry'">
+        <app-product-enquiry [item]="sectionData"></app-product-enquiry>
+    </ng-container>
+
   </div>
 <!-- </div> -->

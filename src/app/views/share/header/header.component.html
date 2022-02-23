@@ -35,7 +35,7 @@
                             {{menu?.title}}
                         </a>
                         <span *ngIf="menu.page.length" class="dropdown-menu mx-5 shadow " aria-labelledby="navbarDropdown">
-                          <li *ngFor="let menuItem of menu.page"><a class="dropdown-item " [routerLink]="['/slug']"
+                          <li *ngFor="let menuItem of menu.page"><a class="dropdown-item " [routerLink]="[menuItem.pk]"
                                   (click)="navigatePage(menuItem,'false');ToggleNavBar()">{{menuItem?.fields?.title}}</a></li>
                           <li><hr class="dropdown-divider"></li>
                         </span>

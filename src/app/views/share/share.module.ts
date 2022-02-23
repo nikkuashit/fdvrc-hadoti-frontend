@@ -32,6 +32,10 @@ import { RightToLeftComponent } from './right-to-left/right-to-left.component';
 import { SquareCardHoverComponent } from './square-card-hover/square-card-hover.component';
 import { TeamMemberCardComponent } from './team-member-card/team-member-card.component';
 import { FaqComponent } from './faq/faq.component';
+import { ChartComponent } from './chart/chart.component';
+import { ProgressNumberComponent } from './progress-number/progress-number.component';
+import { CollapseComponent } from './collapse/collapse.component';
+import { ProductEnquiryComponent } from './product-enquiry/product-enquiry.component';
 
 @NgModule({
 	declarations: [
@@ -61,7 +65,11 @@ import { FaqComponent } from './faq/faq.component';
     RightToLeftComponent,
     SquareCardHoverComponent,
     TeamMemberCardComponent,
-    FaqComponent
+    FaqComponent,
+    ChartComponent,
+		ProgressNumberComponent,
+  CollapseComponent,
+  ProductEnquiryComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
@@ -91,7 +99,11 @@ import { FaqComponent } from './faq/faq.component';
     RightToLeftComponent,
     SquareCardHoverComponent,
     TeamMemberCardComponent,
-    FaqComponent
+    FaqComponent,
+    ChartComponent,
+		ProgressNumberComponent,
+    CollapseComponent,
+    ProductEnquiryComponent
 
 	]
 })
