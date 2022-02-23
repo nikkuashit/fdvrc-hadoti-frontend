@@ -23,7 +23,64 @@
               </div>
           </div>
           <button class=" btn-sm  bt" type='button' (click)='showText()'>{{isReadMore?'Read More':'Read
-              Less'}}</button>
+              Less'}}</button> &nbsp;
+
+          <button *ngIf="pageData?.url" type="button" class="btn bt" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo">Connect with us</button>
       </div>
   </div>
 </div>
+
+<div class="container-fluid p-5">
+  <div class="row">
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Fill your details here..</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"
+                              aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <form>
+                              <div class="mb-2">
+                                  <label for="recipient-name" class="col-form-label">Enter your
+                                      Name
+                                      here</label>
+                                  <input type="text" class="form-control" id="recipient-name"
+                                      placeholder="Full Name">
+                              </div>
+                              <div class="mb-2">
+                                  <label for="recipient-name" class="col-form-label">Enter your E-mail
+                                      address
+                                  </label>
+                                  <input type="text" class="form-control" id="recipient-name"
+                                      placeholder="E-mail address">
+                              </div>
+                              <div class="mb-2">
+                                  <label for="recipient-name" class="me-auto col-form-label ">Enter your
+                                      Mobile
+                                      Number
+                                  </label>
+                                  <input type="number" class="form-control" id="recipient-name"
+                                      placeholder="Mobile Number">
+                              </div>
+                              <div class="mb-2">
+                                  <label for="message-text" class="col-form-label">Topic</label>
+                                  <textarea class="form-control" id="message-text"></textarea>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="p-1 shadow btn-danger" data-bs-dismiss="modal"
+                              style="border:none;">Close</button>
+                          <button type="button" class="p-1 shadow  btn-success" style="border:none;">Submit
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
