@@ -1,5 +1,5 @@
 <!-- Article -->
-<div class="container mb-3 article ">
+<!-- <div class="container mb-3 article ">
     <h1 class="header-text ms-3">Articles</h1>
     <div class="card-group text-center">
         <div class="card m-3 border shadow">
@@ -32,10 +32,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- Annoncement Archieve -->
-<div class="annoncement-a my-5 background">
+<!-- <div class="annoncement-a my-5 background">
     <div class="container p-5">
         <div class="row mt-3">
             <div class="col-lg-4 col-md-6 col-sm-12 mt-3 ">
@@ -72,10 +72,10 @@
         </div>
 
     </div>
-</div>
+</div> -->
 
 <!-- video section -->
-<div class="conatiner m-3 bg-light shadow border-success my-5">
+<!-- <div class="conatiner m-3 bg-light shadow border-success my-5">
     <h1 class="header-text pt-4 ms-4">Things To know</h1>
     <div class="row p-4">
         <div class="col-lg-6 col-md-12 col-sm-12 text-center">
@@ -125,51 +125,31 @@
 
     </div>
 
-</div>
+</div> -->
 <!-- Gallery -->
 <div class="gallery my-5">
     <div class="container">
 
-        <h1 class="title header-text">Gallery</h1>
+        <h1 class="text-center header-text ">Gallery</h1>
 
         <div class="col-12  pb-3 ">
             <div class="row">
-                <div *ngFor="let data of memberData" class="col-lg-3 col-md-6 col-sm-12 ">
+                <div class="col-lg-3" *ngFor='let data of pageData'>
                     <div class="col">
-                        <div class="card border shadow mb-2 p-1">
-                            <a href="">
-                                <h3 class="theme-color text-center">{{data.gal_title}}</h3>
-                            </a>
-                            <img [src]="data.image" alt="...">
+                        <div class="card shadow mb-2">
+                            <img [src]="data.media" alt="Gallery-Image" class="img-fluid">
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-12  mb-1 pt-3 pb-3 ">
-            <div class="row ">
-                <div *ngFor="let data of memberData_2" class="col-lg-3 col-md-6 col-sm-12 ">
-                    <div class="col">
-                        <div class="card border shadow mb-2 p-1">
-                            <a href="">
-                                <h3 class="theme-color text-center">{{data.gal_title}}</h3>
-                            </a>
-                            <img [src]="data.image" alt="...">
 
-
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
 <!-- Newspaper Article -->
-<div class="article background">
+<!-- <div class="article background">
     <div class="container p-5">
         <div class="row mx-auto">
             <h1 class="title header-text mb-3"> Newspaper Articles</h1>
@@ -195,4 +175,4 @@
             </div>
 
         </div>
-    </div>
+    </div> -->

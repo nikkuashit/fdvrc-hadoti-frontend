@@ -36,6 +36,7 @@ import { ChartComponent } from './chart/chart.component';
 import { ProgressNumberComponent } from './progress-number/progress-number.component';
 import { CollapseComponent } from './collapse/collapse.component';
 import { ProductEnquiryComponent } from './product-enquiry/product-enquiry.component';
+import { NormalCardComponent } from './normal-card/normal-card.component';
 
 @NgModule({
 	declarations: [
@@ -55,21 +56,22 @@ import { ProductEnquiryComponent } from './product-enquiry/product-enquiry.compo
 		AboutComponent,
 		ProjectUpdateComponent,
 		EngageWithUsComponent,
-    ComponentCenterEndComponent,
-    ComponentLeftEndComponent,
-    FullSliderComponent,
-    InfoCardCenterComponent,
-    CardSliderSquareComponent,
-    CardSliderCircleComponent,
-    LeftToRightComponent,
-    RightToLeftComponent,
-    SquareCardHoverComponent,
-    TeamMemberCardComponent,
-    FaqComponent,
-    ChartComponent,
+		ComponentCenterEndComponent,
+		ComponentLeftEndComponent,
+		FullSliderComponent,
+		InfoCardCenterComponent,
+		CardSliderSquareComponent,
+		CardSliderCircleComponent,
+		LeftToRightComponent,
+		RightToLeftComponent,
+		SquareCardHoverComponent,
+		TeamMemberCardComponent,
+		FaqComponent,
+		ChartComponent,
 		ProgressNumberComponent,
-  CollapseComponent,
-  ProductEnquiryComponent
+		CollapseComponent,
+		ProductEnquiryComponent,
+		NormalCardComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
@@ -89,22 +91,22 @@ import { ProductEnquiryComponent } from './product-enquiry/product-enquiry.compo
 		AboutComponent,
 		EngageWithUsComponent,
 		ProjectUpdateComponent,
-    ComponentCenterEndComponent,
-    ComponentLeftEndComponent,
-    InfoCardCenterComponent,
-    CardSliderSquareComponent,
-    FullSliderComponent,
-    CardSliderCircleComponent,
-    LeftToRightComponent,
-    RightToLeftComponent,
-    SquareCardHoverComponent,
-    TeamMemberCardComponent,
-    FaqComponent,
-    ChartComponent,
+		ComponentCenterEndComponent,
+		ComponentLeftEndComponent,
+		InfoCardCenterComponent,
+		CardSliderSquareComponent,
+		FullSliderComponent,
+		CardSliderCircleComponent,
+		LeftToRightComponent,
+		RightToLeftComponent,
+		SquareCardHoverComponent,
+		TeamMemberCardComponent,
+		FaqComponent,
+		ChartComponent,
 		ProgressNumberComponent,
-    CollapseComponent,
-    ProductEnquiryComponent
-
+		CollapseComponent,
+		ProductEnquiryComponent,
+		NormalCardComponent
 	]
 })
 export class ShareModule {}
