@@ -68,7 +68,7 @@ export class AboutComponent implements OnInit {
 	];
 	// board member
 	teamMember: any = [
-		{ team_img: '/assets/about_us/favicon.svg', team_title: 'Ranjan Kumar', team_subt: 'CEO' },
+		{ team_img: '/assets/about_us/favicon.svg', team_title: 'Divya Yadav', team_subt: 'CEO' },
 		{
 			team_img: '/assets/about_us/favicon.svg',
 			team_title: 'Saurabh Singh Shekhawat',
@@ -131,7 +131,7 @@ export class AboutComponent implements OnInit {
 		{ image: '/assets/about_us/KrishanaKumaMali.jpg', title: 'Krishna kumari Mali ', position: 'Director' },
 		{ image: '/assets/about_us/MeenaKumari.jpg', title: 'Meena Bai', position: 'Director' },
 		{ image: '/assets/about_us/Avinash.jpg', title: 'Avinash Kumar Choudhary', position: 'Expert Director' },
-		{ image: '/assets/about_us/RanjanKumar.jpg', title: 'Ranjan Kumar', position: 'CEO' }
+		{ image: '/assets/about_us/favicon.svg', title: 'Divya Yadav', position: 'CEO' }
 	];
 	responsiveOptions: any;
 	constructor() {
