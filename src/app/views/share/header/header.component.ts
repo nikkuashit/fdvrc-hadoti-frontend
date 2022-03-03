@@ -65,4 +65,11 @@ export class HeaderComponent implements OnInit {
     // }
 
   }
+
+  navigateSinglePage(data: any){
+    console.log('data', data);
+    if(data.page){
+      this.router.navigate([data.page[0].pk]);
+    }
+  }
 }

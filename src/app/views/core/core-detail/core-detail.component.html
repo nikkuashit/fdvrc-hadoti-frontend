@@ -66,8 +66,10 @@
     <app-product-enquiry [item]="sectionData"></app-product-enquiry>
   </ng-container>
 
-  <ng-container *ngIf="sectionData.component_type == 'normal-card'">
-    <app-normal-card [item]="sectionData"></app-normal-card>
+  <ng-container *ngIf="sectionData.component_type == 'normal-card'" >
+    <div>
+      <app-normal-card [item]="sectionData"></app-normal-card>
+    </div>
   </ng-container>
 
   <ng-container *ngIf="sectionData.component_type == 'media' ">

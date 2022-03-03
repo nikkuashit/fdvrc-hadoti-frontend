@@ -50,7 +50,7 @@
                     <div class="footer-widget">
                         <h4> {{menu?.title}}</h4>
                         <ul *ngIf="menu.page.length">
-                            <li *ngFor="let menuItem of menu.page"><a [routerLink]="['/slug']">{{menuItem?.fields?.title}}</a></li>
+                            <li *ngFor="let menuItem of menu.page"><a (click)="navigatePage(menuItem)">{{menuItem?.fields?.title}}</a></li>
                             <!-- <li><a href=" contact@fdrvc.in ">Latest Update</a></li>
                             <li><a href=" contact@fdrvc.in ">Faq</a></li> -->
                         </ul>

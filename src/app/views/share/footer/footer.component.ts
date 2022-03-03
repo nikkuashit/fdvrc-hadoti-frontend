@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CoreService } from 'src/app/services/core.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class FooterComponent implements OnInit {
   companyData: any;
   menuList: any;
 
-  constructor(public coreService: CoreService) { }
+  constructor(public coreService: CoreService, public router: Router) { }
 
   ngOnInit(): void {
     this.getSocialMedia();
@@ -58,6 +59,10 @@ export class FooterComponent implements OnInit {
         console.log(error);
       }
     );
+  }
+
+  navigatePage(data: any){
+      this.router.navigate([data.pk]);
   }
 
 }
