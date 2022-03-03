@@ -56,16 +56,20 @@ export class HeaderComponent implements OnInit {
 
   navigatePage(data: any, data2:any){
     console.log(data);
-    if(data2){
-      if(data?.pk){
-        this.router.navigate(['/'+data.pk]);
-      }else{
-        // this.router.navigate(['home']);
-      }
+    // if(data2){
+    //   if(data?.pk){
+    //     this.router.navigate(['/'+data.pk]);
+    //   }
+    // }else{
+      this.router.navigate([data.pk]);
+    // }
 
-    }else{
-      this.router.navigate(['/'+data.pk]);
+  }
+
+  navigateSinglePage(data: any){
+    console.log('data', data);
+    if(data.page){
+      this.router.navigate([data.page[0].pk]);
     }
-
   }
 }

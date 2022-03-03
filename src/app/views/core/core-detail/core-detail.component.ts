@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import {map} from 'rxjs/operators';
 import { CoreService } from 'src/app/services/core.service';
@@ -11,30 +11,30 @@ import { CoreService } from 'src/app/services/core.service';
 export class CoreDetailComponent implements OnInit {
   params: any;
   contentData: any;
-  constructor( public router: Router, public route: ActivatedRoute, public coreService: CoreService) {
-  }
-
+  constructor( public router: Router, public _activeRoute: ActivatedRoute, public coreService: CoreService) {}
 
   ngOnInit(): void {
-    this.params = this.route.snapshot.paramMap.get('id');
-    console.log(this.params);
-    // this.showloader = true;
-    this.coreService.getCorePageDetail(this.params).subscribe(
-      res => {
-        // this.showloader = false;
-        let data: any = res;
-        this.contentData = data.core_page;
-        console.log(this.contentData);
-      },
-      error => {
-        // this.showloader = false;
-        console.log(error);
-      }
-    );
+    this._activeRoute.params.subscribe( params => {
+          console.log('params',params);
+          if (params) {
+            this.params = params.id;
+
+            this.coreService.getCorePageDetail(this.params).subscribe(
+              res => {
+                // this.showloader = false;
+                let data: any = res;
+                this.contentData = data.core_page;
+                console.log(this.contentData);
+              },
+              error => {
+                // this.showloader = false;
+                console.log(error);
+              }
+            );
+          }
+    });
 
   }
-
-// add to function two numbers
 
 
 }

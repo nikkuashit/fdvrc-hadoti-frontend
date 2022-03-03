@@ -1,0 +1,29 @@
+<!-- Internship -->
+<div class="internship mt-5">
+    <div class="container">
+        <div *ngFor='let data of pageData.component_data' class="col-12">
+            <div class="box">
+                <div class="col-lg-6 col-md-9 col-sm-12 py-5 text-white">
+                    <h1 class="mb-1 ">{{data.title}}</h1>
+                    <h4 class="">{{data.subtitle}}</h4>
+                    <h5 class="">{{data.description}}</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- apply form -->
+<div class="form mb-5 background p-4">
+    <div class="container text-center">
+        <h4 class="theme-color">Upload your resume here</h4>
+        <div class="col-12">
+            <form action="">
+                <input type="file" class="p-2  bg-white" id="exampleFormControlFile1" placeholder="">
+                <button class="btn-sm  bt m-2 ">Apply Now</button>
+            </form>
+        </div>
+
+    </div>
+</div>
