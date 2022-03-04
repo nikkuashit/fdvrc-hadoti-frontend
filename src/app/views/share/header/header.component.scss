@@ -26,7 +26,7 @@ a:hover {
 	color: #ef4e58;
 }
 .navbar-nav {
-	margin-left: -70px;
+	margin-left: -100px;
 }
 .active {
 	color: #ef4e58 !important;
@@ -64,10 +64,6 @@ a:hover {
 }
 /* Responsive */
 @media (max-width: 1200px) {
-	.logo1 {
-		width: 160px !important;
-		height: 80px !important;
-	}
 	.navbar-nav {
 		margin-left: 0px !important;
 	}
@@ -78,8 +74,6 @@ a:hover {
 		display: none;
 	}
 	.logo1 {
-		width: 140px !important;
-		height: 70px !important;
 		margin-top: 50px !important;
 	}
 	.logo-2 {

@@ -235,7 +235,7 @@
 <div class="partnership background py-5">
     <h1 class="header-text text-center py-3 "> Our Partners </h1>
     <div class="container">
-        <p-carousel [value]="partner" [numVisible]="2" [numScroll]="2" [circular]="false"
+        <p-carousel [value]="partner" [numVisible]="2" [numScroll]="2" [circular]="false" [autoplayInterval]="4000"
             [responsiveOptions]="responsiveOptions">
             <ng-template let-partner pTemplate="item">
                 <img [src]="partner.image" alt="Partner-jpg" class="d-block  mx-auto" height="200">
