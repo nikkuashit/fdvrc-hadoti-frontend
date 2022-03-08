@@ -46,19 +46,48 @@ export class AboutComponent implements OnInit {
 			val_subtitle: 'STRATEGIC PLAN',
 			val_para:
 				'Producer enterprise value proposition over other company or market has an advantage as its able reduce transactional cost of the commodity and bulk transaction will enable better price realisation for the company.'
-		},
+		}
+	];
+
+	isReadMore = true;
+	showLess = true;
+
+	showText() {
+		this.showLess = !this.showLess;
+		this.isReadMore = !this.isReadMore;
+	}
+	valueData1: any = [
 		{
 			val_imag: '/assets/about_us/Init.svg',
 			val_subtitle: 'Initiative',
 			val_para:
 				'The professional management support would bring in initatives such as best practices SOPs, Technology driven Systems, Price discovery mechnaisms using national and international metrics and opertaions effeicieny systems.'
-		},
+		}
+	];
+	isReadMore1 = true;
+	showLess1 = true;
+
+	showText1() {
+		this.showLess1 = !this.showLess1;
+		this.isReadMore1 = !this.isReadMore1;
+	}
+
+	valueData2: any = [
 		{
 			val_imag: '/assets/about_us/Account.svg',
 			val_subtitle: 'ACCOUNTABILITY',
 			val_para:
 				'An appropriate mechanism has been put in place to map accountibilty and technology would be leveraged in the areas of information collection, data management and payments etc. for transparency and effective management.'
-		},
+		}
+	];
+	isReadMore2 = true;
+	showLess2 = true;
+
+	showText2() {
+		this.showLess2 = !this.showLess2;
+		this.isReadMore2 = !this.isReadMore2;
+	}
+	valueData3: any = [
 		{
 			val_imag: '/assets/about_us/Itrate.svg',
 			val_subtitle: 'Evaluate & Iterate',
@@ -66,6 +95,14 @@ export class AboutComponent implements OnInit {
 				'A strong Governance mechanism has been adopted to ensure transparency, information disclosure,grievance redressal and monitoring with utmost importance to ensure good governance and course correction.'
 		}
 	];
+	isReadMore3 = true;
+	showLess3 = true;
+
+	showText3() {
+		this.showLess3 = !this.showLess3;
+		this.isReadMore3 = !this.isReadMore3;
+	}
+
 	// board member
 	teamMember: any = [
 		{ team_img: '/assets/about_us/favicon.svg', team_title: 'Divya Yadav', team_subt: 'CEO' },

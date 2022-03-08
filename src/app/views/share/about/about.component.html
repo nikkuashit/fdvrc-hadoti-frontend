@@ -71,15 +71,86 @@
     <div class="container my-5  value">
         <div class="row ">
             <h1 class=" header-text text-center my-3">Value & Objective</h1>
-            <div *ngFor="let data of valueData" class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card text-center p-4 mb-5 shadow" style="height: 330px;">
-                    <img [src]="data.val_imag" height="40px" class="mx-auto color-white" />
+            <div *ngFor="let data of valueData" class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="card text-center p-3 mb-5 shadow">
+                    <img [src]="data.val_imag" height="40px" class="mx-auto mt-3" />
                     <div class="card-body">
-                        <h5 class="theme-color text-uppercase">{{data.val_subtitle}}</h5>
-                        <p class=" paragraph-text mt-3">{{data.val_para}}</p>
+                        <div [ngClass]="{'limitTextHeight': isReadMore}">
+                            <h5 class="theme-color text-uppercase">{{data.val_subtitle}}</h5>
+                            <p *ngIf="showLess" class=" paragraph-text mt-3">{{data.val_para|slice:0:110}}
+                                <span *ngIf="data.val_para.length>=150">...</span>
+                            </p>
+
+                            <p *ngIf="!showLess" class="card-text paragraph-text mt-3">{{data.val_para }}
+
+                            </p>
+                        </div>
+                        <span class=" theme-color" (click)="showText()"> {{ isReadMore ? 'Read More': 'Read
+                            Less' }} </span>
                     </div>
                 </div>
             </div>
+
+            <div *ngFor="let data of valueData1" class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="card text-center p-3 mb-5 shadow">
+                    <img [src]="data.val_imag" height="40px" class="mx-auto mt-3" />
+                    <div class="card-body">
+                        <div [ngClass]="{'limitTextHeight': isReadMore1}">
+                            <h5 class="theme-color text-uppercase">{{data.val_subtitle}}</h5>
+                            <p *ngIf="showLess1" class=" paragraph-text mt-3">{{data.val_para|slice:0:110}}
+                                <span *ngIf="data.val_para.length>=150">...</span>
+                            </p>
+
+                            <p *ngIf="!showLess1" class="card-text paragraph-text mt-3">{{data.val_para }}
+
+                            </p>
+                        </div>
+                        <span class=" theme-color" (click)="showText1()"> {{ isReadMore1 ? 'Read More': 'Read
+                            Less' }} </span>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngFor="let data of valueData2" class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="card text-center p-3 mb-5 shadow">
+                    <img [src]="data.val_imag" height="40px" class="mx-auto mt-3" />
+                    <div class="card-body">
+                        <div [ngClass]="{'limitTextHeight': isReadMore1}">
+                            <h5 class="theme-color text-uppercase">{{data.val_subtitle}}</h5>
+                            <p *ngIf="showLess2" class=" paragraph-text mt-3">{{data.val_para|slice:0:110}}
+                                <span *ngIf="data.val_para.length>=150">...</span>
+                            </p>
+
+                            <p *ngIf="!showLess2" class="card-text paragraph-text mt-3">{{data.val_para }}
+
+                            </p>
+                        </div>
+                        <span class=" theme-color" (click)="showText2()"> {{ isReadMore2 ? 'Read More': 'Read
+                            Less' }} </span>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngFor="let data of valueData3" class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="card text-center p-3 mb-5 shadow">
+                    <img [src]="data.val_imag" height="40px" class="mx-auto mt-3" />
+                    <div class="card-body">
+                        <div [ngClass]="{'limitTextHeight': isReadMore3}">
+                            <h5 class="theme-color text-uppercase">{{data.val_subtitle}}</h5>
+                            <p *ngIf="showLess3" class=" paragraph-text mt-3">{{data.val_para|slice:0:110}}
+                                <span *ngIf="data.val_para.length>=150">...</span>
+                            </p>
+
+                            <p *ngIf="!showLess3" class="card-text paragraph-text mt-3">{{data.val_para }}
+
+                            </p>
+                        </div>
+                        <span class=" theme-color" (click)="showText3()"> {{ isReadMore3 ? 'Read More': 'Read
+                            Less' }} </span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

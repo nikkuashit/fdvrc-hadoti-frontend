@@ -88,8 +88,11 @@ a:hover {
 	}
 }
 
-@media (max-width: 376px) {
+@media (max-width: 410px) {
 	.navbar-light .navbar-toggler {
 		margin-right: 0px !important;
+	}
+	.logo1 {
+		margin-left: -10px !important;
 	}
 }
