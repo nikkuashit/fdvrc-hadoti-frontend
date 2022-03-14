@@ -6,18 +6,17 @@
 		margin-top: 10px !important;
 	}
 }
-@media (max-width: 768px) {
-	.prod {
-		margin-top: 0px !important;
-	}
-	.bod {
-		height: 160px;
-	}
-}
-.team-member .card img {
+.bod {
 	border-radius: 50%;
+	height: 200px;
+	width: 200px;
 }
 
+.team-organization {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
 // value & objective
 .value .card {
 	transition: 1.5s all;

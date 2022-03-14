@@ -53,13 +53,13 @@
     <p-carousel [value]="product" [numVisible]="3" [numScroll]="3" [circular]="false"
         [responsiveOptions]="responsiveOptions">
         <ng-template let-product pTemplate="item">
-            <div class="product-item ms-5">
+            <div class="product-item text-center">
                 <div>
-                    <img [src]="product.image" alt="" class="bod d-block ms-2 w-75 rounded-circle" height="180">
+                    <img [src]="product.image" alt="" class="bod">
                 </div>
                 <div>
-                    <h5 class="text-center me-5  text-uppercase theme-color mt-3">{{product.title}}</h5>
-                    <h6 class="text-center me-5  text-uppercase">{{product.position}}</h6>
+                    <h5 class="text-center   text-uppercase theme-color mt-3">{{product.title}}</h5>
+                    <h6 class="text-center   text-uppercase">{{product.position}}</h6>
                 </div>
             </div>
         </ng-template>
