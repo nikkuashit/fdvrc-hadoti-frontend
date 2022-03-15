@@ -59,7 +59,7 @@ export class ProjectGlanceComponent implements OnInit {
 			glaimg4: '/assets/glance/Tender.svg',
 			glatiltle4: 'TENDER DETAILS',
 			glapara4: 'The News and information about upcoming tender would be available here.',
-			glapara5: 'Advertisment'
+			glapara5: 'Tender Search'
 		}
 	];
 	isReadMore3 = true;

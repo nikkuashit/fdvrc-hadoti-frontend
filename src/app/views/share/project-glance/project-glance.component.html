@@ -6,7 +6,7 @@
                 <div class="card-body">
                     <div [ngClass]="{'limitTextHeight': isReadMore}">
                         <h5 class="card-title subtitle-text">{{data.glatiltle1}}</h5>
-                        <p *ngIf="showLess" class="card-text paragraph-text mt-3">{{data.glapara1 | slice:0:80 }}
+                        <p *ngIf="showLess" class="card-text paragraph-text mt-3">{{data.glapara1 | slice:0:130 }}
                             <span *ngIf="data.glapara1.length>150">
                                 ...
                             </span>
@@ -27,7 +27,7 @@
                 <div class="card-body">
                     <div [ngClass]="{'limitTextHeight': isReadMore}">
                         <h5 class="card-title subtitle-text">{{data.glatiltle2}}</h5>
-                        <p *ngIf="showLess1" class="card-text paragraph-text mt-3">{{data.glapara2 | slice:0:80 }}
+                        <p *ngIf="showLess1" class="card-text paragraph-text mt-3">{{data.glapara2 | slice:0:130 }}
                             <span *ngIf="data.glapara2.length>150">...
                             </span>
                         </p>
@@ -48,8 +48,8 @@
                 <div class="card-body">
                     <div [ngClass]="{'limitTextHeight': isReadMore}">
                         <h5 class="card-title subtitle-text">{{data.glatiltle3}}</h5>
-                        <p *ngIf="showLess2" class="card-text paragraph-text mt-3">{{data.glapara3 | slice:0:80 }}
-                            <span *ngIf="data.glapara3.length>150">
+                        <p *ngIf="showLess2" class="card-text paragraph-text mt-3">{{data.glapara3 | slice:0:120 }}
+                            <span *ngIf="data.glapara3.length>160">
                                 ...
                             </span>
                         </p>
@@ -64,26 +64,17 @@
         </div>
 
         <div *ngFor="let data of glanceData4" class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card text-center mx-auto shadow">
+            <div class="card text-center mx-auto shadow" style="height: 235px;">
                 <img [src]="data.glaimg4" class="card-img-top mx-auto" alt="Tender-logo" />
                 <div class="card-body">
-                    <div [ngClass]="{'limitTextHeight': isReadMore}">
-                        <h5 class="card-title subtitle-text">{{data.glatiltle4}}</h5>
-                        <p *ngIf="showLess3" class="card-text paragraph-text mt-3">{{data.glapara4 | slice:0:80 }}
-                            <span *ngIf="data.glapara4.length>85">
-                                ...
-                            </span>
-                        </p>
-                        <p *ngIf="!showLess3" class="card-text paragraph-text mt-3">{{data.glapara4 }}
 
-                            <br>
-                            <a [routerLink]=" ['/engage-with-us']"><span class="fs-5 mt-3 advertisment">
-                                    <button class="btn-sm bt">{{data.glapara5}}</button></span></a>
-                        </p>
-                    </div>
+                    <h5 class="card-title subtitle-text">{{data.glatiltle4}}</h5>
+                    <p class="card-text paragraph-text mt-3">{{data.glapara4 }}
 
-                    <span class=" theme-color" (click)="showText3()"> {{ isReadMore3 ? 'Read More':'Read
-                        Less' }} </span>
+                    </p>
+
+                    <a [routerLink]=" ['/engage-with-us']"><span class="fs-5  advertisment">
+                            <button class="btn-sm bt">{{data.glapara5}}</button></span></a>
 
                 </div>
             </div>
