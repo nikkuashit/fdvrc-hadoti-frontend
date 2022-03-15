@@ -24,7 +24,7 @@ export class EngageWithUsComponent implements OnInit {
 		}
 	];
 	// tender
-	tenderList: any = 'Tender details would be updated here.';
+	tenderList: any = 'Hadoti MKPCL invites bids from eligible bidders in two envelope system as per particular mentioned in the advertisement.';
 
 	responsiveOptions: any;
 	constructor() {

@@ -205,122 +205,137 @@
             <div class="col-lg-9 col-md-12 my-5">
                 <div class=" d-block w-100 p-5 tender">
                     <div class="col-lg-9 col-md-12 col-sm-12 ">
-                        <h1 class="title header-text">Details of available tenders
+                        <h1 class="title text-white">Details of available tenders
 
                         </h1>
                         <h4 class="text-white fs-5">{{tenderList}}</h4>
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <ul class="ms-3">
-                                <li class="text-white ">Details 1</li>
-                                <li class="text-white ">Details 2</li>
-                                <li class="text-white ">Details 3</li>
+                        <div class="col-6">
 
-                            </ul>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn-sm bt ms-2 mb-3" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Advertisement
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close theme-color " data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="/assets/engage-wth-us/Hadoti Advertisement.jpeg" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
 
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- partnership -->
+    <!-- partnership -->
 
-<div class="partnership background py-5">
-    <h1 class="header-text text-center py-3 "> Our Partners </h1>
-    <div class="container">
-        <p-carousel [value]="partner" [numVisible]="2" [numScroll]="2" [circular]="false" [autoplayInterval]="4000"
-            [responsiveOptions]="responsiveOptions">
-            <ng-template let-partner pTemplate="item">
-                <img [src]="partner.image" alt="Partner-jpg" class="d-block  mx-auto" height="200">
+    <div class="partnership background py-5">
+        <h1 class="header-text text-center py-3 "> Our Partners </h1>
+        <div class="container">
+            <p-carousel [value]="partner" [numVisible]="2" [numScroll]="2" [circular]="false" [autoplayInterval]="4000"
+                [responsiveOptions]="responsiveOptions">
+                <ng-template let-partner pTemplate="item">
+                    <img [src]="partner.image" alt="Partner-jpg" class="d-block  mx-auto" height="200">
 
-            </ng-template>
-        </p-carousel>
-    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
 
-    <div class="container py-5">
-        <div class="row">
-            <div *ngFor="let data of partnershipData" class="col-lg-6 col-md-12 col-sm-12">
-                <div class=" text-center">
-                    <div class="card  shadow p-2">
-                        <h2 class="theme-color pt-5 text-center">{{data.card_title}}</h2>
-                        <img [src]="data.image" class="w-50 mx-auto mb-5" alt="Partnership">
+        <div class="container py-5">
+            <div class="row">
+                <div *ngFor="let data of partnershipData" class="col-lg-6 col-md-12 col-sm-12">
+                    <div class=" text-center">
+                        <div class="card  shadow p-2">
+                            <h2 class="theme-color pt-5 text-center">{{data.card_title}}</h2>
+                            <img [src]="data.image" class="w-50 mx-auto mb-5" alt="Partnership">
 
+                        </div>
+                        <button type="button" class="btn bt mt-2 mb-5" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">Connect with us</button>
                     </div>
-                    <button type="button" class="btn bt mt-2 mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        data-bs-whatever="@mdo">Connect with us</button>
-                </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Fill your details here..</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-2">
-                                        <label for="recipient-name" class="col-form-label">Enter your
-                                            Name
-                                            here</label>
-                                        <input type="text" class="form-control" id="recipient-name"
-                                            placeholder="Full Name">
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="recipient-name" class="col-form-label">Enter your E-mail
-                                            address
-                                        </label>
-                                        <input type="text" class="form-control" id="recipient-name"
-                                            placeholder="E-mail address">
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="recipient-name" class="me-auto col-form-label ">Enter your
-                                            Mobile
-                                            Number
-                                        </label>
-                                        <input type="number" class="form-control" id="recipient-name"
-                                            placeholder="Mobile Number">
-                                    </div>
-                                    <div class="mb-2">
-                                        <label for="message-text" class="col-form-label">Topic</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="p-1 shadow btn-danger" data-bs-dismiss="modal"
-                                    style="border:none;">Close</button>
-                                <button type="button" class="p-1 shadow  btn-success" style="border:none;">Submit
-                                </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Fill your details here..</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-2">
+                                            <label for="recipient-name" class="col-form-label">Enter your
+                                                Name
+                                                here</label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Full Name">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="recipient-name" class="col-form-label">Enter your E-mail
+                                                address
+                                            </label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="E-mail address">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="recipient-name" class="me-auto col-form-label ">Enter your
+                                                Mobile
+                                                Number
+                                            </label>
+                                            <input type="number" class="form-control" id="recipient-name"
+                                                placeholder="Mobile Number">
+                                        </div>
+                                        <div class="mb-2">
+                                            <label for="message-text" class="col-form-label">Topic</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="p-1 shadow btn-danger" data-bs-dismiss="modal"
+                                        style="border:none;">Close</button>
+                                    <button type="button" class="p-1 shadow  btn-success" style="border:none;">Submit
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h5 class="theme-color">Partner with Hadoti MKPCL for engagement with our project on
+                        strengthening women
+                        farmer producer of
+                        Rajasthan on the following :-</h5>
+                    <ol>
+                        <li class="mb-3"> Sourcing of Agri Commodity</li>
+                        <li class="mb-3"> Technology Solutions for Farmers</li>
+                        <li class="mb-3"> Marketing of Agri Produce</li>
+                        <li class="mb-3">Supply of Agri Input Products and Services
+                        </li>
+                        <li class="mb-3"> Partner with us for socio-Impact project</li>
+                        <li class="mb-3"> Training and capacity building of the producers</li>
+                    </ol>
                 </div>
 
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <h5 class="theme-color">Partner with Hadoti MKPCL for engagement with our project on
-                    strengthening women
-                    farmer producer of
-                    Rajasthan on the following :-</h5>
-                <ol>
-                    <li class="mb-3"> Sourcing of Agri Commodity</li>
-                    <li class="mb-3"> Technology Solutions for Farmers</li>
-                    <li class="mb-3"> Marketing of Agri Produce</li>
-                    <li class="mb-3">Supply of Agri Input Products and Services
-                    </li>
-                    <li class="mb-3"> Partner with us for socio-Impact project</li>
-                    <li class="mb-3"> Training and capacity building of the producers</li>
-                </ol>
-            </div>
-
         </div>
-    </div>

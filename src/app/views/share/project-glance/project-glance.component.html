@@ -57,7 +57,7 @@
 
                         </p>
                     </div>
-                    <span class=" theme-color" (click)="showText2()"> {{ isReadMore1 ? 'Read More': 'Read
+                    <span class=" theme-color" (click)="showText2()"> {{ isReadMore2 ? 'Read More': 'Read
                         Less' }} </span>
                 </div>
             </div>
@@ -70,16 +70,21 @@
                     <div [ngClass]="{'limitTextHeight': isReadMore}">
                         <h5 class="card-title subtitle-text">{{data.glatiltle4}}</h5>
                         <p *ngIf="showLess3" class="card-text paragraph-text mt-3">{{data.glapara4 | slice:0:80 }}
-                            <span *ngIf="data.glapara4.length>150">
+                            <span *ngIf="data.glapara4.length>85">
                                 ...
                             </span>
                         </p>
                         <p *ngIf="!showLess3" class="card-text paragraph-text mt-3">{{data.glapara4 }}
 
+                            <br>
+                            <a [routerLink]=" ['/engage-with-us']"><span class="fs-5 mt-3 advertisment">
+                                    <button class="btn-sm bt">{{data.glapara5}}</button></span></a>
                         </p>
                     </div>
-                    <span class=" theme-color" (click)="showText3()"> {{ isReadMore1 ? 'Read More': 'Read
+
+                    <span class=" theme-color" (click)="showText3()"> {{ isReadMore3 ? 'Read More':'Read
                         Less' }} </span>
+
                 </div>
             </div>
         </div>
