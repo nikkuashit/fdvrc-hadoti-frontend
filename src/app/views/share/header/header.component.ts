@@ -17,7 +17,8 @@ export class HeaderComponent implements OnInit {
 	}
 
   menuList : any = [];
-
+  activeItem = 'home';
+  activeItem2 = '';
 	constructor(public coreService: CoreService, public router: Router) {
     this.getMenuList();
     this.getCompanyProfile();
@@ -72,4 +73,5 @@ export class HeaderComponent implements OnInit {
       this.router.navigate([data.page[0].pk]);
     }
   }
+
 }

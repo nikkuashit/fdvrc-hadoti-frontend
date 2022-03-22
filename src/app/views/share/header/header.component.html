@@ -26,17 +26,17 @@
               </ul> -->
                 <ul class="navbar-nav mb-2 mb-lg-0 mt-5" *ngFor="let menu of menuList; let i = index;">
                     <li class="nav-item dropdown ">
-                        <a class="nav-link"  id="navbarDropdown" role="button" (click)="navigateSinglePage(menu);ToggleNavBar()"
+                        <a class="nav-link" [ngClass]="{active: activeItem === menu}" id="navbarDropdown" role="button" (click)="navigateSinglePage(menu);ToggleNavBar(); activeItem = menu;"
                             data-bs-toggle="dropdown" aria-expanded="false" *ngIf="menu?.page.length == 1">
                             {{menu?.title}}
                         </a>
-                        <a class="nav-link dropdown-toggle " id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" *ngIf="menu?.page.length > 1">
+                        <a class="nav-link dropdown-toggle " [ngClass]="{active: activeItem === menu}" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" *ngIf="menu?.page.length > 1" (click)="activeItem = menu">
                             {{menu?.title}}
                         </a>
                         <span *ngIf="menu.page && menu.page.length && menu.page.length > 1" class="dropdown-menu mx-5 shadow " aria-labelledby="navbarDropdown">
-                          <li *ngFor="let menuItem of menu.page"><a class="dropdown-item "
-                                  (click)="navigatePage(menuItem,'false');ToggleNavBar()">{{menuItem?.fields?.title}}</a></li>
+                          <li *ngFor="let menuItem of menu.page"><a class="dropdown-item " [ngClass]="{active: activeItem2 === menuItem}"
+                                  (click)="navigatePage(menuItem,'false');ToggleNavBar();activeItem2 = menuItem">{{menuItem?.fields?.title}}</a></li>
                           <li><hr class="dropdown-divider"></li>
                         </span>
                     </li>

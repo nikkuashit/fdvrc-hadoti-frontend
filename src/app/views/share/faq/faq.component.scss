@@ -34,3 +34,7 @@
 .sm-box:hover {
 	transform: scale(1.1);
 }
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff !important;
+}
