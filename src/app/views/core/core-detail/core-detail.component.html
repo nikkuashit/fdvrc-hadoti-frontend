@@ -66,8 +66,8 @@
     <app-product-enquiry [item]="sectionData"></app-product-enquiry>
   </ng-container>
 
-  <ng-container *ngIf="sectionData.component_type == 'normal-card'" >
-    <div>
+  <ng-container *ngIf="sectionData.component_type == 'normal-card'">
+    <div class="normal">
       <app-normal-card [item]="sectionData"></app-normal-card>
     </div>
   </ng-container>
@@ -93,6 +93,16 @@
   <ng-container *ngIf="sectionData.component_type == 'our_partner' ">
     <app-our-partner [item]="sectionData"></app-our-partner>
   </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'latest_news' ">
+    <app-latest-news [item]="sectionData"></app-latest-news>
+  </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'testimonial' ">
+    <app-testimonial [item]="sectionData"></app-testimonial>
+  </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'partnership' ">
+    <app-partnership [item]="sectionData"></app-partnership>
+  </ng-container>
+
 
 
 </div>

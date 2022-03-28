@@ -1,44 +1,50 @@
 <!-- product enquire -->
 
 <div class="container mt-5">
-  <div class="row">
-      <h1 class="text-center header-text"> {{pageData?.title}}</h1>
-  </div>
+    <div class="row">
+        <h1 class="text-center header-text"> {{pageData?.title}}</h1>
+    </div>
 </div>
 <div class="product background mb-5">
-  <div class="container">
-      <div class="row mb-3">
-          <div class="col-lg-6 col-sm-12">
-              <div class="mb-1">
-                  <label for="exampleFormControlTextarea1" class="form-label"></label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enquire Here.."
-                      rows="8"></textarea>
-              </div>
-              <div class="mb-1">
-                  <label for="exampleFormControlInput1" class="form-label"></label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" rows="2">
-              </div>
-              <div class="mb-1">
-                  <label for="exampleFormControlInput1" class="form-label"></label>
-                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Mobile Number"
-                      rows="2">
-              </div>
-              <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"></label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address"
-                      rows="2">
-              </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 mt-3 mx-auto">
-              <div class="mb-3">
-                  <ul class="list-group " *ngFor="let data of pageData.component_data">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-lg-6 col-sm-12">
+                <form action="">
+                    <div class="mb-1">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enquire Here.."
+                            rows="8"></textarea>
+                    </div>
+                    <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name"
+                            rows="3">
+                    </div>
+                    <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Mobile Number" rows="3">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Email Address" rows="3">
+                    </div>
+                    <div class="mb-5">
+                        <button type="submit" class=" btn-sm  bt mb-3">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 mt-3 mx-auto">
+                <div class="mb-3">
+                    <ul class="list-group " *ngFor="let data of pageData.component_data">
 
-                      <h3 class="subtitle-text">{{data?.title}}</h3>
-                      <li class="preline mb-3 ">
-                          <p class="p-1">{{data?.description}}
-                          </p>
-                      </li>
-                      <!-- <li class="list-group-item mb-3">
+                        <h3 class="subtitle-text">{{data?.title}}</h3>
+                        <li class="preline mb-3 ">
+                            <p class="p-1">{{data?.description}}
+                            </p>
+                        </li>
+                        <!-- <li class="list-group-item mb-3">
                           <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nisl tellus
                               scelerisque
                               mattis
@@ -59,10 +65,10 @@
                           </p>
                       </li> -->
 
-                  </ul>
-              </div>
-          </div>
+                    </ul>
+                </div>
+            </div>
 
-      </div>
-  </div>
+        </div>
+    </div>
 </div>

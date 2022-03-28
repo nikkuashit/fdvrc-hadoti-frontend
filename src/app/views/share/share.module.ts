@@ -9,7 +9,7 @@ import { ProjectGlanceComponent } from './project-glance/project-glance.componen
 import { OurProductComponent } from './our-product/our-product.component';
 import { KnownAbtUsComponent } from './known-abt-us/known-abt-us.component';
 // import { INewsComponent } from './i-news/i-news.component';
-// import { TestimonialComponent } from './testimonial/testimonial.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MediaComponent } from './media/media.component';
 import { ProductComponent } from './product/product.component';
@@ -42,6 +42,8 @@ import { PositionComponent } from './position/position.component';
 import { FileuploadComponent } from './fileupload/fileupload.component';
 import { TenderComponent } from './tender/tender.component';
 import { OurPartnerComponent } from './our-partner/our-partner.component';
+import { LatestNewsComponent } from './latest-news/latest-news.component';
+import { PartnershipComponent } from './partnership/partnership.component';
 
 @NgModule({
 	declarations: [
@@ -53,7 +55,7 @@ import { OurPartnerComponent } from './our-partner/our-partner.component';
 		OurProductComponent,
 		KnownAbtUsComponent,
 		// INewsComponent,
-		// TestimonialComponent,
+		TestimonialComponent,
 		MediaComponent,
 		ProductComponent,
 		ContactUsComponent,
@@ -81,7 +83,9 @@ import { OurPartnerComponent } from './our-partner/our-partner.component';
 		PositionComponent,
 		FileuploadComponent,
 		TenderComponent,
-		OurPartnerComponent
+		OurPartnerComponent,
+		LatestNewsComponent,
+		PartnershipComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
@@ -93,7 +97,7 @@ import { OurPartnerComponent } from './our-partner/our-partner.component';
 		OurProductComponent,
 		KnownAbtUsComponent,
 		// INewsComponent,
-		// TestimonialComponent,
+		TestimonialComponent,
 		MediaComponent,
 		ProductComponent,
 		ContactUsComponent,
@@ -121,7 +125,9 @@ import { OurPartnerComponent } from './our-partner/our-partner.component';
 		PositionComponent,
 		FileuploadComponent,
 		TenderComponent,
-		OurPartnerComponent
+		OurPartnerComponent,
+		LatestNewsComponent,
+		PartnershipComponent
 	]
 })
 export class ShareModule {}

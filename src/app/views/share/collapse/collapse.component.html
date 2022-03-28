@@ -1,45 +1,46 @@
 <!-- Product -->
-<div class="container mb-3">
-  <h1 class="text-center header-text"> {{pageData?.title}}</h1>
-  <div class="row text-center">
-      <div class="col-12">
-          <h3 class="subtitle-text">
-            <button class="btn bt" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="true" aria-controls="multiCollapseExample1">Bulk Unit</button> &nbsp;&nbsp;
-            <button class="btn bt" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="true" aria-controls="multiCollapseExample2">Consumer Pack</button>
 
-            <!-- <a class="bulk" href="#tab1"> Bulk Unit</a>
-            <a href="#tab2">
-              <span class="m-3 consumer">
-                      Consumer Pack
-                </span>
-            </a> -->
-          </h3>
-      </div>
-  </div>
-  <div class="row text-center collapse multi-collapse" id="multiCollapseExample1">
-      <div *ngFor="let data of productData" class="col-lg-3 col-md-6 col-sm-6">
-          <div class="card c-size mx-auto border border-danger background p-3 m-2 shadow ">
-              <img class="card-img-top prod-img mx-auto" [src]="data.media" alt="...">
-              <div class="card-body bg-white">
-                  <a href="">
-                      <h3 class="card-title subtitle-text ">{{ data.title}}</h3>
-                  </a>
-                  <p class="card-text paragraph-text ">{{data.subtitle}}</p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="row text-center collapse multi-collapse" id="multiCollapseExample2">
-      <div *ngFor="let data of productData2" class="col-lg-3 col-md-6 col-sm-6 ">
-          <div class="card c-size mx-auto border border-danger background p-3 m-2 shadow">
-              <img class="card-img-top  prod-img mx-auto" [src]="data.media" alt="...">
-              <div class="card-body bg-white">
-                  <a href="">
-                      <h3 class="card-title subtitle-text ">{{ data.title}}</h3>
-                  </a>
-                  <p class="card-text paragraph-text">{{data.subtitle}}</p>
-              </div>
-          </div>
-      </div>
-  </div>
+
+<div class="container mb-3">
+    <h1 class="text-center header-text"> {{pageData?.title}}</h1>
+    <div class="row text-center">
+        <div class="col-12">
+            <h3 class="subtitle-text">
+                <button class="btn fw-bold hower me-3" type="button" data-bs-toggle="collapse.show"
+                    data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
+                    Bulk Unit
+                </button>
+                <button class="btn fw-bold hower" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2" aria-expanded="true" aria-controls="#multiCollapseExample2">
+                    Consumer Pack
+                </button>
+            </h3>
+        </div>
+    </div>
+    <div class="row text-center collapse.show multi-collapse" id="multiCollapseExample1">
+        <div *ngFor="let data of productData" class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card c-size  mx-auto border-danger background p-2 m-2 shadow ">
+                <img class="card-img-top prod-img mx-auto" [src]="data.media" alt="product-image">
+                <div class="card-body bg-white">
+                    <a href="">
+                        <h3 class="card-title subtitle-text ">{{ data.title}}</h3>
+                    </a>
+                    <p class="card-text paragraph-text ">{{data.subtitle}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center collapse multi-collapse" id="multiCollapseExample2">
+        <div *ngFor="let data of productData2" class="col-lg-3 col-md-6 col-sm-6 ">
+            <div class="card c-size mx-auto  border-danger background p-2 m-2 shadow">
+                <img class="card-img-top  prod-img mx-auto" [src]="data.media" alt="product-image">
+                <div class="card-body bg-white">
+                    <a href="">
+                        <h3 class="card-title subtitle-text ">{{ data.title}}</h3>
+                    </a>
+                    <p class="card-text paragraph-text">{{data.subtitle}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
