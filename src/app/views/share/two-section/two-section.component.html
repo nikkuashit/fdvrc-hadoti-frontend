@@ -1,0 +1,22 @@
+<!-- Grivances discloser -->
+<div *ngFor="let data of pageData.component_data" class="container my-5 border-top mandetory">
+    <h1 class=" header-text text-center mt-5">{{data.title}}</h1>
+    <div class="row mt-5">
+        <div class="col-lg-6 col-sm-12 mb-3 text-center">
+            <img class="w-75" [src]="data.media" alt="grivances-img" height="300">
+        </div>
+        <div class="col-lg-6 col-sm-12 text-center">
+
+            <p class="fw-bold fs-5 ">{{data.subtitle}}</p>
+            <p class="fw-bold"><a class="theme-color " href="mailto:ceo@satpurafpc.in"
+                    target="_blank">{{data.description}}</a></p>
+
+            <!-- <p class="fw-bold"><a class="theme-color" href="mailto:contact@satpurafpc.in"
+                    target="_blank">contact@satpurafpc.in</a>
+            </p>
+            <p class="fw-bold"><a class="theme-color " href="mailto:contact@fdrvc.in"
+                    target="_blank">contact@fdrvc.in</a></p>
+            <p class="fw-bold theme-color ">Mob No - 7276262605</p> -->
+        </div>
+    </div>
+</div>

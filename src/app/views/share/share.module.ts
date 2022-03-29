@@ -44,6 +44,9 @@ import { TenderComponent } from './tender/tender.component';
 import { OurPartnerComponent } from './our-partner/our-partner.component';
 import { LatestNewsComponent } from './latest-news/latest-news.component';
 import { PartnershipComponent } from './partnership/partnership.component';
+import { LeftRightCardComponent } from './left-right-card/left-right-card.component';
+import { TwoSectionComponent } from './two-section/two-section.component';
+import { DownloadCardComponent } from './download-card/download-card.component';
 
 @NgModule({
 	declarations: [
@@ -85,7 +88,10 @@ import { PartnershipComponent } from './partnership/partnership.component';
 		TenderComponent,
 		OurPartnerComponent,
 		LatestNewsComponent,
-		PartnershipComponent
+		PartnershipComponent,
+		LeftRightCardComponent,
+		TwoSectionComponent,
+		DownloadCardComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
@@ -127,7 +133,10 @@ import { PartnershipComponent } from './partnership/partnership.component';
 		TenderComponent,
 		OurPartnerComponent,
 		LatestNewsComponent,
-		PartnershipComponent
+		PartnershipComponent,
+		LeftRightCardComponent,
+		TwoSectionComponent,
+		DownloadCardComponent
 	]
 })
 export class ShareModule {}

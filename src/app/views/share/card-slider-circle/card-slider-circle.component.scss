@@ -1,20 +1,5 @@
-.textHeight {
-	text-align: justify;
-}
-@media (max-width: 1200px) {
-	.head {
-		margin-top: 10px !important;
-	}
-}
-.team-member .card img {
+.bod {
 	border-radius: 50%;
-}
-
-// value & objective
-.value .card {
-	transition: 1.5s all;
-}
-.value .card:hover {
-	transform: scale(1.1);
-	border: 1px solid #ef4e58;
+	height: 200px;
+	width: 200px;
 }

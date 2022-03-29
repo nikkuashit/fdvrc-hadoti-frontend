@@ -1,17 +1,19 @@
 <div class="container-fluid my-5">
+
     <h1 class="header-text text-center pb-3"> {{items?.title}} </h1>
     <p-carousel [value]="items.component_data" [numVisible]="3" [numScroll]="3" [circular]="false"
         [responsiveOptions]="responsiveOptions">
         <ng-template let-product pTemplate="item">
-            <div class="product-item ms-5">
+            <div class="product-item text-center">
                 <div>
-                    <img [src]="product.media" alt="" class="d-block ms-2 w-75">
+                    <img [src]="product.media" alt="" class="bod ">
                 </div>
                 <div>
-                    <h4 class="text-center me-5  text-uppercase theme-color mt-3">{{product?.title}}</h4>
-                    <h6 class="text-center me-5  text-uppercase">{{product?.subtitle}}</h6>
+                    <h4 class="text-center  text-uppercase theme-color mt-3">{{product?.title}}</h4>
+                    <h6 class="text-center  text-uppercase">{{product?.subtitle}}</h6>
                 </div>
             </div>
         </ng-template>
     </p-carousel>
+
 </div>

@@ -1,23 +1,15 @@
-<div class="container-fluid  background mx-auto" *ngFor='let data of pageData'>
-  <div class="row mx-auto">
-      <div class="col-lg-3 col-md-6 col-sm-12">
-          <img class="d-block w-100 " [src]="data.media">
-      </div>
-      <div class="col-lg-9 col-md-6 col-sm-12">
-          <h2 class="subtitle-text text-decoration-underline">{{data.title}}</h2>
-          <div [ngClass]="{'textHeight':isReadMore}">
-              <p *ngIf="showLess" class="paragraph-text">{{data.description | slice:0:550}}
-                  <span *ngIf="data.description.length>500">
-                      ...
-                  </span>
-              </p>
-              <p *ngIf="!showLess" class="paragraph-text">{{data.description}}
-
-              </p>
-          </div>
-          <button class="btn-sm  bt mt-1 mb-3" type="button" (click)="showText()">
-              {{ isReadMore ? 'Read More': 'Read Less' }}
-          </button>
-      </div>
-  </div>
+<div class="container-fluid  background mx-auto p-5 " *ngFor='let data of pageData'>
+    <div class="container">
+        <div class="row mx-auto">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img class="d-block w-100 " [src]="data.media">
+            </div>
+            <div class="col-lg-9 col-md-6 col-sm-12">
+                <h2 class="subtitle-text text-decoration-underline">{{data.title}}</h2>
+                <p class="fw-bold">{{data.subtitle}}
+                <p class="paragraph-text">{{data.description}}
+                </p>
+            </div>
+        </div>
+    </div>
 </div>

@@ -102,6 +102,15 @@
   <ng-container *ngIf="sectionData.component_type == 'partnership' ">
     <app-partnership [item]="sectionData"></app-partnership>
   </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'left_right_card' ">
+    <app-left-right-card [item]="sectionData"></app-left-right-card>
+  </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'two_section' ">
+    <app-two-section [item]="sectionData"></app-two-section>
+  </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'download_card' ">
+    <app-download-card [item]="sectionData"></app-download-card>
+  </ng-container>
 
 
 

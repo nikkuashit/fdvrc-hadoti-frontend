@@ -12,8 +12,8 @@ import { CoreDetailComponent } from './views/core/core-detail/core-detail.compon
 
 const routes: Routes = [
 	{ path: '', component: LandingPageComponent },
-  { path: 'home', component: LandingPageComponent },
-  { path: ':id', component: CoreDetailComponent,  pathMatch: 'full' },
+	{ path: 'home', component: LandingPageComponent },
+	{ path: ':id', component: CoreDetailComponent, pathMatch: 'full' },
 	{ path: 'engage-with-us', component: EngageWithUsComponent },
 	{ path: 'about', component: AboutComponent },
 	{ path: 'project-update', component: ProjectUpdateComponent },
@@ -24,7 +24,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-	imports: [ RouterModule.forRoot(routes, { useHash: true }) ],
+	imports: [ RouterModule.forRoot(routes, { useHash: true, scrollPositionRestoration: 'top' }) ],
 	exports: [ RouterModule ]
 })
 export class AppRoutingModule {}
