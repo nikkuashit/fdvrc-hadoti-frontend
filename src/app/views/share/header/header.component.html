@@ -15,8 +15,8 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse  justify-content-center text-center" id="navbarSupportedContent">
-              <!-- <ul class="navbar-nav mb-2 mb-lg-0 mt-5">
+            <div class="collapse navbar-collapse  justify-content-center text-center me-5" id="navbarSupportedContent">
+                <!-- <ul class="navbar-nav mb-2 mb-lg-0 mt-5">
                   <li class="nav-item dropdown">
                   <a class="nav-link" routerLink='' id="navbarDropdown" role="button" target="_self"
                       data-bs-toggle="dropdown" aria-expanded="false">
@@ -24,21 +24,28 @@
                   </a>
                 </li>
               </ul> -->
-                <ul class="navbar-nav mb-2 mb-lg-0 mt-5" *ngFor="let menu of menuList; let i = index;">
+                <ul class="navbar-nav mb-2 mb-lg-0 mt-4 " *ngFor="let menu of menuList; let i = index;">
                     <li class="nav-item dropdown ">
-                        <a class="nav-link" [ngClass]="{active: activeItem === menu}" id="navbarDropdown" role="button" (click)="navigateSinglePage(menu);ToggleNavBar(); activeItem = menu;"
+                        <a class="nav-link" [ngClass]="{active: activeItem === menu}" id="navbarDropdown" role="button"
+                            (click)="navigateSinglePage(menu);ToggleNavBar(); activeItem = menu;"
                             data-bs-toggle="dropdown" aria-expanded="false" *ngIf="menu?.page.length == 1">
                             {{menu?.title}}
                         </a>
-                        <a class="nav-link dropdown-toggle " [ngClass]="{active: activeItem === menu}" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" *ngIf="menu?.page.length > 1" (click)="activeItem = menu">
+                        <a class="nav-link dropdown-toggle " [ngClass]="{active: activeItem === menu}"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            *ngIf="menu?.page.length > 1" (click)="activeItem = menu">
                             {{menu?.title}}
                         </a>
-                        <span *ngIf="menu.page && menu.page.length && menu.page.length > 1" class="dropdown-menu mx-5 shadow " aria-labelledby="navbarDropdown">
-                          <li *ngFor="let menuItem of menu.page"><a class="dropdown-item " [ngClass]="{active: activeItem2 === menuItem}"
-                                  (click)="navigatePage(menuItem,'false');ToggleNavBar();activeItem2 = menuItem">{{menuItem?.fields?.title}}</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                        </span>
+                        <span *ngIf="menu.page && menu.page.length && menu.page.length > 1"
+                            class="dropdown-menu mx-5 shadow " aria-labelledby="navbarDropdown">
+                    <li *ngFor="let menuItem of menu.page"><a class="dropdown-item "
+                            [ngClass]="{active: activeItem2 === menuItem}"
+                            (click)="navigatePage(menuItem,'false');ToggleNavBar();activeItem2 = menuItem">{{menuItem?.fields?.title}}</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    </span>
                     </li>
                 </ul>
             </div>
@@ -118,7 +125,7 @@
             </div> -->
 
             <a class="navbar-brand logo-2 me-5" href="https://fdrvc.org/mission-i/" target="_blank"><img
-              [src]="companyData?.sub_image" alt=""></a>
+                    [src]="companyData?.sub_image" alt=""></a>
         </div>
 
     </nav>
