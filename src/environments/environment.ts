@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'http://hadoti.curiositydesk.com',
+  url: 'http://hadotifpc.in/',
 };
 
 /*
