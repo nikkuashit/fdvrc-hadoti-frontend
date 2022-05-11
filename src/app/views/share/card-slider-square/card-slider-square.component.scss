@@ -1,0 +1,10 @@
+.product-item img {
+	height: 350px;
+	width: 320px;
+}
+
+@media (max-width: 411px) {
+	.product-item img {
+		height: 220px;
+	}
+}

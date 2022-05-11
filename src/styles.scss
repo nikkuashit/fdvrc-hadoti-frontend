@@ -19,14 +19,15 @@ a:focus {
 	text-decoration: none;
 	outline: none;
 }
-/* ::-webkit-scrollbar {
-	display: none;
-} */
+.KrutiDev_hindi_text {
+	font-family: Kruti Dev !important;
+}
 
 html,
 body {
 	height: 100%;
 }
+
 body {
 	margin: 0;
 	font-family: "Roboto", "Helvetica Neue", sans-serif;
@@ -34,25 +35,34 @@ body {
 
 .header-text {
 	color: #ef4e58;
-	font-size: 27px;
-	word-spacing: 2px;
 	text-transform: capitalize;
 }
+
 .subtitle-text {
 	color: #ef4e58;
-	font-size: 21px;
 	text-transform: capitalize;
 }
 
 .paragraph-text {
 	color: rgb(49, 49, 49);
-	font-size: 12px;
-	line-height: 18px;
+	line-height: 1.375em;
 }
+
 .bt {
-	font-size: 14px;
 	background-color: #ef4e58;
+	font-size: 1.1rem !important;
 	color: #fff;
 	border: none;
+	border-radius: 0px !important;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.theme-color {
+	color: #ef4e58;
+}
+.background {
+	background-color: #ffe7f0;
+}
+.preline{
+  white-space: pre-line !important;
 }

@@ -1,206 +1,47 @@
-/* Engage with us */
-.engage-with-us {
-	margin-bottom: 90px;
-}
+// .engage-with-us {
+// 	background: url(/assets/engage-wth-us/green-chameleon-s9CC2SKySJM-unsplash.jpg);
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// }
+// .engage-with-us input,
+// select {
+// 	border: none;
+// }
 
-.background-img {
-	background-image: url(/assets/engage-wth-us/green-chameleon-s9CC2SKySJM-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 100px;
-	max-height: 500px;
-}
-.engage-with-us img {
-	height: 400px;
-	width: 400px;
-	margin-top: -20px;
-}
+// @media (max-width: 992px) {
+// 	.images {
+// 		margin-top: 10px;
+// 	}
+// }
+// @media (max-width: 768px) {
+// 	.images {
+// 		height: 450px;
+// 		margin-top: 80px;
+// 	}
+// }
+// // internship
+// .internship {
+// 	background: url(/assets/engage-wth-us/Student-Internship.jpg);
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// }
 
-.engage-with-us h6 {
-	color: #ef4e58;
-	font-size: 18px;
-	margin-top: 40px;
-}
-.engage-with-us h4 {
-	color: #ef4e58;
-	font-size: 27px;
-	line-height: 25px;
-	font-weight: 500;
-}
-
-.engage-with-us .info {
-	width: 100%;
-	background-color: #fffaec;
-	border: 1px solid rgb(214, 214, 214);
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	margin-bottom: 20px;
-	padding: 10px;
-}
-.engage-with-us input {
-	padding: 10px;
-	border: .5px solid #ef4e58;
-	border-radius: 4px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-.engage {
-	padding: 10px;
-	border: .5px solid #ef4e58;
-	border-radius: 4px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
-/* Internship */
-
-.internship {
-	background-image: url(/assets/engage-wth-us/Student-Internship.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 450px;
-}
-.box {
-	background-color: #fffaec;
-	height: 450px;
-	opacity: 0.9;
-	clip-path: polygon(100% 0, 60% 0%, 100% 100%, 0 100%, 0 0);
-}
-
-.box h4 {
-	font-size: 27px;
-	color: #ef4e58;
-	font-weight: 500;
-	line-height: 1px;
-}
-.box h5 {
-	font-size: 18px;
-	color: #ef4e58;
-	font-weight: 400;
-	line-height: 25px;
-	text-transform: capitalize;
-}
-
-.why-prg {
-	background-color: #ffadb5;
-	width: 100%;
-	opacity: .8;
-	margin-top: -100px;
-}
-/* form */
-.form {
-	background-color: #fffaec;
-}
-.form input {
-	padding: 10px;
-	border: none;
-	border-radius: 4px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	margin-left: 2px;
-	font-size: 12px;
-}
-
-.apply-form {
-	padding: 10px;
-	border: none;
-	border-radius: 4px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	font-size: 12px;
-}
-
-/* Tender search  */
-
-.tender {
-	padding: 10px;
-	border: none;
-	border-radius: 4px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	margin-left: -2px;
-	font-size: 12px;
-	background-color: #fffaec;
-}
-
-.tender-search h5 {
-	font-size: 16px;
-	color: #ef4e58;
-}
-.tender-rt .t_bg {
-	background-image: url(/assets/engage-wth-us/tender.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 100px;
-	height: 430px;
-	margin-top: -50px;
-	margin-bottom: 30px;
-}
-
-.tender-rt h4 {
-	color: #ef4e58;
-	text-decoration: underline;
-	font-size: 16px;
-}
-.tender-rt h6 {
-	color: black;
-	text-decoration: underline;
-	margin-left: 1px;
-	font-size: 12px;
-}
-
-/* partnership */
-.card {
-	border: none;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.card img {
-	height: 200px;
-	width: 150px;
-}
-.partnership {
-	background-color: #fffaec;
-	padding: 20px;
-}
-
-/* responsive */
-@media (max-width: 992px) {
-	.engage-with-us img {
-		height: 300px;
-		width: 300px;
-		margin-top: 60px;
-	}
-}
-@media (max-width: 768px) {
-	.card {
-		width: 120px;
-		height: 200px;
-	}
-	.partnership h3 {
-		font-size: 16px;
-	}
-	.partnership p {
-		display: none;
-	}
-	.card img {
-		height: 100px;
-		width: 150px;
-	}
-	.tender-search h3 {
-		font-size: 18px;
-	}
-	.tender-rt h1 {
-		font-size: 21px;
-		letter-spacing: .5px;
-		margin-top: -70px;
-	}
-	.engage-with-us input {
-		font-size: 10px;
-		padding: 4px;
-	}
-	.engage {
-		font-size: 8px;
-		padding: 6px;
-	}
-	#btn-1 {
-		font-size: 12px;
-		padding: 3px;
-	}
-	.partnership button {
-		font-size: 10px;
-	}
-}
+// // partnership
+// .partnership .card {
+// 	border: none;
+// }
+// label .col-form-label {
+// 	text-align: left !important;
+// }
+// // tender
+// .tender {
+// 	background: url(/assets/engage-wth-us/tender.jpg);
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// }
+// .option-bg {
+// 	background: #ffe7f0 !important;
+// }
+// select {
+// 	background: #fff !important;
+// }

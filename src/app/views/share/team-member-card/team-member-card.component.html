@@ -1,0 +1,12 @@
+<div class="container-fluid background p-5 mt-5">
+    <h1 class="header-text text-center mb-3">{{pageData?.title}}</h1>
+    <div class="row  mb-3">
+        <div *ngFor='let data of pageData.component_data' class="col-lg-3 col-md-6 col-sm-12 text-center">
+            <div>
+                <img [src]="data.media">
+                <h4 class="subtitle-text mt-1">{{data?.title}}</h4>
+                <p class="mb-3">{{data?.subtitle}}</p>
+            </div>
+        </div>
+    </div>
+</div>

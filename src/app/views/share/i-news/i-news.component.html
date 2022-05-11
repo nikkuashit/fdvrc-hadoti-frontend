@@ -1,8 +1,7 @@
-<div class="container mb-3">
+<div class="container-fluid mb-3">
     <div class="row">
-
         <div class="new ">
-            <h1 class="header-text text-center mt-3 ">Latest news</h1>
+            <h1 class="title header-text text-center mt-3 ">Latest news</h1>
         </div>
 
 
@@ -10,17 +9,16 @@
     </div>
 
     <div class="row">
-        <div *ngFor="let data of gData" class="col-lg-4 col-md-6 col-sm-12 mx-auto">
-            <div class="col">
-                <div class="card mx-auto m-3">
-                    <img [src]="data.image" alt="...">
-                    <div class="card-body">
-                        <a href="#">
-                            <h6>{{data.title}}</h6>
-                        </a>
-                    </div>
+        <div *ngFor="let data of gData" class="col-lg-4 col-md-12 col-sm-12 mx-auto">
+            <div class="card  m-3 d-block w-75 border-danger rounded shadow mx-auto" style="background: #ef4e58;">
+                <img [src]="data.image" class="d-block w-100" alt="...">
+                <div class="card-body">
+                    <a href="#">
+                        <h6 class="text-center text-white fs-4 text-capitalize">{{data.title}}</h6>
+                    </a>
                 </div>
             </div>
+
         </div>
     </div>
 

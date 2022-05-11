@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
 	selector: 'app-engage-with-us',
@@ -6,28 +6,37 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: [ './engage-with-us.component.scss' ]
 })
 export class EngageWithUsComponent implements OnInit {
-	partnershipData = [
-		{
-			card_title: 'Partnership',
-			image: '/assets/partnership/Group 256.png',
-			card_para:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pretium in sit arcu magna nascetur et vel.'
-		},
-		{
-			card_title: 'Distribution',
-			image: '/assets/partnership/local-business-data-distribution 1.png',
-			card_para:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pretium in sit arcu magna nascetur et vel.'
-		},
-		{
-			card_title: 'Vendor',
-			image: '/assets/partnership/Group 257.png',
-			card_para:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id pretium in sit arcu magna nascetur et vel.'
-		}
-	];
+	responsiveOptions: any;
+	@Input() item: any;
+	items: any;
 
-	constructor() {}
+	constructor() {
+		this.responsiveOptions = [
+			{
+				breakpoint: '1920px',
+				numVisible: 4,
+				numScroll: 4
+			},
+			{
+				breakpoint: '1200px',
+				numVisible: 3,
+				numScroll: 3
+			},
+			{
+				breakpoint: '968px',
+				numVisible: 2,
+				numScroll: 2
+			},
+			{
+				breakpoint: '568px',
+				numVisible: 1,
+				numScroll: 1
+			}
+		];
+	}
 
-	ngOnInit(): void {}
+	ngOnInit(): void {
+		this.items = this.item;
+		console.log('circle slider', this.items);
+	}
 }

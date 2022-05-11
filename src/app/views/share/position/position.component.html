@@ -1,0 +1,15 @@
+<!-- job opening -->
+<div class="container mb-5">
+    <div class="col-12">
+        <h3 class="theme-color">{{pageData.title}}</h3>
+        <ul *ngFor="let data of pageData.component_data" class="ms-3">
+            <li class="fw-bold mb-2">{{data.title}} <span><a class="theme-color ms-2" [href]="data.url"
+                        target="_blank">{{data.subtitle}}
+                    </a></span> </li>
+        </ul>
+        <a href="https://forms.gle/ikmHPBL2qgcyXHBM6" target="_blank" rel="noopener noreferrer"><button type="button"
+                class="btn bt mt-2 mb-5">
+                Apply Now</button></a>
+
+    </div>
+</div>

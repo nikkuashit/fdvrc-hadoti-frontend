@@ -1,0 +1,20 @@
+<div class="container my-5">
+
+    <h1 class="header-text text-center mt-3 ">{{pageData.title}}</h1>
+
+    <div class="row">
+        <div *ngFor="let data of pageData.component_data" class="col-lg-4 col-md-12 col-sm-12 mx-auto">
+            <div class="card  m-3 d-block w-100 rounded shadow mx-auto">
+                <img [src]="data.media" class="d-block w-100" alt="latest-news banner" height="300">
+            </div>
+            <a [href]="data.url" target="_blank" class="l-new">
+                <h5 class="theme-color text-center l-new mb-5">{{data.subtitle}}</h5>
+            </a>
+        </div>
+
+
+
+
+    </div>
+
+</div>

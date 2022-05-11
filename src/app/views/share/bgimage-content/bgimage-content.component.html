@@ -1,0 +1,48 @@
+<!-- Engage with us -->
+<div class="engage-with-us mt-3 mb-5">
+    <div *ngFor='let data of pageData.component_data' class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mt-7">
+
+                <h1 class=" text-white">{{data.title}}</h1>
+                <p class="paragraph-text text-white lead">{{data.description}}</p>
+
+            </div>
+            <div class="col-lg-6 col-md-12 pt-7">
+                <img class="img-fluid" [src]=data.media alt="Career-jpg">
+            </div>
+
+        </div>
+        <!-- <div class="container p-2 shadow background">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-9 my-1">
+                    <input type="text" placeholder=" search" class="p-2 d-block w-100  rounded">
+                </div>
+
+                <div class="col-lg-2 col-md-4  col-sm-9 my-1">
+                    <select name="All Ctegories" class="d-block w-100 p-2 rounded " id="category" form="categoryform">
+                        <option value="all-categories ">Select all categories</option>
+                        <option value="all-categories"></option>
+                        <option value="all-categories"></option>
+                        <option value="all-categories"></option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-9 my-1">
+                    <select name="location" class="d-block w-100 p-2 rounded " id="location" form="locationform">
+                        <option value="all-location">Select location</option>
+                        <option value="all-location"></option>
+                        <option value="all-location"></option>
+                        <option value="all-location"></option>
+                        <option value="all-location"></option>
+
+                    </select>
+                </div>
+                <div class="col-lg-2 col-sm-9 my-1">
+                    <button class="btn-sm bt mx-auto" id="btn-1">Find Job</button>
+                </div>
+            </div>
+
+        </div> -->
+    </div>
+
+</div>

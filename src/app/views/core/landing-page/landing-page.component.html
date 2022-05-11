@@ -1,7 +1,61 @@
-<app-hero-img></app-hero-img>
-<app-what-we-do></app-what-we-do>
-<app-project-glance></app-project-glance>
-<app-our-product></app-our-product>
-<app-known-abt-us></app-known-abt-us>
-<app-i-news></app-i-news>
-<app-testimonial></app-testimonial>
+<!-- <div *ngFor="let core of coreDetailData;"> -->
+<div *ngFor="let sectionData of coreDetailData">
+
+  <ng-container *ngIf="sectionData.component_type == 'slider'">
+    <app-full-slider [item]="sectionData"></app-full-slider>
+  </ng-container>
+
+  <ng-container *ngIf="sectionData.component_type == 'info_center'">
+    <div *ngFor="let section of sectionData.component_data">
+      <app-info-card-center [item]="section"></app-info-card-center>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="sectionData.component_type == 'center_card' ">
+    <!-- <div *ngFor="let section of sectionData.component_data"> -->
+    <app-component-center-end [item]="sectionData"></app-component-center-end>
+    <!-- </div> -->
+  </ng-container>
+
+  <ng-container *ngIf="sectionData.component_type == 'slider_square'">
+    <!-- <div *ngFor="let section of sectionData.component_data"> -->
+    <app-card-slider-square [item]="sectionData"></app-card-slider-square>
+    <!-- </div> -->
+  </ng-container>
+
+  <ng-container *ngIf="sectionData.component_type == 'left_card' ">
+    <app-component-left-end [item]="sectionData"></app-component-left-end>
+  </ng-container>
+
+  <ng-container *ngIf="sectionData.component_type == 'left_to_right' ">
+    <app-left-to-right [item]="sectionData"></app-left-to-right>
+  </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'right_to_left' ">
+    <app-right-to-left [item]="sectionData"></app-right-to-left>
+  </ng-container>
+
+  <ng-container *ngIf="sectionData.component_type == 'slider_circle'">
+    <app-card-slider-circle [item]="sectionData"></app-card-slider-circle>
+  </ng-container>
+
+  <ng-container *ngIf="sectionData.component_type == 'square_card_hover'">
+    <app-square-card-hover [item]="sectionData"></app-square-card-hover>
+  </ng-container>
+
+  <ng-container *ngIf="sectionData.component_type == 'team_member'">
+    <app-team-member-card [item]="sectionData"></app-team-member-card>
+  </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'latest_news' ">
+    <app-latest-news [item]="sectionData"></app-latest-news>
+  </ng-container>
+  <ng-container *ngIf="sectionData.component_type == 'testimonial' ">
+    <app-testimonial [item]="sectionData"></app-testimonial>
+  </ng-container>
+
+</div>
+<!-- </div> -->
+
+<!-- <app-what-we-do></app-what-we-do> -->
+<!-- <app-project-glance></app-project-glance> -->
+<!-- <app-our-product></app-our-product> -->
+<!-- <app-known-abt-us></app-known-abt-us> -->

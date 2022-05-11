@@ -1,0 +1,14 @@
+<div class="container-fluid my-5">
+    <h1 class="header-text text-center pb-3"> {{items?.title}} </h1>
+    <p-carousel [value]="items.component_data" [numVisible]="3" [numScroll]="3" [circular]="false"
+        [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+            <div class="product-item ms-5">
+                <div>
+                    <img [src]="product.media" alt="Partner-jpg" class="d-block  mx-auto" height="200">
+                </div>
+
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>

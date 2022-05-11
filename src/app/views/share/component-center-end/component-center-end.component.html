@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12" *ngFor="let data of pageData;let i=index">
+      <div class="card text-center mx-auto shadow">
+        <img [src]="data?.media" class="card-img-top mx-auto" />
+        <div class="card-body">
+
+          <h5 class="card-title theme-color">{{data?.title}}</h5>
+          <p *ngIf="data.is_showmore" class="paragraph-text">{{data?.description |
+            slice:0:80}}
+            <span *ngIf="data.description.length>120">
+              ...
+            </span>
+          </p>
+
+          <a *ngIf="data.url" [routerLink]=" ['/7']"><span class="advertisment">
+              <button class="btn-sm bt mt-3">Tender Search</button></span></a>
+
+          <br>
+          <p *ngIf="!data.is_showmore" class="paragraph-text">{{data?.description }}
+
+          </p>
+
+          <span *ngIf="!data.url" class="theme-color" (click)="showText(i)"> {{ data.is_showmore ? 'Read
+            More':
+            'Read
+            Less' }} </span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

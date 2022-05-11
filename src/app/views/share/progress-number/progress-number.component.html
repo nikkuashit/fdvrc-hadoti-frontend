@@ -1,0 +1,29 @@
+<!-- progress at glance -->
+<div class="project-update background">
+    <div class="container pt-3 pb-5">
+        <h1 class="theme-color pb-2">{{pageData.title}}</h1>
+
+        <div class="row mx-auto p-4 shadow" style="background: #ef4e58" >
+
+          <div *ngFor="let val of pageData.component_data; let even=even; let odd=odd" class="col-lg-3 p-3 text-center">
+
+            <p class="fs-2 text-white" [ngClass]="{'white': odd, 'yellow': even }">{{val?.subtitle}}</p>
+              <p class="fw-bold text-white fs-5">{{val?.title}}</p>
+          </div>
+
+          <!-- <div class="col-lg-3 p-3 text-center">
+              <p class="fs-2" style="color: yellow;"> {{dc3Count}}</p>
+              <p class="fw-bold text-white fs-5">No of DC3</p>
+          </div>
+          <div class="col-lg-3 p-3 text-center">
+              <p class="fs-2 text-white">{{productCount}}</p>
+              <p class="fw-bold text-white fs-5">No of Product Line</p>
+          </div>
+          <div class="col-lg-3 p-3 text-center">
+              <p class="fs-2" style="color: yellow;">{{villageCount}}</p>
+              <p class=" fw-bold text-white fs-5">No Of Villages</p>
+          </div> -->
+
+      </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.prod-img {
+	height: 210px;
+}
+
+.hower {
+	margin-left: -20px;
+}
+.hower:hover {
+	color: #ef4e58;
+	text-decoration: underline;
+}
+.c-size {
+	transition: all 1s;
+}
+.c-size:hover {
+	transform: scale(1.05);
+}
