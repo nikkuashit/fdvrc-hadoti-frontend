@@ -51,7 +51,7 @@ a:hover {
 .dropdown-item:focus,
 .dropdown-item:hover {
 	color: rgb(82, 74, 74);
-	background-color: #ffe7f0;
+	background-color: #ffffff;
 }
 .dropdown-menu {
 	padding: 0px;
@@ -99,6 +99,6 @@ a:hover {
 		margin-right: 0px !important;
 	}
 }
-.filter-green{
-  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+.filter-green {
+	filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }

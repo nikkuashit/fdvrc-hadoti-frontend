@@ -1,12 +1,11 @@
 <!-- Article -->
-<div class="container my-5 text-center" *ngFor='let data of pageData'>
+<div class="container my-5 text-center" *ngFor='let data of pageData.component_data'>
 
     <h1 class="header-text pt-5">{{data.title}}</h1>
 
     <ul class="list-unstyled ">
 
-        <a class="theme-color" href="http://hadoti.curiositydesk.com/media/Coriander_Case_Study_mykpOC7.pdf"
-            target="_blank">
+        <a class="theme-color" [href]="data.url" target="_blank">
             <li class="ms-3 fs-5 ">{{data.subtitle}}</li>
         </a>
     </ul>

@@ -1,10 +1,10 @@
 <!-- Tender search -->
 
 <div class="tender-search my-5">
-    <div class="container">
+    <div class="container mx-auto">
         <div class="row">
 
-            <div class="col-lg-3 col-md-6 col-sm-12 ">
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
                 <h2 class="theme-color">Tender Search</h2>
                 <select name="apply" class="p-2 d-block w-100 rounded option-bg" id="tender-type" form="tenderform">
                     <option value="tender-type">Tender Type</option>
@@ -58,50 +58,30 @@
 
             </div>
 
-            <div *ngFor="let data of pageData.component_data" class="col-lg-9 col-md-12 my-5">
-                <div class=" d-block w-100 p-5 tender">
-                    <div class="col-lg-9 col-md-12 col-sm-12 ">
-                        <h1 class="text-white">{{data.title}}
+            <div class="col-lg-8 col-md-12 my-5">
+                <div class="row mx-auto background shadow">
+                    <!-- <h2 class="theme-color  text-center pt-4 ">{{pageData.title}}
 
-                        </h1>
-                        <h4 class="text-white fs-5">{{data.subtitle}}</h4>
+                    </h2>
+                    <p class="text-dark text-center fs-5">{{pageData.content}}</p> -->
+
+                    <div class="col-lg-4 col-sm-8  p-4 mt-4 mx-auto">
+                        <h2 class="theme-color mb-1">Active Tender</h2>
+                        <ul *ngFor="let data of active_tender" class="mx-auto">
+                            <li class="theme-color list-unstyled mx-auto"><a class="theme-color" [href]="data.media"
+                                    target="_blank">{{data.title}}</a>
+                            </li>
+
+                        </ul>
                     </div>
+                    <div class="col-lg-4 col-sm-8  p-4 mt-4 mx-auto">
+                        <h2 class="theme-color mb-1">Archive Tender</h2>
+                        <ul *ngFor="let data of archive_tender" class="mx-auto">
+                            <li class="list-unstyled "><a class=" text-dark" [href]="data.media"
+                                    target="_blank">{{data.title}}</a></li>
 
-                    <div class="row">
-                        <div class="col-6">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn-sm bt ms-2 mb-3" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                Advertisement
-                            </button>
-                            <br>
-                            <button class="btn-sm bt ms-2 "> <a class="text-white "
-                                    href="/assets/engage-wth-us/Open Tender_Hadoti_Soya n Mustard.pdf"
-                                    target="_blank">Pre-bid
-                                    invite</a> </button>
-
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close theme-color " data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <img src="/assets/engage-wth-us/Hadoti Advertisement.jpeg" alt="">
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
+                        </ul>
                     </div>
-
                 </div>
             </div>
         </div>
