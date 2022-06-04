@@ -11,7 +11,7 @@ export class NormalCardComponent implements OnInit {
 	constructor() {}
 
 	ngOnInit(): void {
-		this.pageData = this.item.component_data;
+		this.pageData = this.item;
 		console.log('pageData', this.pageData);
 	}
 }
