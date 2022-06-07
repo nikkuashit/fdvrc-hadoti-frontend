@@ -1,13 +1,13 @@
 {
     "/menu": {
-        "target": "http://hadoti.curiositydesk.com/api/api/core/menu/",
+        "target": "http://hahadotifpc.in/api/api/core/menu/",
         "secure": false,
         "logLevel": "debug",
         "changeOrigin": true
 
     },
     "/api/*": {
-      "target": "http://hadoti.curiositydesk.com/",
+      "target": "http://hahadotifpc.in/",
       "secure": false,
       "logLevel": "debug",
       "changeOrigin": true
