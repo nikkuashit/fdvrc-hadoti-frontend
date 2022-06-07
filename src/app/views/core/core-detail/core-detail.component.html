@@ -1,6 +1,31 @@
 <!-- <div *ngFor="let core of contentData;"> -->
 <div *ngFor="let sectionData of contentData">
+  <!-- start section -->
+  <ng-container *ngIf="sectionData.content">
+    <div *ngIf="sectionData.media">
+      <div class="container">
+        <div class="row">
+          <div  class="col-lg-6 col-md-12 col-sm-12">
+            <div class=" text-center">
+                <div class="card  shadow p-2">
+                    <h2 class="theme-color pt-5 text-center">{{sectionData.title}}</h2>
+                    <img [src]="sectionData.media" class="w-50 mx-auto mb-5" alt="{{sectionData?.title}}" style="height: 200px;">
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div [innerHTML]="sectionData?.content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!sectionData.media" class="container">
+      <h2 class="theme-color pt-5 text-center">{{sectionData.title}}</h2>
+      <div [innerHTML]="sectionData.content"></div>
+    </div>
 
+  </ng-container>
+  <!-- end -->
   <ng-container *ngIf="sectionData.component_type == 'slider'">
     <app-full-slider [item]="sectionData"></app-full-slider>
   </ng-container>
