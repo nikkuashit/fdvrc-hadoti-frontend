@@ -8,7 +8,7 @@
             <h1 class="header-text text-center">{{data.title}}</h1>
             <div class="col-12">
 
-                <p *ngIf="data.url" class="text-center">{{data.subtitle}} <a href="" target="_blank"><span
+                <p *ngIf="data.url" class="text-center">{{data.subtitle}} <a [href]="data.media" target="_blank"><span
                             class="download"> <i class="fas fa-download"></i></span></a></p>
                 <p class="text-center">{{data.description}}</p>
             </div>

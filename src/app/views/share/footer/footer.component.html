@@ -4,11 +4,10 @@
             <div class="row">
                 <div class="logo">
                     <div class="col-lg-12 col-md-12 col-sm-12">
-                        <a href="#"><img class="ms-3 mt-4" [src]="companyData?.footer_icon" alt="footer-icon"></a>
+                        <a href="#"><img class="ms-3 mt-4" [src]="companyData?.footer_icon" alt=""></a>
                         <a href="https://fdrvc.org/mission-i/" target="_blank"><img class="logo_2 mt-4 me-4 float-end"
-                                [src]="companyData?.footer_sub_image" alt="mission-icon"></a>
-                        <!-- <a href="https://fdrvc.org/mission-i/" target="_blank"><img class="logo_2 mt-4 me-4 float-end"
-                                src="/assets/brandlogo2.svg" alt=""></a> -->
+                                [src]="companyData?.footer_sub_image" alt=""></a>
+
                         <h3 class="mt-3 text-white ms-5 ps-4"> {{companyData?.title}}
                         </h3>
                         <p class="mt-2 ms-5 ps-4 "><a class="text-white" href="contact@fdrvc.in" target="_blank">
@@ -22,29 +21,7 @@
 
             <div class="row mb-3  mx-auto mt-5 text-center justify-content-center">
 
-                <!-- <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-3 mb-2">
-                    <div class="footer-widget">
-                        <h4>About Us</h4>
-                        <ul>
-                            <li><a href=" contact@fdrvc.in ">Who we are</a></li>
-                            <li><a href=" contact@fdrvc.in ">Project Update</a></li>
 
-                            <li><a href=" contact@fdrvc.in ">Product</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-3 mb-2">
-                    <div class="footer-widget">
-                        <h4>Media</h4>
-                        <ul>
-                            <li><a href=" contact@fdrvc.in ">Gallery</a></li>
-                            <li><a href=" contact@fdrvc.in ">Latest Update</a></li>
-                            <li><a href=" contact@fdrvc.in ">Faq</a></li>
-                        </ul>
-                    </div>
-                </div> -->
 
                 <div *ngFor="let menu of menuList" class="col-lg-2 offset-lg-1 col-md-3 col-sm-3 mb-2">
                     <div class="footer-widget">
@@ -52,24 +29,20 @@
                         <ul *ngIf="menu.page.length">
                             <li *ngFor="let menuItem of menu.page"><a
                                     (click)="navigatePage(menuItem)">{{menuItem?.fields?.title}}</a></li>
-                            <!-- <li><a href=" contact@fdrvc.in ">Latest Update</a></li>
-                            <li><a href=" contact@fdrvc.in ">Faq</a></li> -->
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-3 mb-2">
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-3 ">
                     <div class="footer-widget">
                         <h4>Contact Us</h4>
                         <ul>
-                            <li><a href=" contact@fdrvc.in ">Work with us</a></li>
-                            <li><a href="contact@fdrvc.in">Contact@drvc.in</a></li>
-                            <div class="social-links mx-auto">
-                                <a href="https://www.facebook.com/Haodti-Mahila-Kisan-Producer-Company-Limited-100542215212554"
-                                    target="_blank"><i class="fab fa-facebook"></i></a>
-                                <a href=" contact@fdrvc.in "><i class="fab fa-twitter"></i></a>
-                                <a href=" contact@fdrvc.in "><i class="fab fa-instagram"></i></a>
-                                <a href=" contact@fdrvc.in "><i class="fab fa-youtube"></i></a>
+                            <li><a [routerLink]="['/8']">Work with us</a></li>
+                            <li><a href="mailto:contact@drvc.in" target="_blank">Contact@drvc.in</a></li>
+
+                            <div class="footer-icons mt-2" *ngFor="let data of socialMediaData">
+                                <a [href]="data?.url" target="_blank"><img [src]="data?.icon" alt="data.title"
+                                        class=" "></a>
 
 
                             </div>
