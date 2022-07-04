@@ -2,14 +2,14 @@
 <div *ngFor="let sectionData of contentData">
   <!-- start section -->
   <ng-container *ngIf="sectionData.content">
-    <div *ngIf="sectionData.media">
+    <div *ngIf="sectionData.media_file">
       <div class="container">
         <div class="row">
           <div  class="col-lg-6 col-md-12 col-sm-12">
             <div class=" text-center">
                 <div class="card  shadow p-2">
                     <h2 class="theme-color pt-5 text-center">{{sectionData.title}}</h2>
-                    <img [src]="sectionData.media" class="w-50 mx-auto mb-5" alt="{{sectionData?.title}}" style="height: 200px;">
+                    <img [src]="sectionData.media_file" class="w-50 mx-auto mb-5" alt="{{sectionData?.title}}" style="height: 200px;">
                 </div>
             </div>
           </div>
@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <div *ngIf="!sectionData.media" class="container">
+    <div *ngIf="!sectionData.media_file" class="container">
       <h2 class="theme-color pt-5 text-center">{{sectionData.title}}</h2>
       <div [innerHTML]="sectionData.content"></div>
     </div>
