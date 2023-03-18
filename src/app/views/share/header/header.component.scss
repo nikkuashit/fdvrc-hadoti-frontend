@@ -47,6 +47,7 @@ a:hover {
 .dropdown-item:active {
 	text-decoration: none;
 	background-color: #ffe7f0;
+	cursor: pointer;
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
@@ -57,6 +58,7 @@ a:hover {
 	padding: 0px;
 	font-size: clamp(20px, 5vw, 20px);
 	margin-top: -20px;
+	cursor: pointer;
 }
 .mx-5 {
 	margin-right: 0rem !important;

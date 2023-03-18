@@ -13,6 +13,7 @@ footer {
 .logo h3 {
 	font-weight: 500;
 	max-width: 600px;
+	
 }
 .logo p {
 	font-weight: 400;
@@ -32,6 +33,7 @@ footer {
 .footer-widget ul li {
 	list-style: none;
 	line-height: 36px;
+	cursor: pointer;
 }
 .footer-widget ul li a {
 	color: rgb(226, 219, 219);
@@ -50,6 +52,8 @@ footer {
 	transition: all 0.5s ease;
 	margin-right: 5px;
 	border-radius: 50%;
+	height: 30px;
+	width: 30px;
 }
 .footer-icons:hover {
 	background-color: rgb(146, 120, 110);
