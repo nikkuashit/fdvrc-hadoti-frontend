@@ -1,11 +1,11 @@
 <!-- Download -->
 
-<div class="midle p-3 mt-5">
+<div class="midle p-3 ">
 
     <div class="container">
-        <hr>
+        <hr class="my-custom-hr">
         <div *ngFor="let data of pageData.component_data" class="row">
-            <h1 class="header-text text-center">{{data.title}}</h1>
+            <h1 class="header-text text-center pt-4">{{data.title}}</h1>
             <div class="col-12">
 
                 <p *ngIf="data.url" class="text-center">{{data.subtitle}} <a [href]="data.media" target="_blank"><span

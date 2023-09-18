@@ -4,7 +4,9 @@
         <div *ngFor="let data of pageData.component_data" class="col-lg-6 text-center">
             <h1 class="header-text mb-2 ">{{data.title}}</h1>
             <p class="paragraph-text fw-bold ">{{data.subtitle}}</p>
-            <p class="paragraph-text fw-bold mt-4 ">{{data.description}} </p>
+            <ng-container *ngFor="let item of data.description.split('\n')">
+                <p class="paragraph-text fw-bold mt-4">{{ item }}</p>
+            </ng-container>
 
         </div>
 

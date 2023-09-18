@@ -47,6 +47,7 @@ import { PartnershipComponent } from './partnership/partnership.component';
 import { LeftRightCardComponent } from './left-right-card/left-right-card.component';
 import { TwoSectionComponent } from './two-section/two-section.component';
 import { DownloadCardComponent } from './download-card/download-card.component';
+import { MandatoryFiledComponent } from './mandatory-filed/mandatory-filed.component';
 
 @NgModule({
 	declarations: [
@@ -91,7 +92,8 @@ import { DownloadCardComponent } from './download-card/download-card.component';
 		PartnershipComponent,
 		LeftRightCardComponent,
 		TwoSectionComponent,
-		DownloadCardComponent
+		DownloadCardComponent,
+		MandatoryFiledComponent
 	],
 	imports: [ BrowserModule, CommonModule, RouterModule, AccordionModule, CarouselModule, ButtonModule ],
 	exports: [
@@ -136,7 +138,8 @@ import { DownloadCardComponent } from './download-card/download-card.component';
 		PartnershipComponent,
 		LeftRightCardComponent,
 		TwoSectionComponent,
-		DownloadCardComponent
+		DownloadCardComponent,
+		MandatoryFiledComponent
 	]
 })
 export class ShareModule {}

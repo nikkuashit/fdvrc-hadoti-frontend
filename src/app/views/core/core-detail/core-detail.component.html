@@ -30,6 +30,8 @@
   <ng-container *ngIf="sectionData.component_type == 'left_to_right' ">
     <app-left-to-right [item]="sectionData"></app-left-to-right>
   </ng-container>
+
+
   <ng-container *ngIf="sectionData.component_type == 'right_to_left' ">
     <app-right-to-left [item]="sectionData"></app-right-to-left>
   </ng-container>
@@ -111,8 +113,9 @@
   <ng-container *ngIf="sectionData.component_type == 'download_card' ">
     <app-download-card [item]="sectionData"></app-download-card>
   </ng-container>
-
+  <ng-container *ngIf="sectionData.component_type == 'mandatory-filed'">
+    <app-mandatory-filed></app-mandatory-filed>
+  </ng-container>
 
 
 </div>
-<!-- </div> -->
